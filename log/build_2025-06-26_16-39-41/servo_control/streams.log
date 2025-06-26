@@ -1,0 +1,58 @@
+[0.090s] Invoking command in '/home/abanoub/delivery_bot_ws/build/servo_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/abanoub/delivery_bot_ws/src/servo_control -DCMAKE_INSTALL_PREFIX=/home/abanoub/delivery_bot_ws/install/servo_control
+[0.442s] -- The C compiler identification is GNU 11.4.0
+[1.312s] -- The CXX compiler identification is GNU 11.4.0
+[1.742s] -- Detecting C compiler ABI info
+[1.943s] -- Detecting C compiler ABI info - done
+[1.951s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.951s] -- Detecting C compile features
+[1.952s] -- Detecting C compile features - done
+[1.955s] -- Detecting CXX compiler ABI info
+[2.202s] -- Detecting CXX compiler ABI info - done
+[2.216s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.216s] -- Detecting CXX compile features
+[2.216s] -- Detecting CXX compile features - done
+[2.218s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.394s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.517s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[2.834s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.841s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.857s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.886s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.912s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.011s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.021s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.913s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.959s] -- Found FastRTPS: /opt/ros/humble/include  
+[12.964s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.970s] -- Looking for pthread.h
+[13.087s] -- Looking for pthread.h - found
+[13.087s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[13.221s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[13.222s] -- Found Threads: TRUE  
+[13.263s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[13.335s] -- Added test 'lint_cmake' to check CMake code style
+[13.336s] -- Added test 'xmllint' to check XML markup files
+[13.338s] -- Configuring done
+[13.346s] -- Generating done
+[13.349s] -- Build files have been written to: /home/abanoub/delivery_bot_ws/build/servo_control
+[13.366s] Invoked command in '/home/abanoub/delivery_bot_ws/build/servo_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/abanoub/delivery_bot_ws/src/servo_control -DCMAKE_INSTALL_PREFIX=/home/abanoub/delivery_bot_ws/install/servo_control
+[13.367s] Invoking command in '/home/abanoub/delivery_bot_ws/build/servo_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/servo_control -- -j20 -l20
+[13.404s] Invoked command in '/home/abanoub/delivery_bot_ws/build/servo_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/servo_control -- -j20 -l20
+[13.406s] Invoking command in '/home/abanoub/delivery_bot_ws/build/servo_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/servo_control
+[13.414s] -- Install configuration: ""
+[13.416s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/ament_index/resource_index/package_run_dependencies/servo_control
+[13.416s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/ament_index/resource_index/parent_prefix_path/servo_control
+[13.417s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/environment/ament_prefix_path.sh
+[13.417s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/environment/ament_prefix_path.dsv
+[13.418s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/environment/path.sh
+[13.418s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/environment/path.dsv
+[13.418s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/local_setup.bash
+[13.418s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/local_setup.sh
+[13.419s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/local_setup.zsh
+[13.419s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/local_setup.dsv
+[13.420s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/package.dsv
+[13.420s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/ament_index/resource_index/packages/servo_control
+[13.420s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/cmake/servo_controlConfig.cmake
+[13.420s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/cmake/servo_controlConfig-version.cmake
+[13.420s] -- Installing: /home/abanoub/delivery_bot_ws/install/servo_control/share/servo_control/package.xml
+[13.435s] Invoked command in '/home/abanoub/delivery_bot_ws/build/servo_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/servo_control

@@ -1,0 +1,9 @@
+/home/abanoub/delivery_bot_ws/build/face_recognition/CMakeFiles/uninstall.dir
+/home/abanoub/delivery_bot_ws/build/face_recognition/CMakeFiles/face_recognition_uninstall.dir
+/home/abanoub/delivery_bot_ws/build/face_recognition/CMakeFiles/test.dir
+/home/abanoub/delivery_bot_ws/build/face_recognition/CMakeFiles/edit_cache.dir
+/home/abanoub/delivery_bot_ws/build/face_recognition/CMakeFiles/rebuild_cache.dir
+/home/abanoub/delivery_bot_ws/build/face_recognition/CMakeFiles/list_install_components.dir
+/home/abanoub/delivery_bot_ws/build/face_recognition/CMakeFiles/install.dir
+/home/abanoub/delivery_bot_ws/build/face_recognition/CMakeFiles/install/local.dir
+/home/abanoub/delivery_bot_ws/build/face_recognition/CMakeFiles/install/strip.dir

@@ -1,0 +1,15 @@
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/ament_index/resource_index/package_run_dependencies/face_recognition
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/ament_index/resource_index/parent_prefix_path/face_recognition
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/environment/ament_prefix_path.sh
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/environment/ament_prefix_path.dsv
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/environment/path.sh
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/environment/path.dsv
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/local_setup.bash
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/local_setup.sh
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/local_setup.zsh
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/local_setup.dsv
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/package.dsv
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/ament_index/resource_index/packages/face_recognition
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/cmake/face_recognitionConfig.cmake
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/cmake/face_recognitionConfig-version.cmake
+/home/abanoub/delivery_bot_ws/install/face_recognition/share/face_recognition/package.xml

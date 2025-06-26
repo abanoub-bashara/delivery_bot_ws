@@ -1,0 +1,4 @@
+source;share/delivery_logic/local_setup.bash
+source;share/delivery_logic/local_setup.dsv
+source;share/delivery_logic/local_setup.sh
+source;share/delivery_logic/local_setup.zsh

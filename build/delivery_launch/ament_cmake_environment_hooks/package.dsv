@@ -1,0 +1,4 @@
+source;share/delivery_launch/local_setup.bash
+source;share/delivery_launch/local_setup.dsv
+source;share/delivery_launch/local_setup.sh
+source;share/delivery_launch/local_setup.zsh

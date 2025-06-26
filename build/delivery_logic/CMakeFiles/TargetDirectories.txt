@@ -1,0 +1,9 @@
+/home/abanoub/delivery_bot_ws/build/delivery_logic/CMakeFiles/uninstall.dir
+/home/abanoub/delivery_bot_ws/build/delivery_logic/CMakeFiles/delivery_logic_uninstall.dir
+/home/abanoub/delivery_bot_ws/build/delivery_logic/CMakeFiles/test.dir
+/home/abanoub/delivery_bot_ws/build/delivery_logic/CMakeFiles/edit_cache.dir
+/home/abanoub/delivery_bot_ws/build/delivery_logic/CMakeFiles/rebuild_cache.dir
+/home/abanoub/delivery_bot_ws/build/delivery_logic/CMakeFiles/list_install_components.dir
+/home/abanoub/delivery_bot_ws/build/delivery_logic/CMakeFiles/install.dir
+/home/abanoub/delivery_bot_ws/build/delivery_logic/CMakeFiles/install/local.dir
+/home/abanoub/delivery_bot_ws/build/delivery_logic/CMakeFiles/install/strip.dir
