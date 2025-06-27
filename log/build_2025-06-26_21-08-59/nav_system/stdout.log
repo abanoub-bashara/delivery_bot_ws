@@ -1,0 +1,22 @@
+-- Install configuration: ""
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/launch
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/launch/slam_sim.launch.py
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/urdf
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/urdf/robot.urdf
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/maps
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/maps/empty.yaml
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/ament_index/resource_index/package_run_dependencies/nav_system
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/ament_index/resource_index/parent_prefix_path/nav_system
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/environment/ament_prefix_path.sh
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/environment/path.sh
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/environment/path.dsv
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/local_setup.bash
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/local_setup.sh
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/local_setup.zsh
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/local_setup.dsv
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/package.dsv
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/ament_index/resource_index/packages/nav_system
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/cmake/nav_systemConfig.cmake
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/cmake/nav_systemConfig-version.cmake
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/package.xml

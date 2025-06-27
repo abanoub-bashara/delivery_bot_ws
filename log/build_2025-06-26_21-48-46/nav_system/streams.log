@@ -1,0 +1,26 @@
+[0.052s] Invoking command in '/home/abanoub/delivery_bot_ws/build/nav_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/nav_system -- -j20 -l20
+[0.149s] Invoked command in '/home/abanoub/delivery_bot_ws/build/nav_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/nav_system -- -j20 -l20
+[0.181s] Invoking command in '/home/abanoub/delivery_bot_ws/build/nav_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/nav_system
+[0.189s] -- Install configuration: ""
+[0.189s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/launch
+[0.189s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/launch/slam_sim.launch.py
+[0.189s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/urdf
+[0.190s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/urdf/robot.urdf
+[0.190s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/maps
+[0.190s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/maps/empty.yaml
+[0.190s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/ament_index/resource_index/package_run_dependencies/nav_system
+[0.190s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/ament_index/resource_index/parent_prefix_path/nav_system
+[0.190s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/environment/ament_prefix_path.sh
+[0.190s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/environment/ament_prefix_path.dsv
+[0.191s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/environment/path.sh
+[0.191s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/environment/path.dsv
+[0.191s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/local_setup.bash
+[0.191s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/local_setup.sh
+[0.192s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/local_setup.zsh
+[0.192s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/local_setup.dsv
+[0.192s] -- Installing: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/package.dsv
+[0.193s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/ament_index/resource_index/packages/nav_system
+[0.193s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/cmake/nav_systemConfig.cmake
+[0.193s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/cmake/nav_systemConfig-version.cmake
+[0.193s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/package.xml
+[0.309s] Invoked command in '/home/abanoub/delivery_bot_ws/build/nav_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/nav_system

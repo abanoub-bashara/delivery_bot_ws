@@ -1,3 +1,6 @@
+/home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/launch/slam_sim.launch.py
+/home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/urdf/robot.urdf
+/home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/maps/empty.yaml
 /home/abanoub/delivery_bot_ws/install/nav_system/share/ament_index/resource_index/package_run_dependencies/nav_system
 /home/abanoub/delivery_bot_ws/install/nav_system/share/ament_index/resource_index/parent_prefix_path/nav_system
 /home/abanoub/delivery_bot_ws/install/nav_system/share/nav_system/environment/ament_prefix_path.sh

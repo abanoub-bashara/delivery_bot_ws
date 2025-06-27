@@ -1,0 +1,20 @@
+[0.138s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_logic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_logic -- -j20 -l20
+[0.256s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_logic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_logic -- -j20 -l20
+[0.277s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_logic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_logic
+[0.296s] -- Install configuration: ""
+[0.297s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/ament_index/resource_index/package_run_dependencies/delivery_logic
+[0.297s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/ament_index/resource_index/parent_prefix_path/delivery_logic
+[0.298s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/environment/ament_prefix_path.sh
+[0.300s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/environment/ament_prefix_path.dsv
+[0.300s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/environment/path.sh
+[0.301s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/environment/path.dsv
+[0.301s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/local_setup.bash
+[0.301s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/local_setup.sh
+[0.302s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/local_setup.zsh
+[0.302s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/local_setup.dsv
+[0.303s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/package.dsv
+[0.304s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/ament_index/resource_index/packages/delivery_logic
+[0.304s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/cmake/delivery_logicConfig.cmake
+[0.304s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/cmake/delivery_logicConfig-version.cmake
+[0.305s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_logic/share/delivery_logic/package.xml
+[0.397s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_logic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_logic

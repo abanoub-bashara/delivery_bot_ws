@@ -43,6 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nav_system" TYPE DIRECTORY FILES
+    "/home/abanoub/delivery_bot_ws/src/nav_system/launch"
+    "/home/abanoub/delivery_bot_ws/src/nav_system/urdf"
+    "/home/abanoub/delivery_bot_ws/src/nav_system/maps"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/abanoub/delivery_bot_ws/build/nav_system/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/nav_system")
 endif()
 

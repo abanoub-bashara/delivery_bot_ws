@@ -1,0 +1,4 @@
+Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_logic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_logic -- -j20 -l20
+Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_logic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_logic -- -j20 -l20
+Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_logic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_logic
+Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_logic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_logic
