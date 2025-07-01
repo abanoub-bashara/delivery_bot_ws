@@ -1,4 +1,0 @@
-Invoking command in '/home/abanoub/delivery_bot_ws/build/nav_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/nav_system -- -j20 -l20
-Invoked command in '/home/abanoub/delivery_bot_ws/build/nav_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/nav_system -- -j20 -l20
-Invoking command in '/home/abanoub/delivery_bot_ws/build/nav_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/nav_system
-Invoked command in '/home/abanoub/delivery_bot_ws/build/nav_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/nav_system

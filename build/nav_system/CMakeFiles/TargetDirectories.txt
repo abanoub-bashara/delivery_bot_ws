@@ -1,9 +1,0 @@
-/home/abanoub/delivery_bot_ws/build/nav_system/CMakeFiles/uninstall.dir
-/home/abanoub/delivery_bot_ws/build/nav_system/CMakeFiles/nav_system_uninstall.dir
-/home/abanoub/delivery_bot_ws/build/nav_system/CMakeFiles/test.dir
-/home/abanoub/delivery_bot_ws/build/nav_system/CMakeFiles/edit_cache.dir
-/home/abanoub/delivery_bot_ws/build/nav_system/CMakeFiles/rebuild_cache.dir
-/home/abanoub/delivery_bot_ws/build/nav_system/CMakeFiles/list_install_components.dir
-/home/abanoub/delivery_bot_ws/build/nav_system/CMakeFiles/install.dir
-/home/abanoub/delivery_bot_ws/build/nav_system/CMakeFiles/install/local.dir
-/home/abanoub/delivery_bot_ws/build/nav_system/CMakeFiles/install/strip.dir
