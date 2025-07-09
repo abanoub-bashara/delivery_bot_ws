@@ -1,0 +1,34 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/abanoub/delivery_bot_ws/build/delivery_bot_nav
+-- Install configuration: ""
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/ament_index/resource_index/package_run_dependencies/delivery_bot_nav
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/ament_index/resource_index/parent_prefix_path/delivery_bot_nav
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/ament_prefix_path.sh
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/ament_prefix_path.dsv
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/path.sh
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/path.dsv
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.bash
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.sh
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.zsh
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.dsv
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.dsv
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/ament_index/resource_index/packages/delivery_bot_nav
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/cmake/delivery_bot_navConfig.cmake
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/cmake/delivery_bot_navConfig-version.cmake
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.xml

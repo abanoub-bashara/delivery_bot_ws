@@ -1,0 +1,67 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/abanoub/delivery_bot_ws/build/my_robot_description
+-- Install configuration: ""
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/urdf
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/urdf/robot.urdf
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_14.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/wheel.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_2.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/top_plate.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_17.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_4.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_9.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/l298n_h_driver.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_15.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_7.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_1__2.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/motor_mount.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_8.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/rasberry_pi_4_b.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_12.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_16.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_13.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_11.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/base_link.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_10.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_5.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/geared_dc_motor_with_encoder___ts_25ga370h.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_18.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_1.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_6.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/column_support.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_20.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_3.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/assets/part_19.stl
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/launch
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/launch/gazebo_launch.py
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.dsv
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+-- Installing: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.xml
