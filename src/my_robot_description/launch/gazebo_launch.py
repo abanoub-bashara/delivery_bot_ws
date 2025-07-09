@@ -24,7 +24,8 @@ def generate_launch_description():
         Node(
             package='gazebo_ros',
             executable='spawn_entity.py',
-            arguments=['-entity', 'delivery_bot', '-file', urdf_path],
+            arguments=['-entity', 'delivery_bot', '-file', urdf_path,
+                       '-x', '0.0', '-y', '0.0', '-z', '1.0'],  # Adjust spawn position if needed
             output='screen'
         )
     ])

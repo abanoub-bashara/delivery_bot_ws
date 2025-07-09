@@ -1,0 +1,3 @@
+export ONSHAPE_API=https://cad.onshape.com
+export ONSHAPE_ACCESS_KEY=LYLZ3R9ksOn2A8I6JBA7PU3p
+export ONSHAPE_SECRET_KEY=TBizi33LMnClA1GaCrzx4Uc8M5XcKddVBrJ43adflJa7u8zJ

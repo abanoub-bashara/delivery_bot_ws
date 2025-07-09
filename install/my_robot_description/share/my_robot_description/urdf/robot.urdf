@@ -13,7 +13,7 @@
     <visual>
       <origin xyz="-0.0513068 -0.08 0.126" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
       <material name="column_support_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -22,14 +22,14 @@
     <collision>
       <origin xyz="-0.0513068 -0.08 0.126" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
     </collision>
     <!-- Part column_support_2 -->
     <visual>
       <origin xyz="0.0436286 0.084433 0.006" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
       <material name="column_support_2_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -38,14 +38,14 @@
     <collision>
       <origin xyz="0.0436286 0.084433 0.006" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
     </collision>
     <!-- Part geared_dc_motor_with_encoder___ts_25ga370h -->
     <visual>
       <origin xyz="4.16334e-17 -0.12125 -0.0195" rpy="2.0506e-16 4.64408e-16 1.94289e-16"/>
       <geometry>
-        <mesh filename="package://assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+        <mesh filename="package://my_robot_description/assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
       </geometry>
       <material name="geared_dc_motor_with_encoder___ts_25ga370h_material">
         <color rgba="0.784314 0.784314 0.784314 1"/>
@@ -54,14 +54,14 @@
     <collision>
       <origin xyz="4.16334e-17 -0.12125 -0.0195" rpy="2.0506e-16 4.64408e-16 1.94289e-16"/>
       <geometry>
-        <mesh filename="package://assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+        <mesh filename="package://my_robot_description/assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
       </geometry>
     </collision>
     <!-- Part geared_dc_motor_with_encoder___ts_25ga370h_2 -->
     <visual>
       <origin xyz="-0.105006 0.060625 -0.0195" rpy="-3.14159 4.27106e-44 1.0472"/>
       <geometry>
-        <mesh filename="package://assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+        <mesh filename="package://my_robot_description/assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
       </geometry>
       <material name="geared_dc_motor_with_encoder___ts_25ga370h_2_material">
         <color rgba="0.784314 0.784314 0.784314 1"/>
@@ -70,14 +70,14 @@
     <collision>
       <origin xyz="-0.105006 0.060625 -0.0195" rpy="-3.14159 4.27106e-44 1.0472"/>
       <geometry>
-        <mesh filename="package://assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+        <mesh filename="package://my_robot_description/assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
       </geometry>
     </collision>
     <!-- Part motor_mount -->
     <visual>
       <origin xyz="3.46945e-17 -0.08 0" rpy="-3.14159 4.64408e-16 1.94289e-16"/>
       <geometry>
-        <mesh filename="package://assets/motor_mount.stl"/>
+        <mesh filename="package://my_robot_description/assets/motor_mount.stl"/>
       </geometry>
       <material name="motor_mount_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -86,14 +86,14 @@
     <collision>
       <origin xyz="3.46945e-17 -0.08 0" rpy="-3.14159 4.64408e-16 1.94289e-16"/>
       <geometry>
-        <mesh filename="package://assets/motor_mount.stl"/>
+        <mesh filename="package://my_robot_description/assets/motor_mount.stl"/>
       </geometry>
     </collision>
     <!-- Part geared_dc_motor_with_encoder___ts_25ga370h_3 -->
     <visual>
       <origin xyz="0.105006 0.060625 -0.0195" rpy="3.14159 5.47382e-48 -1.0472"/>
       <geometry>
-        <mesh filename="package://assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+        <mesh filename="package://my_robot_description/assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
       </geometry>
       <material name="geared_dc_motor_with_encoder___ts_25ga370h_3_material">
         <color rgba="0.784314 0.784314 0.784314 1"/>
@@ -102,14 +102,14 @@
     <collision>
       <origin xyz="0.105006 0.060625 -0.0195" rpy="3.14159 5.47382e-48 -1.0472"/>
       <geometry>
-        <mesh filename="package://assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+        <mesh filename="package://my_robot_description/assets/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
       </geometry>
     </collision>
     <!-- Part column_support_3 -->
     <visual>
       <origin xyz="-0.0436286 0.084433 0.126" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
       <material name="column_support_3_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -118,14 +118,14 @@
     <collision>
       <origin xyz="-0.0436286 0.084433 0.126" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
     </collision>
     <!-- Part column_support_4 -->
     <visual>
       <origin xyz="0.0513068 -0.08 0.126" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
       <material name="column_support_4_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -134,14 +134,14 @@
     <collision>
       <origin xyz="0.0513068 -0.08 0.126" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
     </collision>
     <!-- Part column_support_5 -->
     <visual>
       <origin xyz="-0.0949354 -0.00443297 0.126" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
       <material name="column_support_5_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -150,14 +150,14 @@
     <collision>
       <origin xyz="-0.0949354 -0.00443297 0.126" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
     </collision>
     <!-- Part base_link -->
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/base_link.stl"/>
+        <mesh filename="package://my_robot_description/assets/base_link.stl"/>
       </geometry>
       <material name="base_link_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -166,14 +166,14 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/base_link.stl"/>
+        <mesh filename="package://my_robot_description/assets/base_link.stl"/>
       </geometry>
     </collision>
     <!-- Part l298n_h_driver -->
     <visual>
       <origin xyz="0.127727 -0.0669328 0.0368674" rpy="-1.5708 0.124574 -2.0944"/>
       <geometry>
-        <mesh filename="package://assets/l298n_h_driver.stl"/>
+        <mesh filename="package://my_robot_description/assets/l298n_h_driver.stl"/>
       </geometry>
       <material name="l298n_h_driver_material">
         <color rgba="0.74902 0.0196078 0.0196078 1"/>
@@ -182,14 +182,14 @@
     <collision>
       <origin xyz="0.127727 -0.0669328 0.0368674" rpy="-1.5708 0.124574 -2.0944"/>
       <geometry>
-        <mesh filename="package://assets/l298n_h_driver.stl"/>
+        <mesh filename="package://my_robot_description/assets/l298n_h_driver.stl"/>
       </geometry>
     </collision>
     <!-- Part top_plate -->
     <visual>
       <origin xyz="9.02056e-17 -1.38778e-17 0.132" rpy="3.14159 -0 3.14159"/>
       <geometry>
-        <mesh filename="package://assets/top_plate.stl"/>
+        <mesh filename="package://my_robot_description/assets/top_plate.stl"/>
       </geometry>
       <material name="top_plate_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -198,14 +198,14 @@
     <collision>
       <origin xyz="9.02056e-17 -1.38778e-17 0.132" rpy="3.14159 -0 3.14159"/>
       <geometry>
-        <mesh filename="package://assets/top_plate.stl"/>
+        <mesh filename="package://my_robot_description/assets/top_plate.stl"/>
       </geometry>
     </collision>
     <!-- Part rasberry_pi_4_b -->
     <visual>
       <origin xyz="-0.00017603 0.00268335 0.0631" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/rasberry_pi_4_b.stl"/>
+        <mesh filename="package://my_robot_description/assets/rasberry_pi_4_b.stl"/>
       </geometry>
       <material name="rasberry_pi_4_b_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -214,14 +214,14 @@
     <collision>
       <origin xyz="-0.00017603 0.00268335 0.0631" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/rasberry_pi_4_b.stl"/>
+        <mesh filename="package://my_robot_description/assets/rasberry_pi_4_b.stl"/>
       </geometry>
     </collision>
     <!-- Part motor_mount_2 -->
     <visual>
       <origin xyz="-0.069282 0.04 -6.55569e-45" rpy="3.14159 -4.28639e-44 -2.0944"/>
       <geometry>
-        <mesh filename="package://assets/motor_mount.stl"/>
+        <mesh filename="package://my_robot_description/assets/motor_mount.stl"/>
       </geometry>
       <material name="motor_mount_2_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -230,14 +230,14 @@
     <collision>
       <origin xyz="-0.069282 0.04 -6.55569e-45" rpy="3.14159 -4.28639e-44 -2.0944"/>
       <geometry>
-        <mesh filename="package://assets/motor_mount.stl"/>
+        <mesh filename="package://my_robot_description/assets/motor_mount.stl"/>
       </geometry>
     </collision>
     <!-- Part motor_mount_3 -->
     <visual>
       <origin xyz="0.069282 0.04 0" rpy="3.14159 3.61234e-97 2.0944"/>
       <geometry>
-        <mesh filename="package://assets/motor_mount.stl"/>
+        <mesh filename="package://my_robot_description/assets/motor_mount.stl"/>
       </geometry>
       <material name="motor_mount_3_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -246,14 +246,14 @@
     <collision>
       <origin xyz="0.069282 0.04 0" rpy="3.14159 3.61234e-97 2.0944"/>
       <geometry>
-        <mesh filename="package://assets/motor_mount.stl"/>
+        <mesh filename="package://my_robot_description/assets/motor_mount.stl"/>
       </geometry>
     </collision>
     <!-- Part l298n_h_driver_2 -->
     <visual>
       <origin xyz="-0.00589808 0.144081 0.0368674" rpy="-1.5708 0.124574 -3.47822e-30"/>
       <geometry>
-        <mesh filename="package://assets/l298n_h_driver.stl"/>
+        <mesh filename="package://my_robot_description/assets/l298n_h_driver.stl"/>
       </geometry>
       <material name="l298n_h_driver_2_material">
         <color rgba="0.74902 0.0196078 0.0196078 1"/>
@@ -262,14 +262,14 @@
     <collision>
       <origin xyz="-0.00589808 0.144081 0.0368674" rpy="-1.5708 0.124574 -3.47822e-30"/>
       <geometry>
-        <mesh filename="package://assets/l298n_h_driver.stl"/>
+        <mesh filename="package://my_robot_description/assets/l298n_h_driver.stl"/>
       </geometry>
     </collision>
     <!-- Part column_support_6 -->
     <visual>
       <origin xyz="0.0949354 -0.00443297 0.126" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
       <material name="column_support_6_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -278,14 +278,14 @@
     <collision>
       <origin xyz="0.0949354 -0.00443297 0.126" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/column_support.stl"/>
+        <mesh filename="package://my_robot_description/assets/column_support.stl"/>
       </geometry>
     </collision>
     <!-- Part l298n_h_driver_3 -->
     <visual>
       <origin xyz="-0.0244131 -0.00728438 0.0368674" rpy="-1.5708 0.124574 -1.0472"/>
       <geometry>
-        <mesh filename="package://assets/l298n_h_driver.stl"/>
+        <mesh filename="package://my_robot_description/assets/l298n_h_driver.stl"/>
       </geometry>
       <material name="l298n_h_driver_3_material">
         <color rgba="0.74902 0.0196078 0.0196078 1"/>
@@ -294,14 +294,14 @@
     <collision>
       <origin xyz="-0.0244131 -0.00728438 0.0368674" rpy="-1.5708 0.124574 -1.0472"/>
       <geometry>
-        <mesh filename="package://assets/l298n_h_driver.stl"/>
+        <mesh filename="package://my_robot_description/assets/l298n_h_driver.stl"/>
       </geometry>
     </collision>
     <!-- Part part_8 -->
     <visual>
       <origin xyz="-0.0121949 0.0322049 0.1791" rpy="-2.74517 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_8.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_8.stl"/>
       </geometry>
       <material name="part_8_material">
         <color rgba="0.776471 0.756863 0.737255 1"/>
@@ -310,14 +310,14 @@
     <collision>
       <origin xyz="-0.0121949 0.0322049 0.1791" rpy="-2.74517 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_8.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_8.stl"/>
       </geometry>
     </collision>
     <!-- Part part_15 -->
     <visual>
       <origin xyz="-0.028 0.035 0.1416" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_15.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_15.stl"/>
       </geometry>
       <material name="part_15_material">
         <color rgba="1 1 1 1"/>
@@ -326,14 +326,14 @@
     <collision>
       <origin xyz="-0.028 0.035 0.1416" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_15.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_15.stl"/>
       </geometry>
     </collision>
     <!-- Part part_11 -->
     <visual>
       <origin xyz="-9.44383e-15 -0.0385 0.1411" rpy="-6.12279e-17 -6.12323e-17 -3.14159"/>
       <geometry>
-        <mesh filename="package://assets/part_11.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_11.stl"/>
       </geometry>
       <material name="part_11_material">
         <color rgba="1 1 1 1"/>
@@ -342,14 +342,14 @@
     <collision>
       <origin xyz="-9.44383e-15 -0.0385 0.1411" rpy="-6.12279e-17 -6.12323e-17 -3.14159"/>
       <geometry>
-        <mesh filename="package://assets/part_11.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_11.stl"/>
       </geometry>
     </collision>
     <!-- Part part_8_2 -->
     <visual>
       <origin xyz="-0.011 -0.0385 0.1629" rpy="1.53787 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_8.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_8.stl"/>
       </geometry>
       <material name="part_8_2_material">
         <color rgba="0.776471 0.756863 0.737255 1"/>
@@ -358,14 +358,14 @@
     <collision>
       <origin xyz="-0.011 -0.0385 0.1629" rpy="1.53787 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_8.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_8.stl"/>
       </geometry>
     </collision>
     <!-- Part part_20 -->
     <visual>
       <origin xyz="-9.44383e-15 -0.0385 0.1616" rpy="1.28639e-16 3.79626e-17 0.124422"/>
       <geometry>
-        <mesh filename="package://assets/part_20.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_20.stl"/>
       </geometry>
       <material name="part_20_material">
         <color rgba="0.25098 0.25098 0.25098 1"/>
@@ -374,14 +374,14 @@
     <collision>
       <origin xyz="-9.44383e-15 -0.0385 0.1616" rpy="1.28639e-16 3.79626e-17 0.124422"/>
       <geometry>
-        <mesh filename="package://assets/part_20.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_20.stl"/>
       </geometry>
     </collision>
     <!-- Part part_16 -->
     <visual>
       <origin xyz="0.02 -0.035 0.14" rpy="3.14159 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_16.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_16.stl"/>
       </geometry>
       <material name="part_16_material">
         <color rgba="1 1 1 1"/>
@@ -390,14 +390,14 @@
     <collision>
       <origin xyz="0.02 -0.035 0.14" rpy="3.14159 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_16.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_16.stl"/>
       </geometry>
     </collision>
     <!-- Part part_16_2 -->
     <visual>
       <origin xyz="-0.02 -0.035 0.14" rpy="3.14159 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_16.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_16.stl"/>
       </geometry>
       <material name="part_16_2_material">
         <color rgba="1 1 1 1"/>
@@ -406,14 +406,14 @@
     <collision>
       <origin xyz="-0.02 -0.035 0.14" rpy="3.14159 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_16.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_16.stl"/>
       </geometry>
     </collision>
     <!-- Part part_15_2 -->
     <visual>
       <origin xyz="-0.02 -0.035 0.1416" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_15.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_15.stl"/>
       </geometry>
       <material name="part_15_2_material">
         <color rgba="1 1 1 1"/>
@@ -422,14 +422,14 @@
     <collision>
       <origin xyz="-0.02 -0.035 0.1416" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_15.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_15.stl"/>
       </geometry>
     </collision>
     <!-- Part part_1 -->
     <visual>
       <origin xyz="-9.44383e-15 0.007 0.1606" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_1.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_1.stl"/>
       </geometry>
       <material name="part_1_material">
         <color rgba="0.25098 0.25098 0.25098 1"/>
@@ -438,14 +438,14 @@
     <collision>
       <origin xyz="-9.44383e-15 0.007 0.1606" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_1.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_1.stl"/>
       </geometry>
     </collision>
     <!-- Part part_1_2 -->
     <visual>
       <origin xyz="0.000111026 0.00693466 0.1761" rpy="3.14159 5.29332e-14 0.450629"/>
       <geometry>
-        <mesh filename="package://assets/part_1__2.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_1__2.stl"/>
       </geometry>
       <material name="part_1_2_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -454,14 +454,14 @@
     <collision>
       <origin xyz="0.000111026 0.00693466 0.1761" rpy="3.14159 5.29332e-14 0.450629"/>
       <geometry>
-        <mesh filename="package://assets/part_1__2.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_1__2.stl"/>
       </geometry>
     </collision>
     <!-- Part part_18 -->
     <visual>
       <origin xyz="-9.44383e-15 0.007 0.1416" rpy="3.14159 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_18.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_18.stl"/>
       </geometry>
       <material name="part_18_material">
         <color rgba="0.74902 0.74902 0.74902 1"/>
@@ -470,14 +470,14 @@
     <collision>
       <origin xyz="-9.44383e-15 0.007 0.1416" rpy="3.14159 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_18.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_18.stl"/>
       </geometry>
     </collision>
     <!-- Part part_13 -->
     <visual>
       <origin xyz="0.000125 -0.0152 0.14875" rpy="-3.14159 -1.22465e-16 3.14159"/>
       <geometry>
-        <mesh filename="package://assets/part_13.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_13.stl"/>
       </geometry>
       <material name="part_13_material">
         <color rgba="1 1 1 1"/>
@@ -486,14 +486,14 @@
     <collision>
       <origin xyz="0.000125 -0.0152 0.14875" rpy="-3.14159 -1.22465e-16 3.14159"/>
       <geometry>
-        <mesh filename="package://assets/part_13.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_13.stl"/>
       </geometry>
     </collision>
     <!-- Part part_10 -->
     <visual>
       <origin xyz="0.000362495 -0.026 0.1358" rpy="1.5708 -8.69586e-17 -3.14159"/>
       <geometry>
-        <mesh filename="package://assets/part_10.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_10.stl"/>
       </geometry>
       <material name="part_10_material">
         <color rgba="1 1 1 1"/>
@@ -502,14 +502,14 @@
     <collision>
       <origin xyz="0.000362495 -0.026 0.1358" rpy="1.5708 -8.69586e-17 -3.14159"/>
       <geometry>
-        <mesh filename="package://assets/part_10.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_10.stl"/>
       </geometry>
     </collision>
     <!-- Part part_8_3 -->
     <visual>
       <origin xyz="0.011 -0.0385 0.1629" rpy="1.53787 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_8.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_8.stl"/>
       </geometry>
       <material name="part_8_3_material">
         <color rgba="0.776471 0.756863 0.737255 1"/>
@@ -518,14 +518,14 @@
     <collision>
       <origin xyz="0.011 -0.0385 0.1629" rpy="1.53787 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_8.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_8.stl"/>
       </geometry>
     </collision>
     <!-- Part part_14 -->
     <visual>
       <origin xyz="-9.44383e-15 0.007 0.1496" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_14.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_14.stl"/>
       </geometry>
       <material name="part_14_material">
         <color rgba="0.486275 0.486275 0.486275 1"/>
@@ -534,14 +534,14 @@
     <collision>
       <origin xyz="-9.44383e-15 0.007 0.1496" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_14.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_14.stl"/>
       </geometry>
     </collision>
     <!-- Part part_15_3 -->
     <visual>
       <origin xyz="0.02 -0.035 0.1416" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_15.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_15.stl"/>
       </geometry>
       <material name="part_15_3_material">
         <color rgba="1 1 1 1"/>
@@ -550,14 +550,14 @@
     <collision>
       <origin xyz="0.02 -0.035 0.1416" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_15.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_15.stl"/>
       </geometry>
     </collision>
     <!-- Part part_16_3 -->
     <visual>
       <origin xyz="0.028 0.035 0.14" rpy="3.14159 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_16.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_16.stl"/>
       </geometry>
       <material name="part_16_3_material">
         <color rgba="1 1 1 1"/>
@@ -566,14 +566,14 @@
     <collision>
       <origin xyz="0.028 0.035 0.14" rpy="3.14159 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_16.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_16.stl"/>
       </geometry>
     </collision>
     <!-- Part part_15_4 -->
     <visual>
       <origin xyz="0.028 0.035 0.1416" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_15.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_15.stl"/>
       </geometry>
       <material name="part_15_4_material">
         <color rgba="1 1 1 1"/>
@@ -582,14 +582,14 @@
     <collision>
       <origin xyz="0.028 0.035 0.1416" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_15.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_15.stl"/>
       </geometry>
     </collision>
     <!-- Part part_17 -->
     <visual>
       <origin xyz="-0.0271 0.007 0.14" rpy="1.22465e-16 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_17.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_17.stl"/>
       </geometry>
       <material name="part_17_material">
         <color rgba="0.909804 0.443137 0.0313725 1"/>
@@ -598,14 +598,14 @@
     <collision>
       <origin xyz="-0.0271 0.007 0.14" rpy="1.22465e-16 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_17.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_17.stl"/>
       </geometry>
     </collision>
     <!-- Part part_12 -->
     <visual>
       <origin xyz="-9.44383e-15 -0.0385 0.1375" rpy="-1.51397e-16 -2.57317e-17 -2.70799"/>
       <geometry>
-        <mesh filename="package://assets/part_12.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_12.stl"/>
       </geometry>
       <material name="part_12_material">
         <color rgba="0 0 0 1"/>
@@ -614,14 +614,14 @@
     <collision>
       <origin xyz="-9.44383e-15 -0.0385 0.1375" rpy="-1.51397e-16 -2.57317e-17 -2.70799"/>
       <geometry>
-        <mesh filename="package://assets/part_12.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_12.stl"/>
       </geometry>
     </collision>
     <!-- Part part_6 -->
     <visual>
       <origin xyz="-9.44383e-15 0.007 0.1676" rpy="-9.52416e-14 4.54221e-14 0.445009"/>
       <geometry>
-        <mesh filename="package://assets/part_6.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_6.stl"/>
       </geometry>
       <material name="part_6_material">
         <color rgba="0.486275 0.486275 0.486275 1"/>
@@ -630,14 +630,14 @@
     <collision>
       <origin xyz="-9.44383e-15 0.007 0.1676" rpy="-9.52416e-14 4.54221e-14 0.445009"/>
       <geometry>
-        <mesh filename="package://assets/part_6.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_6.stl"/>
       </geometry>
     </collision>
     <!-- Part part_8_4 -->
     <visual>
       <origin xyz="-0.00946882 -0.0193504 0.1791" rpy="-2.63865 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_8.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_8.stl"/>
       </geometry>
       <material name="part_8_4_material">
         <color rgba="0.776471 0.756863 0.737255 1"/>
@@ -646,14 +646,14 @@
     <collision>
       <origin xyz="-0.00946882 -0.0193504 0.1791" rpy="-2.63865 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_8.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_8.stl"/>
       </geometry>
     </collision>
     <!-- Part part_9 -->
     <visual>
       <origin xyz="-9.44383e-15 0.007 0.1506" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_9.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_9.stl"/>
       </geometry>
       <material name="part_9_material">
         <color rgba="0.0509804 0.615686 0.0509804 1"/>
@@ -662,14 +662,14 @@
     <collision>
       <origin xyz="-9.44383e-15 0.007 0.1506" rpy="0 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_9.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_9.stl"/>
       </geometry>
     </collision>
     <!-- Part part_2 -->
     <visual>
       <origin xyz="-9.44383e-15 0.007 0.1636" rpy="-5.29332e-14 -8.49279e-14 -1.12017"/>
       <geometry>
-        <mesh filename="package://assets/part_2.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_2.stl"/>
       </geometry>
       <material name="part_2_material">
         <color rgba="0.25098 0.25098 0.25098 1"/>
@@ -678,14 +678,14 @@
     <collision>
       <origin xyz="-9.44383e-15 0.007 0.1636" rpy="-5.29332e-14 -8.49279e-14 -1.12017"/>
       <geometry>
-        <mesh filename="package://assets/part_2.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_2.stl"/>
       </geometry>
     </collision>
     <!-- Part part_4 -->
     <visual>
       <origin xyz="-0.0201761 0.00977362 0.1756" rpy="3.14159 -1.36674 0.452838"/>
       <geometry>
-        <mesh filename="package://assets/part_4.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_4.stl"/>
       </geometry>
       <material name="part_4_material">
         <color rgba="0.0823529 0.0823529 0.0823529 1"/>
@@ -694,14 +694,14 @@
     <collision>
       <origin xyz="-0.0201761 0.00977362 0.1756" rpy="3.14159 -1.36674 0.452838"/>
       <geometry>
-        <mesh filename="package://assets/part_4.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_4.stl"/>
       </geometry>
     </collision>
     <!-- Part part_16_4 -->
     <visual>
       <origin xyz="-0.028 0.035 0.14" rpy="3.14159 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_16.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_16.stl"/>
       </geometry>
       <material name="part_16_4_material">
         <color rgba="1 1 1 1"/>
@@ -710,14 +710,14 @@
     <collision>
       <origin xyz="-0.028 0.035 0.14" rpy="3.14159 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_16.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_16.stl"/>
       </geometry>
     </collision>
     <!-- Part part_7 -->
     <visual>
       <origin xyz="-1.30458e-13 0.007 0.1855" rpy="3.14159 1.96746e-14 -2.69096"/>
       <geometry>
-        <mesh filename="package://assets/part_7.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_7.stl"/>
       </geometry>
       <material name="part_7_material">
         <color rgba="0.439216 0.439216 0.439216 1"/>
@@ -726,14 +726,14 @@
     <collision>
       <origin xyz="-1.30458e-13 0.007 0.1855" rpy="3.14159 1.96746e-14 -2.69096"/>
       <geometry>
-        <mesh filename="package://assets/part_7.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_7.stl"/>
       </geometry>
     </collision>
     <!-- Part part_3 -->
     <visual>
       <origin xyz="0.000141965 0.00687055 0.1666" rpy="-7.13303e-14 4.5174e-14 0.452838"/>
       <geometry>
-        <mesh filename="package://assets/part_3.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_3.stl"/>
       </geometry>
       <material name="part_3_material">
         <color rgba="0.486275 0.486275 0.486275 1"/>
@@ -742,14 +742,14 @@
     <collision>
       <origin xyz="0.000141965 0.00687055 0.1666" rpy="-7.13303e-14 4.5174e-14 0.452838"/>
       <geometry>
-        <mesh filename="package://assets/part_3.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_3.stl"/>
       </geometry>
     </collision>
     <!-- Part part_19 -->
     <visual>
       <origin xyz="-1.30458e-13 0.007 0.163786" rpy="1.5708 -1.37204e-16 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_19.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_19.stl"/>
       </geometry>
       <material name="part_19_material">
         <color rgba="0.486275 0.486275 0.486275 1"/>
@@ -758,14 +758,14 @@
     <collision>
       <origin xyz="-1.30458e-13 0.007 0.163786" rpy="1.5708 -1.37204e-16 -1.5708"/>
       <geometry>
-        <mesh filename="package://assets/part_19.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_19.stl"/>
       </geometry>
     </collision>
     <!-- Part part_5 -->
     <visual>
       <origin xyz="0.0250914 0.0125735 0.1766" rpy="4.06979e-14 -0.804343 -2.55696"/>
       <geometry>
-        <mesh filename="package://assets/part_5.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_5.stl"/>
       </geometry>
       <material name="part_5_material">
         <color rgba="0.909804 0.443137 0.0313725 1"/>
@@ -774,14 +774,14 @@
     <collision>
       <origin xyz="0.0250914 0.0125735 0.1766" rpy="4.06979e-14 -0.804343 -2.55696"/>
       <geometry>
-        <mesh filename="package://assets/part_5.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_5.stl"/>
       </geometry>
     </collision>
     <!-- Part part_8_5 -->
     <visual>
       <origin xyz="0.0265381 -0.00192909 0.1791" rpy="-2.63865 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_8.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_8.stl"/>
       </geometry>
       <material name="part_8_5_material">
         <color rgba="0.776471 0.756863 0.737255 1"/>
@@ -790,10 +790,13 @@
     <collision>
       <origin xyz="0.0265381 -0.00192909 0.1791" rpy="-2.63865 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/part_8.stl"/>
+        <mesh filename="package://my_robot_description/assets/part_8.stl"/>
       </geometry>
     </collision>
   </link>
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
   <!-- Frame lidarView (dummy link + fixed joint) -->
   <link name="lidarView">
     <origin xyz="0 0 0" rpy="0 -0 0"/>
@@ -803,6 +806,9 @@
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
     </inertial>
   </link>
+  <gazebo reference="lidarView">
+    <material>Gazebo/Blue</material>
+  </gazebo>
   <joint name="lidarView_frame" type="fixed">
     <origin xyz="0.000111026 0.00693466 0.1761" rpy="-8.49279e-14 5.29332e-14 0.450629"/>
     <parent link="base_link"/>
@@ -820,7 +826,7 @@
     <visual>
       <origin xyz="0 -8.67362e-18 -0.025" rpy="3.99084e-17 6.27965e-18 -1.38778e-17"/>
       <geometry>
-        <mesh filename="package://assets/wheel.stl"/>
+        <mesh filename="package://my_robot_description/assets/wheel.stl"/>
       </geometry>
       <material name="wheel_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -829,10 +835,13 @@
     <collision>
       <origin xyz="0 -8.67362e-18 -0.025" rpy="3.99084e-17 6.27965e-18 -1.38778e-17"/>
       <geometry>
-        <mesh filename="package://assets/wheel.stl"/>
+        <mesh filename="package://my_robot_description/assets/wheel.stl"/>
       </geometry>
     </collision>
   </link>
+  <gazebo reference="wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>
   <!-- Joint from base_link to wheel -->
   <joint name="wheel3" type="revolute">
     <origin xyz="-0.100026 0.05775 -0.0195" rpy="1.5708 1.48832 1.0472"/>
@@ -852,7 +861,7 @@
     <visual>
       <origin xyz="6.86182e-18 0 -0.025" rpy="0 -5.55112e-17 -8.21073e-48"/>
       <geometry>
-        <mesh filename="package://assets/wheel.stl"/>
+        <mesh filename="package://my_robot_description/assets/wheel.stl"/>
       </geometry>
       <material name="wheel_2_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -861,10 +870,13 @@
     <collision>
       <origin xyz="6.86182e-18 0 -0.025" rpy="0 -5.55112e-17 -8.21073e-48"/>
       <geometry>
-        <mesh filename="package://assets/wheel.stl"/>
+        <mesh filename="package://my_robot_description/assets/wheel.stl"/>
       </geometry>
     </collision>
   </link>
+  <gazebo reference="wheel_2">
+    <material>Gazebo/Blue</material>
+  </gazebo>
   <!-- Joint from base_link to wheel_2 -->
   <joint name="wheel2" type="revolute">
     <origin xyz="0.100026 0.05775 -0.0195" rpy="1.5708 -2.15704e-32 -1.0472"/>
@@ -884,7 +896,7 @@
     <visual>
       <origin xyz="-3.85927e-18 0 -0.025" rpy="0 6.56362e-34 0"/>
       <geometry>
-        <mesh filename="package://assets/wheel.stl"/>
+        <mesh filename="package://my_robot_description/assets/wheel.stl"/>
       </geometry>
       <material name="wheel_3_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -893,10 +905,13 @@
     <collision>
       <origin xyz="-3.85927e-18 0 -0.025" rpy="0 6.56362e-34 0"/>
       <geometry>
-        <mesh filename="package://assets/wheel.stl"/>
+        <mesh filename="package://my_robot_description/assets/wheel.stl"/>
       </geometry>
     </collision>
   </link>
+  <gazebo reference="wheel_3">
+    <material>Gazebo/Blue</material>
+  </gazebo>
   <!-- Joint from base_link to wheel_3 -->
   <joint name="wheel1" type="revolute">
     <origin xyz="4.03566e-17 -0.1155 -0.0195" rpy="-1.5708 -2.04051e-15 2.22045e-16"/>
@@ -930,7 +945,7 @@
         <remapping>scan:=scan</remapping>
       </ros>
       <frameName>lidarView</frameName>
-      <output_type>sensor_msgs/LaserScan<output_type>
+      <output_type>sensor_msgs/LaserScan</output_type>
     </plugin>
   </sensor>
   </gazebo>
