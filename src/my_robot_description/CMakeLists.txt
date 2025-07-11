@@ -4,8 +4,8 @@ project(my_robot_description)
 find_package(ament_cmake REQUIRED)
 
 install(DIRECTORY
+  models
   urdf
-  assets
   launch
   DESTINATION share/${PROJECT_NAME}
 )
