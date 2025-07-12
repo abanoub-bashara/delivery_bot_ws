@@ -54,7 +54,7 @@ def generate_launch_description():
                 '-file', urdf_path,
                 '-x', '0.0',
                 '-y', '0.0', 
-                '-z', '0.5',  # Changed from 100 to 0.5 - spawning at z=100 is very high!
+                '-z', '0.5', 
                 '-timeout', '60.0'  # Add timeout for spawn
             ],
             output='screen'
