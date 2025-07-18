@@ -15,3 +15,12 @@
 //     // helper: send to gazebo, read back joint states
 //   };
 //   int main(int argc, char** argv) { … }
+
+// SSH from VS Code on your laptop into the Pi (install “Remote – SSH” extension).
+
+// In VS Code’s terminal, run:
+
+// bash
+// Copy code
+// sudo apt update
+// sudo apt install pigpio-tools libpigpio-dev
