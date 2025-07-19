@@ -1,0 +1,21 @@
+[0.011s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_nav -- -j20 -l20
+[0.044s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_nav -- -j20 -l20
+[0.053s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_nav
+[0.060s] -- Install configuration: ""
+[0.061s] -- Execute custom install script
+[0.061s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/ament_index/resource_index/package_run_dependencies/delivery_bot_nav
+[0.061s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/ament_index/resource_index/parent_prefix_path/delivery_bot_nav
+[0.062s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/ament_prefix_path.sh
+[0.062s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/ament_prefix_path.dsv
+[0.062s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/path.sh
+[0.062s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/path.dsv
+[0.063s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.bash
+[0.063s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.sh
+[0.063s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.zsh
+[0.063s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.dsv
+[0.063s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.dsv
+[0.084s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/ament_index/resource_index/packages/delivery_bot_nav
+[0.084s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/cmake/delivery_bot_navConfig.cmake
+[0.084s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/cmake/delivery_bot_navConfig-version.cmake
+[0.084s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.xml
+[0.086s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_nav

@@ -1,0 +1,9 @@
+teleop_twist_joy:
+  ros__parameters:
+    joy_topic:     /joy
+    cmd_vel_topic: /cmd_vel
+    axis_linear:   1        # e.g. left stick vertical
+    axis_angular:  2        # e.g. right stick horizontal
+    scale_linear:  0.5
+    scale_angular: 1.0
+    enable_button: 4        # L1 to enable motion

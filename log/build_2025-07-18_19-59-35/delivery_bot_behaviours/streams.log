@@ -1,0 +1,32 @@
+[0.190s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours': /usr/bin/cmake /home/abanoub/delivery_bot_ws/src/delivery_bot_behaviours -DCMAKE_INSTALL_PREFIX=/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours
+[0.334s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.334s]   No project() command is present.  The top-level CMakeLists.txt file must
+[0.334s]   contain a literal, direct call to the project() command.  Add a line of
+[0.334s]   code such as
+[0.334s] 
+[0.334s]     project(ProjectName)
+[0.334s] 
+[0.334s]   near the top of the file, but after cmake_minimum_required().
+[0.334s] 
+[0.334s]   CMake is pretending there is a "project(Project)" command on the first
+[0.334s]   line.
+[0.334s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.334s] [0m
+[4.296s] -- The C compiler identification is GNU 11.4.0
+[6.304s] -- The CXX compiler identification is GNU 11.4.0
+[6.388s] -- Detecting C compiler ABI info
+[6.684s] -- Detecting C compiler ABI info - done
+[6.693s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.704s] -- Detecting C compile features
+[6.734s] -- Detecting C compile features - done
+[6.767s] -- Detecting CXX compiler ABI info
+[7.120s] -- Detecting CXX compiler ABI info - done
+[7.127s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.127s] -- Detecting CXX compile features
+[7.128s] -- Detecting CXX compile features - done
+[7.128s] -- Configuring done
+[7.129s] -- Generating done
+[7.130s] -- Build files have been written to: /home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours
+[7.132s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours' returned '0': /usr/bin/cmake /home/abanoub/delivery_bot_ws/src/delivery_bot_behaviours -DCMAKE_INSTALL_PREFIX=/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours
+[7.133s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours': /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours -- -j20 -l20
+[7.172s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours' returned '0': /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours -- -j20 -l20

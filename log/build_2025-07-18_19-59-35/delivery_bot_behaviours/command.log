@@ -1,0 +1,4 @@
+Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours': /usr/bin/cmake /home/abanoub/delivery_bot_ws/src/delivery_bot_behaviours -DCMAKE_INSTALL_PREFIX=/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours
+Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours' returned '0': /usr/bin/cmake /home/abanoub/delivery_bot_ws/src/delivery_bot_behaviours -DCMAKE_INSTALL_PREFIX=/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours
+Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours': /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours -- -j20 -l20
+Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours' returned '0': /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours -- -j20 -l20

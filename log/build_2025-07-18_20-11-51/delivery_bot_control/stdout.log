@@ -1,0 +1,28 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/hardware_bridge_node.dir/src/hardware_bridge_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable hardware_bridge_node[0m
+[100%] Built target hardware_bridge_node
+-- Install configuration: ""
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/hardware_bridge_node
+-- Set runtime path of "/home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/hardware_bridge_node" to ""
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/omni_kinematics_node.py
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/odometry_node.py
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/omni_controllers.yaml
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/teleop_joy,yaml
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch/controls.launch.py
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/package_run_dependencies/delivery_bot_control
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/parent_prefix_path/delivery_bot_control
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/ament_prefix_path.sh
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/ament_prefix_path.dsv
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/path.sh
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/path.dsv
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.bash
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.sh
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.zsh
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.dsv
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.dsv
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/packages/delivery_bot_control
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/cmake/delivery_bot_controlConfig.cmake
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/cmake/delivery_bot_controlConfig-version.cmake
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.xml

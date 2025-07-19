@@ -1,0 +1,32 @@
+[0.012s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20
+[0.056s] [ 50%] [32mBuilding CXX object CMakeFiles/hardware_bridge_node.dir/src/hardware_bridge_node.cpp.o[0m
+[2.966s] [100%] [32m[1mLinking CXX executable hardware_bridge_node[0m
+[3.333s] [100%] Built target hardware_bridge_node
+[3.348s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20
+[3.350s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_control
+[3.360s] -- Install configuration: ""
+[3.360s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/hardware_bridge_node
+[3.361s] -- Set runtime path of "/home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/hardware_bridge_node" to ""
+[3.361s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/omni_kinematics_node.py
+[3.361s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/odometry_node.py
+[3.361s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config
+[3.361s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/omni_controllers.yaml
+[3.361s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/teleop_joy,yaml
+[3.362s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch
+[3.362s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch/controls.launch.py
+[3.362s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/package_run_dependencies/delivery_bot_control
+[3.362s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/parent_prefix_path/delivery_bot_control
+[3.362s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/ament_prefix_path.sh
+[3.362s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/ament_prefix_path.dsv
+[3.362s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/path.sh
+[3.362s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/path.dsv
+[3.362s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.bash
+[3.363s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.sh
+[3.363s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.zsh
+[3.363s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.dsv
+[3.363s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.dsv
+[3.363s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/packages/delivery_bot_control
+[3.363s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/cmake/delivery_bot_controlConfig.cmake
+[3.363s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/cmake/delivery_bot_controlConfig-version.cmake
+[3.363s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.xml
+[3.366s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_control
