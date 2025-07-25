@@ -1,0 +1,46 @@
+# bring up server lifecycle parameters
+nav2_lifecycle_manager:
+  ros__parameters:
+    use_sim_time: true
+    autostart:    true
+    node_names:
+      - map_server
+      - amcl
+      - planner_server
+      - controller_server
+      - bt_navigator
+
+# Map server
+map_server:
+  ros__parameters:
+    yaml_filename:  {map}        # substituted in launch
+    use_sim_time:   true
+
+# AMCL
+amcl:
+  ros__parameters: *amcl_params   # anchor to reuse amcl_params.yaml if you wish
+
+# Global & Local costmaps
+planner_server:
+  ros__parameters:
+    expected_planner_frequency: 1.0
+    planner_plugin_ids:          ["GridBased"]
+    planner_plugins:             ["nav2_navfn_planner/NavfnPlanner"]
+    use_sim_time:                true
+
+controller_server:
+  ros__parameters:
+    expected_controller_frequency: 20.0
+    controller_plugins:            ["FollowPath"]
+    use_sim_time:                  true
+
+# include costmap configs
+global_costmap:
+  ros__parameters: *global_costmap
+local_costmap:
+  ros__parameters: *local_costmap
+
+bt_navigator:
+  ros__parameters:
+    use_sim_time:   true
+    bt_xml_filename: {bt_file}    # from launch

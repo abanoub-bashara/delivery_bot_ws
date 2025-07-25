@@ -16,7 +16,7 @@ set(_delivery_bot_nav_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT delivery_bot_nav_FIND_QUIETLY)
-  message(STATUS "Found delivery_bot_nav: 0.0.0 (${delivery_bot_nav_DIR})")
+  message(STATUS "Found delivery_bot_nav: 0.1.0 (${delivery_bot_nav_DIR})")
 endif()
 
 # warn when using a deprecated package

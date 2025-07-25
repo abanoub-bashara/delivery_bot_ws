@@ -1,9 +1,27 @@
 slam_toolbox:
   ros__parameters:
-    odom_frame:       odom
-    map_frame:        map
-    scan_topic:       scan
-    resolution:       0.05      # map cell size in meters
-    max_laser_range:  10.0
-    minimum_time_interval: 0.1
-    # …more tuning for loop closure, scan matcher, etc…
+    use_sim_time: true
+
+    # Frames
+    map_frame:       map
+    odom_frame:      odom
+    base_frame:      base_link
+    scan_topic:      scan
+
+    # Map parameters
+    resolution:      0.05        # meters/cell
+    local_slam:      false       # global SLAM mode
+    generate_map:    true
+
+    # Sensor model (laser) – adjust to your LiDAR specs
+    max_laser_range: 12.0
+    min_range:       0.1
+    scan_rate:       10.0
+
+    # Loop closure & scan matching
+    use_scan_matching:         true
+    scan_matcher_search_radius: 2.0
+
+    # Pose graph optimization (for slow drift correction)
+    optimize_every_n_nodes:    35
+    max_constraint_distance:   2.5

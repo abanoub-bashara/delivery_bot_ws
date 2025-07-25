@@ -1,0 +1,15 @@
+global_costmap:
+  ros__parameters:
+    use_sim_time:      true
+    global_frame:      map
+    robot_base_frame:  base_link
+    update_frequency:  1.0
+    publish_frequency: 0.5
+    rolling_window:    false
+
+    # include common settings
+    plugin_names:      [static_layer, obstacle_layer, inflation_layer]
+    plugin_types:  
+      ["nav2_costmap_2d::StaticLayer",
+       "nav2_costmap_2d::ObstacleLayer",
+       "nav2_costmap_2d::InflationLayer"]
