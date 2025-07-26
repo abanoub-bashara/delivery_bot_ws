@@ -1,0 +1,31 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    use_sim_time: true
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    omni_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+joint_state_broadcaster:
+  ros__parameters:
+    use_sim_time: true
+
+omni_controller:
+  ros__parameters:
+    joints:
+      - wheel1_joint
+      - wheel2_joint
+      - wheel3_joint
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - position
+      - velocity
+    state_publish_rate: 50.0
+    action_monitor_rate: 10.0
+    constraints:
+      goal_time: 0.5
+      stopped_velocity_tolerance: 0.01

@@ -1,0 +1,1 @@
+[1.862s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control': /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20

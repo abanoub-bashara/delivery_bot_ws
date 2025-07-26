@@ -1,0 +1,49 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+-- Found hardware_interface: 2.51.0 (/opt/ros/humble/share/hardware_interface/cmake)
+-- Found ros2_control: 2.51.0 (/opt/ros/humble/share/ros2_control/cmake)
+-- Found ros2_control_test_assets: 2.51.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/abanoub/delivery_bot_ws/build/delivery_bot_control
+[35m[1mConsolidate compiler generated dependencies of target hardware_bridge_node[0m
+[100%] Built target hardware_bridge_node
+-- Install configuration: ""
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/hardware_bridge_node
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/omni_kinematics_node.py
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/odometry_node.py
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/omni_controllers.yaml
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/teleop_joy,yaml
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch/controls.launch.py
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/DefaultRobotHWSim.xml
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/package_run_dependencies/delivery_bot_control
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/parent_prefix_path/delivery_bot_control
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/ament_prefix_path.sh
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/path.sh
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/path.dsv
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.bash
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.sh
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.zsh
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.dsv
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.dsv
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/packages/delivery_bot_control
+-- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/delivery_bot_control
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/cmake/delivery_bot_controlConfig.cmake
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/cmake/delivery_bot_controlConfig-version.cmake
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.xml

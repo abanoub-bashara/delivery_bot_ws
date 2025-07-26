@@ -268,11 +268,17 @@ Python3_EXECUTABLE:FILEPATH=/usr/bin/python3
 //Name of the computer/site where compile is being run
 SITE:STRING=abanoub-XPS-15-9530
 
+//Path to a file.
+TINYXML2_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+TINYXML2_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libtinyxml2.so
+
 //The directory containing a CMake configuration file for TinyXML2.
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/librcl_lifecycle.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
@@ -340,6 +346,9 @@ composition_interfaces_DIR:PATH=/opt/ros/humble/share/composition_interfaces/cma
 //The directory containing a CMake configuration file for console_bridge.
 console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
 
+//The directory containing a CMake configuration file for control_msgs.
+control_msgs_DIR:PATH=/opt/ros/humble/share/control_msgs/cmake
+
 //Value Computed by CMake
 delivery_bot_control_BINARY_DIR:STATIC=/home/abanoub/delivery_bot_ws/build/delivery_bot_control
 
@@ -367,11 +376,17 @@ foonathan_memory_DIR:PATH=/opt/ros/humble/lib/foonathan_memory/cmake
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
 
+//The directory containing a CMake configuration file for hardware_interface.
+hardware_interface_DIR:PATH=/opt/ros/humble/share/hardware_interface/cmake
+
 //The directory containing a CMake configuration file for libstatistics_collector.
 libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/cmake
 
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
+
+//The directory containing a CMake configuration file for lifecycle_msgs.
+lifecycle_msgs_DIR:PATH=/opt/ros/humble/share/lifecycle_msgs/cmake
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
@@ -385,6 +400,9 @@ pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 //Path to a library.
 pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/humble/share/pluginlib/cmake
+
 //The directory containing a CMake configuration file for rcl.
 rcl_DIR:PATH=/opt/ros/humble/share/rcl/cmake
 
@@ -393,6 +411,9 @@ rcl_action_DIR:PATH=/opt/ros/humble/share/rcl_action/cmake
 
 //The directory containing a CMake configuration file for rcl_interfaces.
 rcl_interfaces_DIR:PATH=/opt/ros/humble/share/rcl_interfaces/cmake
+
+//The directory containing a CMake configuration file for rcl_lifecycle.
+rcl_lifecycle_DIR:PATH=/opt/ros/humble/share/rcl_lifecycle/cmake
 
 //The directory containing a CMake configuration file for rcl_logging_interface.
 rcl_logging_interface_DIR:PATH=/opt/ros/humble/share/rcl_logging_interface/cmake
@@ -411,6 +432,9 @@ rclcpp_action_DIR:PATH=/opt/ros/humble/share/rclcpp_action/cmake
 
 //The directory containing a CMake configuration file for rclcpp_components.
 rclcpp_components_DIR:PATH=/opt/ros/humble/share/rclcpp_components/cmake
+
+//The directory containing a CMake configuration file for rclcpp_lifecycle.
+rclcpp_lifecycle_DIR:PATH=/opt/ros/humble/share/rclcpp_lifecycle/cmake
 
 //The directory containing a CMake configuration file for rcpputils.
 rcpputils_DIR:PATH=/opt/ros/humble/share/rcpputils/cmake
@@ -435,6 +459,12 @@ rmw_implementation_DIR:PATH=/opt/ros/humble/share/rmw_implementation/cmake
 
 //The directory containing a CMake configuration file for rmw_implementation_cmake.
 rmw_implementation_cmake_DIR:PATH=/opt/ros/humble/share/rmw_implementation_cmake/cmake
+
+//The directory containing a CMake configuration file for ros2_control.
+ros2_control_DIR:PATH=/opt/ros/humble/share/ros2_control/cmake
+
+//The directory containing a CMake configuration file for ros2_control_test_assets.
+ros2_control_test_assets_DIR:PATH=/opt/ros/humble/share/ros2_control_test_assets/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/humble/share/rosgraph_msgs/cmake
@@ -504,6 +534,9 @@ tf2_msgs_DIR:PATH=/opt/ros/humble/share/tf2_msgs/cmake
 
 //The directory containing a CMake configuration file for tf2_ros.
 tf2_ros_DIR:PATH=/opt/ros/humble/share/tf2_ros/cmake
+
+//The directory containing a CMake configuration file for tinyxml2_vendor.
+tinyxml2_vendor_DIR:PATH=/opt/ros/humble/share/tinyxml2_vendor/cmake
 
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/humble/share/tracetools/cmake
@@ -714,6 +747,10 @@ PIGPIO_pigpio_VERSION:INTERNAL=
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TINYXML2_INCLUDE_DIR
+TINYXML2_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TINYXML2_LIBRARY
+TINYXML2_LIBRARY-ADVANCED:INTERNAL=1
 _OPENSSL_CFLAGS:INTERNAL=
 _OPENSSL_CFLAGS_I:INTERNAL=
 _OPENSSL_CFLAGS_OTHER:INTERNAL=

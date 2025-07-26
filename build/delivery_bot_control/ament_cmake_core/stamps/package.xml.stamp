@@ -25,5 +25,7 @@
 
   <export>
     <build_type>ament_cmake</build_type>
+    <pluginlib plugin="${prefix}/DefaultRobotHWSim.xml"/>
   </export>
+
 </package>

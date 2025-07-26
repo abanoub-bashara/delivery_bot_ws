@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import rclpy 
 from rclpy.node import Node
 from sensor_msgs.msg import JointState #joint state holds joint names, positions, velocities, and efforts (torques)
@@ -56,9 +57,9 @@ class OdometryNode(Node):
 
         self.tf_broadcaster = TransformBroadcaster(self)
 
-        self.joint_names = ['wheel1', 
-                            'wheel2',
-                            'wheel3']
+        self.joint_names = ['wheel1_joint', 
+                            'wheel2_joint',
+                            'wheel3_joint']
         self.r = r 
 
     def joint_states_callback(self, msg: JointState):

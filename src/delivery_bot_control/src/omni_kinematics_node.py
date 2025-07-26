@@ -1,9 +1,11 @@
+#!/usr/bin/env python3
 # omni_kinematics_node.py
 # Description:
 #   Subscribe to /cmd_vel (Twist) and compute 3-wheel velocities for a 120° omni layout,
 #   then publish a trajectory_msgs/JointTrajectory on /omni_controller/joint_trajectory.
 #
 # Outline:
+
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, DurabilityPolicy
@@ -30,7 +32,7 @@ class OmniKinematicsNode(Node):
         #subscribe to cmd vel whih carries linear and angular velocities in Twist messages
         #with a queue size of 10, and whenever a new message is received,
         # the cmd_vel_callback is called
-        self.cmd.sub = self.create_subscription(
+        self.cmd_sub = self.create_subscription(
             Twist, 
             '/cmd_vel',
             self.cmd_vel_callback,

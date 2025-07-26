@@ -9,6 +9,11 @@ find_package(geometry_msgs      REQUIRED)
 find_package(nav_msgs           REQUIRED)
 find_package(tf2_ros            REQUIRED)
 find_package(PkgConfig          REQUIRED)
+find_package(pluginlib REQUIRED)
+find_package(hardware_interface REQUIRED)
+find_package(ros2_control REQUIRED)
+find_package(ros2_control_test_assets REQUIRED)
+
 
 # pigpio (for hardware_bridge)
 # pkg_check_modules(PIGPIO REQUIRED pigpio)
@@ -45,5 +50,6 @@ install(
     launch
   DESTINATION share/${PROJECT_NAME}
 )
+pluginlib_export_plugin_description_file(hardware_interface DefaultRobotHWSim.xml)
 
 ament_package()
