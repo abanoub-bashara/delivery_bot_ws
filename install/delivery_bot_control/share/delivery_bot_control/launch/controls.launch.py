@@ -1,62 +1,65 @@
 #!/usr/bin/env python3
-import os
-
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
-from launch.substitutions import LaunchConfiguration
+from launch.actions import TimerAction
 from launch_ros.actions import Node
+from launch.substitutions import Command, PathJoinSubstitution
+from launch_ros.substitutions import FindPackageShare
+from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
-    # Declare launch-time arguments for your wheel geometry
-    declare_wheel_radius = DeclareLaunchArgument(
-        'wheel_radius', default_value='0.1',
-        description='Radius of each omni wheel (meters)')
-    declare_wheel_distance = DeclareLaunchArgument(
-        'wheel_distance', default_value='0.5',
-        description='Distance from robot center to each wheel (meters)')
+    robot_desc_pkg = FindPackageShare("my_robot_description")
+    ctrl_pkg       = FindPackageShare("delivery_bot_control")
 
-    wheel_radius   = LaunchConfiguration('wheel_radius')
-    wheel_distance = LaunchConfiguration('wheel_distance')
+    # same xacro
+    robot_description = ParameterValue(
+      Command([
+        "xacro ",
+        PathJoinSubstitution([robot_desc_pkg, "urdf", "robot_v3.xacro"])
+      ]),
+      value_type=str,
+    )
+
+    # 1) controller_manager
+    controller_manager = Node(
+      package="controller_manager",
+      executable="ros2_control_node",
+      parameters=[
+        {"robot_description": robot_description},
+        PathJoinSubstitution([ctrl_pkg, "config", "ros2_control.yaml"]),
+      ],
+      output="screen",
+    )
+
+    # 2) spawners, _delayed_ so /controller_manager service is ready
+    spawn_jsb = TimerAction(
+      period=3.0,
+      actions=[ Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+          "joint_state_broadcaster",
+          "--controller-manager", "/controller_manager"
+        ],
+        output="screen",
+      ) ]
+    )
+
+    spawn_omni = TimerAction(
+      period=5.0,
+      actions=[ Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+          # **must** match your YAML name exactly:
+          "omni_wheel_drive_controller",
+          "--controller-manager", "/controller_manager"
+        ],
+        output="screen",
+      ) ]
+    )
 
     return LaunchDescription([
-        # make the arguments available
-        declare_wheel_radius,
-        declare_wheel_distance,
-
-        # 1) Hardware bridge (on real Pi; skipped in Gazebo sim)
-        Node(
-            package='delivery_bot_control',
-            executable='hardware_bridge_node',
-            name='hardware_bridge',
-            output='screen',
-            parameters=[{
-                'use_sim_time': False
-            }]
-        ),
-
-        # 2) Omni-kinematics (cmd_vel → wheel traj)
-        Node(
-            package='delivery_bot_control',
-            executable='omni_kinematics_node.py',
-            name='omni_kinematics',
-            output='screen',
-            parameters=[{
-                'wheel_radius':   wheel_radius,
-                'wheel_distance': wheel_distance,
-                'use_sim_time':   False
-            }]
-        ),
-
-        # 3) Odometry (wheel_states → /odom + TF)
-        Node(
-            package='delivery_bot_control',
-            executable='odometry_node.py',
-            name='odometry',
-            output='screen',
-            parameters=[{
-                'wheel_radius':   wheel_radius,
-                'wheel_distance': wheel_distance,
-                'use_sim_time':   False
-            }]
-        ),
+      controller_manager,
+      spawn_jsb,
+      spawn_omni,
     ])

@@ -19,10 +19,11 @@ import numpy as np
 class OmniKinematicsNode(Node):
     def __init__(self):
         super().__init__('omni_kinematics')
-        self.declare_parameter('wheel_radius', 0.1) #CHANGE VALUE
-        self.declare_parameter('wheel_distance', 0.5) #CHANGE VALUE
+        self.declare_parameter('wheel_radius', 0.024) #CHANGE VALUE
+        self.declare_parameter('wheel_distance', 0.1155) #CHANGE VALUE
         L = self.get_parameter('wheel_distance').value
         r = self.get_parameter('wheel_radius').value
+        self.wheel_radius = r
 
         thetas = np.deg2rad(np.array([0, 120, 240]))
         self.M = np.vstack([[-np.sin(t), np.cos(t), L] for t in thetas])
@@ -51,27 +52,26 @@ class OmniKinematicsNode(Node):
             qos
         )
 
-        self.joint_names = ['wheel1', 'wheel2', 'wheel3']
+        self.joint_names = ['wheel1_joint', 'wheel2_joint', 'wheel3_joint']
 
     def cmd_vel_callback(self, msg: Twist):
-        #unpack the tist 
         vx, vy, omega = msg.linear.x, msg.linear.y, msg.angular.z
-
-        
         v_rim = self.M.dot([vx, vy, omega])
-        omega_wheels = (v_rim/self.wheel_radius).tolist()
+        omega_wheels = (v_rim / self.wheel_radius).tolist()
 
         traj = JointTrajectory()
         traj.header.stamp = self.get_clock().now().to_msg()
         traj.joint_names = self.joint_names
 
         point = JointTrajectoryPoint()
+        point.positions = [0.0] * len(omega_wheels)     # <- add this line
         point.velocities = omega_wheels
         point.time_from_start.sec = 0
         point.time_from_start.nanosec = 500_000_000
 
         traj.points = [point]
         self.traj_pub.publish(traj)
+
 
 def main():
     #initalize the ROS 2 Python client library

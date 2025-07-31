@@ -1,1 +1,1 @@
-rclcpp:rclcpp_components:sensor_msgs:trajectory_msgs
+control_msgs:controller_manager:gazebo_ros2_control:geometry_msgs:hardware_interface:nav_msgs:pluginlib:rclcpp:rclcpp_components:ros2_control:ros2_controllers:sensor_msgs:tf2_ros:trajectory_msgs

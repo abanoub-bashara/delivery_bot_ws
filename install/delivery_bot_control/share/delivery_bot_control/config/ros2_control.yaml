@@ -1,0 +1,26 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    use_sim_time:  true
+
+    # Joint State Broadcaster
+    joint_state_broadcaster:
+      type: "joint_state_broadcaster/JointStateBroadcaster"
+
+    # 3-wheel Omni Drive Controller
+    omni_wheel_drive_controller:
+      type:               "omni_wheel_drive_controller/OmniWheelDriveController"
+      command_topic:      "/cmd_vel"
+      base_frame_id:      "base_link"
+      odom_frame_id:      "odom"
+      publish_odometry:   true
+      publish_rate:       50
+      cmd_vel_timeout:    0.25
+
+      # Wheel joints & geometry
+      wheel_names:  ["wheel1_joint", "wheel2_joint", "wheel3_joint"]
+      wheel_radius: [0.024, 0.024, 0.024]      # each wheel’s rolling radius in meters
+      wheel_angle:  [0.0, 2.094395, 4.18879]   # angles in radians (0°, 120°, 240°)
+
+      # Distance from center to each wheel (m)
+      robot_radius: 0.1155

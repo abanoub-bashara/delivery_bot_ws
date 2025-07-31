@@ -18,8 +18,8 @@ class OdometryNode(Node):
         super().__init__('omni_odometry')
 
         #parameters
-        self.declare_parameter('wheel_radius', 0.1) #CHANGE VALUE
-        self.declare_parameter('wheel_distance', 0.5) #CHANGE VALUE
+        self.declare_parameter('wheel_radius', 0.024) #CHANGE VALUE
+        self.declare_parameter('wheel_distance', 0.1155) #CHANGE VALUE
         r = self.get_parameter('wheel_radius').value
         L = self.get_parameter('wheel_distance').value
 

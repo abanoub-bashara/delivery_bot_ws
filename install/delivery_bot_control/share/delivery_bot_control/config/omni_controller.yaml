@@ -1,31 +1,35 @@
+# config/ros2_control.yaml
+
 controller_manager:
   ros__parameters:
     update_rate: 100
     use_sim_time: true
 
+    # 1) Joint-state broadcaster (no change)
     joint_state_broadcaster:
-      type: joint_state_broadcaster/JointStateBroadcaster
+      ros__parameters: {}
 
-    omni_controller:
-      type: joint_trajectory_controller/JointTrajectoryController
+    # 2) Omni-wheel controller for 3 wheels in a circle
+    omni_wheel_drive_controller:
+      ros__parameters:
+        # name of controller plugin
+        type: "omni_wheel_drive_controller/OmniWheelDriveController"
 
-joint_state_broadcaster:
-  ros__parameters:
-    use_sim_time: true
+        # twist → wheel speeds
+        command_topic: "/cmd_vel"
 
-omni_controller:
-  ros__parameters:
-    joints:
-      - wheel1_joint
-      - wheel2_joint
-      - wheel3_joint
-    command_interfaces:
-      - velocity
-    state_interfaces:
-      - position
-      - velocity
-    state_publish_rate: 50.0
-    action_monitor_rate: 10.0
-    constraints:
-      goal_time: 0.5
-      stopped_velocity_tolerance: 0.01
+        # Frame IDs
+        base_frame_id: "base_link"
+        odom_frame_id: "odom"
+        publish_odometry: true
+        publish_rate: 50
+        cmd_vel_timeout: 0.25
+
+        # Robot geometry: 3 wheels, radius r, at radius R, separated by 120°
+        wheels:
+          - { joint: "wheel1_joint", radius: 0.024, angle: 0.0       }
+          - { joint: "wheel2_joint", radius: 0.024, angle: 2.094395 }  # 120° = 2π/3
+          - { joint: "wheel3_joint", radius: 0.024, angle: 4.188790 }  # 240° = 4π/3
+
+        # Distance from center to each wheel contact point (meters)
+        robot_radius: 0.1155
