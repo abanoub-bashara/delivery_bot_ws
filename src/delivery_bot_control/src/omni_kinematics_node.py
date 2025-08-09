@@ -1,91 +1,80 @@
 #!/usr/bin/env python3
-# omni_kinematics_node.py
-# Description:
-#   Subscribe to /cmd_vel (Twist) and compute 3-wheel velocities for a 120° omni layout,
-#   then publish a trajectory_msgs/JointTrajectory on /omni_controller/joint_trajectory.
-#
-# Outline:
-
+# delivery_bot_control/src/omni_kinematics_node.py
+import math
+import numpy as np
 import rclpy
 from rclpy.node import Node
-from rclpy.qos import QoSProfile, DurabilityPolicy
 from geometry_msgs.msg import Twist
-from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
-import numpy as np
-
-#this node basically listens to commands for desired linear and angular velocities
-#and computes the required wheel velocities for a 3-wheel omni-directional robot
+from std_msgs.msg import Float64MultiArray
 
 class OmniKinematicsNode(Node):
     def __init__(self):
         super().__init__('omni_kinematics')
-        self.declare_parameter('wheel_radius', 0.024) #CHANGE VALUE
-        self.declare_parameter('wheel_distance', 0.1155) #CHANGE VALUE
-        L = self.get_parameter('wheel_distance').value
-        r = self.get_parameter('wheel_radius').value
-        self.wheel_radius = r
 
-        thetas = np.deg2rad(np.array([0, 120, 240]))
-        self.M = np.vstack([[-np.sin(t), np.cos(t), L] for t in thetas])
-        #thetas uses deg2rad to convert degrees to radians, holds 120° angle layout
-        #self.M is the transformation matrix for wheel velocities
+        # ---- Parameters (tune to your robot) ----
+        self.declare_parameter('wheel_radius', 0.024)        # m
+        self.declare_parameter('robot_radius', 0.1155)       # m (center -> wheel)
+        self.declare_parameter('wheel_angles_deg', [0.0, 120.0, 240.0])  # wheel placement angles
+        self.declare_parameter('cmd_rate', 50.0)             # Hz publish rate to controller
+        self.declare_parameter('cmd_timeout', 0.5)           # s: stop if no cmd_vel for this long
 
-        #subscribe to cmd vel whih carries linear and angular velocities in Twist messages
-        #with a queue size of 10, and whenever a new message is received,
-        # the cmd_vel_callback is called
-        self.cmd_sub = self.create_subscription(
-            Twist, 
-            '/cmd_vel',
-            self.cmd_vel_callback,
-            10
+        # Load params
+        self.r = float(self.get_parameter('wheel_radius').value)
+        self.L = float(self.get_parameter('robot_radius').value)
+        angles_deg = list(self.get_parameter('wheel_angles_deg').value)
+        self.phi = np.deg2rad(np.array(angles_deg, dtype=float))
+        self.cmd_dt = 1.0 / float(self.get_parameter('cmd_rate').value)
+        self.cmd_timeout = float(self.get_parameter('cmd_timeout').value)
+
+        # Build forward kinematics matrix:
+        # [v1, v2, v3]^T = M @ [vx, vy, wz]^T, where vi are rim linear velocities
+        self.M = np.vstack([[-np.sin(t), np.cos(t), self.L] for t in self.phi])
+
+        # I/O
+        self.cmd_sub = self.create_subscription(Twist, '/cmd_vel', self._on_cmd_vel, 10)
+        self.pub = self.create_publisher(Float64MultiArray,
+                                         '/omni_wheel_drive_controller/commands', 10)
+
+        # State
+        self.last_cmd = Twist()
+        self.last_cmd_time = self.get_clock().now().nanoseconds * 1e-9
+
+        # Periodic publisher so the robot keeps moving smoothly
+        self.timer = self.create_timer(self.cmd_dt, self._tick)
+
+        self.get_logger().info(
+            f'Omni kinematics ready: r={self.r:.4f} m, L={self.L:.4f} m, '
+            f'angles(deg)={angles_deg}, rate={1.0/self.cmd_dt:.0f} Hz'
         )
 
-       #configure qos profile for the publisher
+    def _on_cmd_vel(self, msg: Twist):
+        self.last_cmd = msg
+        self.last_cmd_time = self.get_clock().now().nanoseconds * 1e-9
 
-        qos = QoSProfile(depth=1)
-        qos.durability = DurabilityPolicy.TRANSIENT_LOCAL
-        #create a publisher for JointTrajectory messages
-        #on the topic /omni_controller/joint_trajectory with the defined QoS profile
-        self.traj_pub = self.create_publisher(
-            JointTrajectory,
-            '/omni_controller/joint_trajectory',
-            qos
-        )
+    def _tick(self):
+        # Timeout safety: zero command if stale
+        now = self.get_clock().now().nanoseconds * 1e-9
+        if (now - self.last_cmd_time) > self.cmd_timeout:
+            vx = vy = wz = 0.0
+        else:
+            vx = float(self.last_cmd.linear.x)
+            vy = float(self.last_cmd.linear.y)
+            wz = float(self.last_cmd.angular.z)
 
-        self.joint_names = ['wheel1_joint', 'wheel2_joint', 'wheel3_joint']
+        # Convert body twist -> wheel angular speeds
+        # rim linear speeds:
+        v_rim = self.M.dot(np.array([vx, vy, wz], dtype=float))
+        # wheel angular speeds (rad/s):
+        omega_wheels = (v_rim / self.r).astype(float)
 
-    def cmd_vel_callback(self, msg: Twist):
-        vx, vy, omega = msg.linear.x, msg.linear.y, msg.angular.z
-        v_rim = self.M.dot([vx, vy, omega])
-        omega_wheels = (v_rim / self.wheel_radius).tolist()
-
-        traj = JointTrajectory()
-        traj.header.stamp = self.get_clock().now().to_msg()
-        traj.joint_names = self.joint_names
-
-        point = JointTrajectoryPoint()
-        point.positions = [0.0] * len(omega_wheels)     # <- add this line
-        point.velocities = omega_wheels
-        point.time_from_start.sec = 0
-        point.time_from_start.nanosec = 500_000_000
-
-        traj.points = [point]
-        self.traj_pub.publish(traj)
-
+        self.pub.publish(Float64MultiArray(data=omega_wheels.tolist()))
 
 def main():
-    #initalize the ROS 2 Python client library
     rclpy.init()
-    #create an instance of the OmniKinematicsNode
     node = OmniKinematicsNode()
-    #spin the node to keep it active and processing callbacks i.e., 
-    #subscribing to cmd_vel and publishing joint trajectories
     rclpy.spin(node)
-    #clean up and shutdown
     node.destroy_node()
     rclpy.shutdown()
 
-
 if __name__ == '__main__':
     main()
-    

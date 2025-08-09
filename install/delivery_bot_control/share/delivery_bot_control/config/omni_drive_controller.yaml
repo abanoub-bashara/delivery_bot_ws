@@ -1,0 +1,9 @@
+# delivery_bot_control/config/omni_drive_controller.params.yaml
+ros__parameters:
+  joints:
+    - wheel1_joint
+    - wheel2_joint
+    - wheel3_joint
+  command_interfaces: [velocity]
+  state_interfaces:   [velocity]
+  state_publish_rate: 50.0

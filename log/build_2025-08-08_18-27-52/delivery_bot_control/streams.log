@@ -1,0 +1,32 @@
+[0.052s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20
+[0.213s] [100%] Built target hardware_bridge_node
+[0.254s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20
+[0.266s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_control
+[0.278s] -- Install configuration: ""
+[0.278s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/hardware_bridge_node
+[0.278s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/omni_kinematics_node.py
+[0.278s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/odometry_node.py
+[0.278s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config
+[0.279s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/omni_drive_controller.params.yaml
+[0.279s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/gains.yaml
+[0.279s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/teleop_joy,yaml
+[0.279s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch
+[0.279s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch/controls.launch.py
+[0.279s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/DefaultRobotHWSim.xml
+[0.280s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/package_run_dependencies/delivery_bot_control
+[0.281s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/parent_prefix_path/delivery_bot_control
+[0.282s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/ament_prefix_path.sh
+[0.283s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/ament_prefix_path.dsv
+[0.283s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/path.sh
+[0.283s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/path.dsv
+[0.284s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.bash
+[0.285s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.sh
+[0.286s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.zsh
+[0.288s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.dsv
+[0.290s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.dsv
+[0.291s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/packages/delivery_bot_control
+[0.292s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/delivery_bot_control
+[0.292s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/cmake/delivery_bot_controlConfig.cmake
+[0.292s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/cmake/delivery_bot_controlConfig-version.cmake
+[0.294s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.xml
+[0.324s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_control

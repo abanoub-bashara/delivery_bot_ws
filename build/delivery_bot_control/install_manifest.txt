@@ -1,7 +1,8 @@
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/hardware_bridge_node
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/omni_kinematics_node.py
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/odometry_node.py
-/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/ros2_control.yaml
+/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/omni_drive_controller.params.yaml
+/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/gains.yaml
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/teleop_joy,yaml
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch/controls.launch.py
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/DefaultRobotHWSim.xml

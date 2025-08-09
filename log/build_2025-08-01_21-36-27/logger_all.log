@@ -1,0 +1,311 @@
+[10.518s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[10.518s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd24a819960>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd24a966dd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd24a966dd0>>)
+[10.953s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[10.953s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[10.953s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[10.954s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[10.954s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[10.954s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[10.954s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/abanoub/delivery_bot_ws'
+[10.954s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[10.954s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[10.954s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[10.954s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[10.954s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[10.954s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[10.954s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[10.954s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[10.954s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[10.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[10.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[10.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[10.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[10.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[10.968s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[10.968s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[10.968s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[10.968s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[10.968s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[10.968s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[10.968s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extensions ['ignore', 'ignore_ament_install']
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extension 'ignore'
+[10.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extension 'ignore_ament_install'
+[10.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extensions ['colcon_pkg']
+[10.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extension 'colcon_pkg'
+[10.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extensions ['colcon_meta']
+[10.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extension 'colcon_meta'
+[10.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extensions ['ros']
+[10.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extension 'ros'
+[10.971s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/delivery_bot_behaviours': Error(s) in package 'src/delivery_bot_behaviours/package.xml':
+The manifest contains invalid XML:
+no element found: line 1, column 0
+[10.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extensions ['cmake', 'python']
+[10.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extension 'cmake'
+[10.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_behaviours) by extension 'python'
+[10.973s] DEBUG:colcon.colcon_core.package_identification:Package 'src/delivery_bot_behaviours' with type 'cmake' and name 'delivery_bot_behaviours'
+[10.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_control) by extensions ['ignore', 'ignore_ament_install']
+[10.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_control) by extension 'ignore'
+[10.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_control) by extension 'ignore_ament_install'
+[10.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_control) by extensions ['colcon_pkg']
+[10.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_control) by extension 'colcon_pkg'
+[10.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_control) by extensions ['colcon_meta']
+[10.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_control) by extension 'colcon_meta'
+[10.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_control) by extensions ['ros']
+[10.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_control) by extension 'ros'
+[10.977s] DEBUG:colcon.colcon_core.package_identification:Package 'src/delivery_bot_control' with type 'ros.ament_cmake' and name 'delivery_bot_control'
+[10.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_nav) by extensions ['ignore', 'ignore_ament_install']
+[10.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_nav) by extension 'ignore'
+[10.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_nav) by extension 'ignore_ament_install'
+[10.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_nav) by extensions ['colcon_pkg']
+[10.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_nav) by extension 'colcon_pkg'
+[10.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_nav) by extensions ['colcon_meta']
+[10.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_nav) by extension 'colcon_meta'
+[10.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_nav) by extensions ['ros']
+[10.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/delivery_bot_nav) by extension 'ros'
+[10.979s] DEBUG:colcon.colcon_core.package_identification:Package 'src/delivery_bot_nav' with type 'ros.ament_cmake' and name 'delivery_bot_nav'
+[10.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[10.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ignore'
+[10.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ignore_ament_install'
+[10.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['colcon_pkg']
+[10.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'colcon_pkg'
+[10.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['colcon_meta']
+[10.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'colcon_meta'
+[10.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['ros']
+[10.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ros'
+[10.981s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_description' with type 'ros.ament_cmake' and name 'my_robot_description'
+[10.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[10.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[10.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[10.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[10.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[11.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[11.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[11.879s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/abanoub/delivery_bot_ws/install
+[11.957s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/abanoub/ros2_ws/install
+[11.961s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 446 installed packages in /opt/ros/humble
+[11.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[12.824s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_behaviours' build argument 'cmake_args' from command line to 'None'
+[12.824s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_behaviours' build argument 'cmake_target' from command line to 'None'
+[12.825s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_behaviours' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[12.825s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_behaviours' build argument 'cmake_clean_cache' from command line to 'False'
+[12.825s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_behaviours' build argument 'cmake_clean_first' from command line to 'False'
+[12.825s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_behaviours' build argument 'cmake_force_configure' from command line to 'False'
+[12.825s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_behaviours' build argument 'ament_cmake_args' from command line to 'None'
+[12.825s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_behaviours' build argument 'catkin_cmake_args' from command line to 'None'
+[12.825s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_behaviours' build argument 'catkin_skip_building_tests' from command line to 'False'
+[12.825s] DEBUG:colcon.colcon_core.verb:Building package 'delivery_bot_behaviours' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours', 'merge_install': False, 'path': '/home/abanoub/delivery_bot_ws/src/delivery_bot_behaviours', 'symlink_install': False, 'test_result_base': None}
+[12.825s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_control' build argument 'cmake_args' from command line to 'None'
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_control' build argument 'cmake_target' from command line to 'None'
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_control' build argument 'cmake_clean_cache' from command line to 'False'
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_control' build argument 'cmake_clean_first' from command line to 'False'
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_control' build argument 'cmake_force_configure' from command line to 'False'
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_control' build argument 'ament_cmake_args' from command line to 'None'
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_control' build argument 'catkin_cmake_args' from command line to 'None'
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[12.826s] DEBUG:colcon.colcon_core.verb:Building package 'delivery_bot_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abanoub/delivery_bot_ws/build/delivery_bot_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abanoub/delivery_bot_ws/install/delivery_bot_control', 'merge_install': False, 'path': '/home/abanoub/delivery_bot_ws/src/delivery_bot_control', 'symlink_install': False, 'test_result_base': None}
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_nav' build argument 'cmake_args' from command line to 'None'
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_nav' build argument 'cmake_target' from command line to 'None'
+[12.826s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_nav' build argument 'cmake_clean_first' from command line to 'False'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_nav' build argument 'cmake_force_configure' from command line to 'False'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_nav' build argument 'ament_cmake_args' from command line to 'None'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'delivery_bot_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[12.827s] DEBUG:colcon.colcon_core.verb:Building package 'delivery_bot_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav', 'merge_install': False, 'path': '/home/abanoub/delivery_bot_ws/src/delivery_bot_nav', 'symlink_install': False, 'test_result_base': None}
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_args' from command line to 'None'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_target' from command line to 'None'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[12.827s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[12.828s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[12.828s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abanoub/delivery_bot_ws/build/my_robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abanoub/delivery_bot_ws/install/my_robot_description', 'merge_install': False, 'path': '/home/abanoub/delivery_bot_ws/src/my_robot_description', 'symlink_install': False, 'test_result_base': None}
+[12.828s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[12.829s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[12.830s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/abanoub/delivery_bot_ws/src/delivery_bot_behaviours'
+[14.933s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[14.934s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.934s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.059s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/abanoub/delivery_bot_ws/src/delivery_bot_control' with build type 'ament_cmake'
+[15.060s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/abanoub/delivery_bot_ws/src/delivery_bot_control'
+[15.061s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.061s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.147s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/abanoub/delivery_bot_ws/src/delivery_bot_nav' with build type 'ament_cmake'
+[15.147s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/abanoub/delivery_bot_ws/src/delivery_bot_nav'
+[15.148s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.148s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.276s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/abanoub/delivery_bot_ws/src/my_robot_description' with build type 'ament_cmake'
+[15.277s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/abanoub/delivery_bot_ws/src/my_robot_description'
+[15.277s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.278s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours': /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours -- -j20 -l20
+[18.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20
+[18.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_nav -- -j20 -l20
+[18.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abanoub/delivery_bot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/my_robot_description -- -j20 -l20
+[19.859s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abanoub/delivery_bot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/my_robot_description -- -j20 -l20
+[20.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abanoub/delivery_bot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/my_robot_description
+[20.063s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_nav -- -j20 -l20
+[20.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_nav
+[20.197s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours' returned '0': /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours -- -j20 -l20
+[20.345s] WARNING:colcon.colcon_cmake.task.cmake.build:Could not run installation step for package 'delivery_bot_behaviours' because it has no 'install' target
+[20.346s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(delivery_bot_behaviours)
+[21.244s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours' for CMake module files
+[21.245s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours' for CMake config files
+[21.246s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours/bin'
+[21.246s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours/lib/pkgconfig/delivery_bot_behaviours.pc'
+[21.246s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours/lib/python3.10/site-packages'
+[21.247s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours/bin'
+[21.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours/share/delivery_bot_behaviours/package.ps1'
+[21.319s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours/share/delivery_bot_behaviours/package.dsv'
+[21.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours/share/delivery_bot_behaviours/package.sh'
+[21.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours/share/delivery_bot_behaviours/package.bash'
+[21.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours/share/delivery_bot_behaviours/package.zsh'
+[21.536s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abanoub/delivery_bot_ws/install/delivery_bot_behaviours/share/colcon-core/packages/delivery_bot_behaviours)
+[21.540s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_description)
+[21.541s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description' for CMake module files
+[21.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abanoub/delivery_bot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/my_robot_description
+[21.547s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description' for CMake config files
+[21.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_description', 'cmake_prefix_path')
+[21.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.ps1'
+[21.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.dsv'
+[21.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.sh'
+[21.635s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description/bin'
+[21.635s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description/lib/pkgconfig/my_robot_description.pc'
+[21.636s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description/lib/python3.10/site-packages'
+[21.636s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description/bin'
+[21.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.ps1'
+[21.639s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.dsv'
+[21.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.sh'
+[21.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.bash'
+[21.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.zsh'
+[21.643s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abanoub/delivery_bot_ws/install/my_robot_description/share/colcon-core/packages/my_robot_description)
+[21.644s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_description)
+[21.645s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description' for CMake module files
+[21.646s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description' for CMake config files
+[21.647s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_description', 'cmake_prefix_path')
+[21.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.ps1'
+[21.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.dsv'
+[21.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.sh'
+[21.663s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description/bin'
+[21.663s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description/lib/pkgconfig/my_robot_description.pc'
+[21.663s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description/lib/python3.10/site-packages'
+[21.664s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/my_robot_description/bin'
+[21.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.ps1'
+[21.666s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.dsv'
+[21.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.sh'
+[21.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.bash'
+[21.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.zsh'
+[21.670s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abanoub/delivery_bot_ws/install/my_robot_description/share/colcon-core/packages/my_robot_description)
+[21.676s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(delivery_bot_nav)
+[21.677s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav' for CMake module files
+[21.679s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav' for CMake config files
+[21.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_nav
+[21.680s] Level 1:colcon.colcon_core.shell:create_environment_hook('delivery_bot_nav', 'cmake_prefix_path')
+[21.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/hook/cmake_prefix_path.ps1'
+[21.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/hook/cmake_prefix_path.dsv'
+[21.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/hook/cmake_prefix_path.sh'
+[21.684s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/bin'
+[21.684s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/lib/pkgconfig/delivery_bot_nav.pc'
+[21.685s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/lib/python3.10/site-packages'
+[21.685s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/bin'
+[21.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.ps1'
+[21.687s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.dsv'
+[21.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.sh'
+[21.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.bash'
+[21.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.zsh'
+[21.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/colcon-core/packages/delivery_bot_nav)
+[21.697s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(delivery_bot_nav)
+[21.698s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav' for CMake module files
+[21.699s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav' for CMake config files
+[21.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('delivery_bot_nav', 'cmake_prefix_path')
+[21.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/hook/cmake_prefix_path.ps1'
+[21.700s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/hook/cmake_prefix_path.dsv'
+[21.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/hook/cmake_prefix_path.sh'
+[21.708s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/bin'
+[21.709s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/lib/pkgconfig/delivery_bot_nav.pc'
+[21.709s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/lib/python3.10/site-packages'
+[21.710s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/bin'
+[21.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.ps1'
+[21.712s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.dsv'
+[21.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.sh'
+[21.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.bash'
+[21.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.zsh'
+[21.715s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/colcon-core/packages/delivery_bot_nav)
+[28.299s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20
+[28.369s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_control
+[28.679s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(delivery_bot_control)
+[28.680s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control' for CMake module files
+[28.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_control
+[28.681s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control' for CMake config files
+[28.681s] Level 1:colcon.colcon_core.shell:create_environment_hook('delivery_bot_control', 'cmake_prefix_path')
+[28.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/hook/cmake_prefix_path.ps1'
+[28.683s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/hook/cmake_prefix_path.dsv'
+[28.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/hook/cmake_prefix_path.sh'
+[28.684s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib'
+[28.684s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/bin'
+[28.684s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/pkgconfig/delivery_bot_control.pc'
+[28.685s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/python3.10/site-packages'
+[28.685s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/bin'
+[28.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.ps1'
+[28.706s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.dsv'
+[28.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.sh'
+[28.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.bash'
+[28.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.zsh'
+[28.710s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/colcon-core/packages/delivery_bot_control)
+[28.722s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(delivery_bot_control)
+[28.723s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control' for CMake module files
+[28.723s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control' for CMake config files
+[28.724s] Level 1:colcon.colcon_core.shell:create_environment_hook('delivery_bot_control', 'cmake_prefix_path')
+[28.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/hook/cmake_prefix_path.ps1'
+[28.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/hook/cmake_prefix_path.dsv'
+[28.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/hook/cmake_prefix_path.sh'
+[28.726s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib'
+[28.726s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/bin'
+[28.726s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/pkgconfig/delivery_bot_control.pc'
+[28.727s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/python3.10/site-packages'
+[28.727s] Level 1:colcon.colcon_core.environment:checking '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/bin'
+[28.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.ps1'
+[28.728s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.dsv'
+[28.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.sh'
+[28.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.bash'
+[28.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.zsh'
+[28.760s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/colcon-core/packages/delivery_bot_control)
+[28.760s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.761s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.761s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[28.762s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[28.912s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[28.912s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[28.912s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[28.941s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[28.941s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abanoub/delivery_bot_ws/install/local_setup.ps1'
+[29.040s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abanoub/delivery_bot_ws/install/_local_setup_util_ps1.py'
+[29.103s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abanoub/delivery_bot_ws/install/setup.ps1'
+[29.127s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abanoub/delivery_bot_ws/install/local_setup.sh'
+[29.201s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abanoub/delivery_bot_ws/install/_local_setup_util_sh.py'
+[29.203s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abanoub/delivery_bot_ws/install/setup.sh'
+[29.213s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abanoub/delivery_bot_ws/install/local_setup.bash'
+[29.272s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abanoub/delivery_bot_ws/install/setup.bash'
+[29.284s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abanoub/delivery_bot_ws/install/local_setup.zsh'
+[29.348s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abanoub/delivery_bot_ws/install/setup.zsh'

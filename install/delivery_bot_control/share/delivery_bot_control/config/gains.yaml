@@ -1,0 +1,10 @@
+gains:
+  wheel1_joint: {p: 5.0, i: 0.0, d: 0.05}
+  wheel2_joint: {p: 5.0, i: 0.0, d: 0.05}
+  wheel3_joint: {p: 5.0, i: 0.0, d: 0.05}
+
+#gains are used to tune the performance of the omni wheel drive controller
+# The values are set for each wheel joint, with proportional (p), integral (i), and derivative (d) gains.
+# p is the proportional gain, which determines how much the controller responds to the current error.
+# i is the integral gain, which determines how much the controller responds to the accumulated error over time.
+# d is the derivative gain, which determines how much the controller responds to the rate of change of the error.

@@ -16,5 +16,6 @@
   <!-- Export information -->
   <export>
     <build_type>ament_cmake</build_type>
+    <gazebo_ros gazebo_model_path="${prefix}/share/my_robot_description/models"/>
   </export>
 </package>

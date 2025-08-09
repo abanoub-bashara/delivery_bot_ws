@@ -1,4 +1,3 @@
-
 // sudo apt install pigpio-tools libpigpio-dev
 
 #include <rclcpp/rclcpp.hpp>
