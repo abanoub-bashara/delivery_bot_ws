@@ -51,6 +51,12 @@ class OmniKinematicsNode(Node):
         self.last_cmd = msg
         self.last_cmd_time = self.get_clock().now().nanoseconds * 1e-9
 
+        vx, vy, wz = float(msg.linear.x), float(msg.linear.y), float(msg.angular.z)
+        v_rim = self.M.dot(np.array([vx, vy, wz], dtype=float))
+        omega = (v_rim / self.r).astype(float).tolist()
+        self.pub.publish(Float64MultiArray(data=omega))
+
+
     def _tick(self):
         # Timeout safety: zero command if stale
         now = self.get_clock().now().nanoseconds * 1e-9

@@ -1,10 +1,24 @@
-# /home/abanoub/delivery_bot_ws/src/delivery_bot_control/config/omni_drive_controller.params.yaml
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    omni_wheel_drive_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
 omni_wheel_drive_controller:
   ros__parameters:
     joints:
       - wheel1_joint
       - wheel2_joint
       - wheel3_joint
-    interface_name: velocity   
-#ros2 control unload_controller --controller-manager /controller_manager omni_wheel_drive_controller
-#ros2 run controller_manager spawner omni_wheel_drive_controller \ --controller-manager /controller_manager \ --controller-type velocity_controllers/JointGroupVelocityController \ --param-file /home/abanoub/delivery_bot_ws/src/delivery_bot_control/config/omni_drive_controller.params.yaml \ --activate
+    
+    interface_name: velocity
+    
+    # Optional: Command timeout (seconds)
+    command_timeout: 0.5
+    
+    # Optional: Publishing rate for controller status
+    state_publish_rate: 50.0

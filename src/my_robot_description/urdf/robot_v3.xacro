@@ -774,14 +774,22 @@
       </surface>
     </collision>
   </link>
-  <!-- Joint from base_link to wheel -->
-  <joint name="wheel1_joint" type="revolute">
+  <!-- wheel1: make it continuous and remove position limits -->
+  <joint name="wheel1_joint" type="continuous">
     <origin xyz="-0.100026 0.05775 -0.0195" rpy="1.5708 1.48832 1.0472"/>
     <parent link="base_link"/>
     <child link="wheel1"/>
+
+    <!-- Axis must be the wheel's spin axis in the JOINT frame -->
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+
+    <!-- Continuous joints ignore lower/upper. Keep effort/velocity. -->
+    <limit effort="5.0" velocity="100.0"/>
+
+    <!-- Helps kill jitter -->
+    <dynamics damping="0.2" friction="0.0"/>
   </joint>
+
 
   <!-- Link wheel2 -->
   <link name="wheel2">
@@ -815,14 +823,23 @@
       </surface>
     </collision>
   </link>
-  <!-- Joint from base_link to wheel2 -->
-  <joint name="wheel2_joint" type="revolute">
+
+  <!-- wheel2: make it continuous and remove position limits -->
+  <joint name="wheel2_joint" type="continuous">
     <origin xyz="0.100026 0.05775 -0.0195" rpy="1.5708 -2.15704e-32 -1.0472"/>
     <parent link="base_link"/>
     <child link="wheel2"/>
+
+    <!-- Axis must be the wheel's spin axis in the JOINT frame -->
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+
+    <!-- Continuous joints ignore lower/upper. Keep effort/velocity. -->
+    <limit effort="5.0" velocity="100.0"/>
+
+    <!-- Helps kill jitter -->
+    <dynamics damping="0.2" friction="0.0"/>
   </joint>
+
 
   <!-- Link wheel3 -->
   <link name="wheel3">
@@ -857,18 +874,26 @@
     </collision>
   </link>
   <!-- Joint from base_link to wheel3 -->
-  <joint name="wheel3_joint" type="revolute">
+<!-- wheel3: make it continuous and remove position limits -->
+  <joint name="wheel3_joint" type="continuous">
     <origin xyz="4.03566e-17 -0.1155 -0.0195" rpy="-1.5708 -2.04051e-15 2.22045e-16"/>
     <parent link="base_link"/>
     <child link="wheel3"/>
+
+    <!-- Axis must be the wheel's spin axis in the JOINT frame -->
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+
+    <!-- Continuous joints ignore lower/upper. Keep effort/velocity. -->
+    <limit effort="5.0" velocity="100.0"/>
+
+    <!-- Helps kill jitter -->
+    <dynamics damping="0.2" friction="0.0"/>
   </joint>
 
   <!-- ROS2 Control for Fortress -->
-  <ros2_control name="IgnitionSystem" type="system">
+  <ros2_control name="GazeboSimSystem" type="system">
     <hardware>
-      <plugin>ign_ros2_control/IgnitionSystem</plugin>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
     </hardware>
     <joint name="wheel1_joint">
       <command_interface name="velocity"/>
@@ -893,7 +918,7 @@
             name="ign_ros2_control::IgnitionROS2ControlPlugin">
       <robot_param>robot_description</robot_param>
       <robot_param_node>robot_state_publisher</robot_param_node>
-      <parameters>/home/abanoub/delivery_bot_ws/src/delivery_bot_control/config/gains.yaml</parameters>
+      <parameters>/home/abanoub/delivery_bot_ws/src/delivery_bot_control/config/omni_drive_controller.params.yaml</parameters>
     </plugin>
   </gazebo>
   <gazebo reference="lidarView">

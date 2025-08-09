@@ -1,7 +1,7 @@
 # delivery_bot_description/launch/gazebo_v2.launch.py
 import os
 from launch import LaunchDescription
-from launch.actions import ExecuteProcess, RegisterEventHandler
+from launch.actions import ExecuteProcess, RegisterEventHandler, TimerAction
 from launch.event_handlers import OnProcessExit
 from launch_ros.actions import Node
 from xacro import process_file
@@ -26,7 +26,7 @@ def generate_launch_description():
 
     # 1) Start Gazebo (server+GUI)
     ign_gazebo = ExecuteProcess(
-        cmd=['ign', 'gazebo', world_path, '--render-engine', 'ogre2', '-r', '-v', '4'],
+        cmd=['ign', 'gazebo', world_path, '--render-engine', 'ogre2', '-r', '-v', '1'],
         output='screen',
         additional_env={'GZ_SIM_RESOURCE_PATH': gazebo_model_path},
     )
@@ -64,7 +64,7 @@ def generate_launch_description():
             '-name', 'delivery_bot',
             '-topic', 'robot_description',
             '-world', 'empty_with_lidar',
-            '-x', '0', '-y', '0', '-z', '0.5',
+            '-x', '0', '-y', '0', '-z', '1',
         ],
     )
 
@@ -77,7 +77,9 @@ def generate_launch_description():
             'joint_state_broadcaster',
             '--controller-manager', '/controller_manager',
             '--controller-type', 'joint_state_broadcaster/JointStateBroadcaster',
-            '--controller-manager-timeout','20.0','--switch-timeout','10.0'],
+            '--controller-manager-timeout', '20.0',
+            '--switch-timeout', '10.0'
+        ],
     )
 
     drive_spawner = Node(
@@ -88,9 +90,10 @@ def generate_launch_description():
             'omni_wheel_drive_controller',
             '--controller-manager', '/controller_manager',
             '--controller-type', 'velocity_controllers/JointGroupVelocityController',
-            # Param file includes joints + rates; absolute path recommended
             '--param-file', '/home/abanoub/delivery_bot_ws/src/delivery_bot_control/config/omni_drive_controller.params.yaml',
-            '--controller-manager-timeout','20.0','--switch-timeout','10.0'],
+            '--controller-manager-timeout', '30.0',
+            '--switch-timeout', '30.0'
+        ],
     )
 
     return LaunchDescription([
@@ -98,14 +101,20 @@ def generate_launch_description():
         state_pub,
         bridge,
         spawn,
-        # Spawn controllers only AFTER the robot has been created in Gazebo
-        # Give Gazebo a brief moment after spawn so controller_manager is fully up
-        RegisterEventHandler(OnProcessExit(target_action=spawn, on_exit=[
-            ExecuteProcess(cmd=['/bin/sleep','3']),
-            jsb_spawner
-        ])),
-        RegisterEventHandler(OnProcessExit(target_action=spawn, on_exit=[
-             ExecuteProcess(cmd=['/bin/sleep','4']),
-            drive_spawner
-        ])),
+        # Use TimerAction instead of OnProcessExit + sleep for better sequencing
+        RegisterEventHandler(
+            OnProcessExit(
+                target_action=spawn,
+                on_exit=[
+                    TimerAction(
+                        period=3.0,  # Wait 3 seconds after spawn completes
+                        actions=[jsb_spawner]
+                    ),
+                    TimerAction(
+                        period=5.0,  # Wait 5 seconds after spawn completes
+                        actions=[drive_spawner]
+                    ),
+                ]
+            )
+        ),
     ])
