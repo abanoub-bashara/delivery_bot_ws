@@ -66,6 +66,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/delivery_bot_control" TYPE PROGRAM FILES
     "/home/abanoub/delivery_bot_ws/src/delivery_bot_control/src/omni_kinematics_node.py"
     "/home/abanoub/delivery_bot_ws/src/delivery_bot_control/src/odometry_node.py"
+    "/home/abanoub/delivery_bot_ws/src/delivery_bot_control/src/recommend_fdir1.py"
     )
 endif()
 

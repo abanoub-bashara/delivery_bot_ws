@@ -273,6 +273,9 @@ CURL_LIBRARY_DEBUG:FILEPATH=CURL_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 CURL_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libcurl.so
 
+//The directory containing a CMake configuration file for CycloneDDS.
+CycloneDDS_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/CycloneDDS
+
 //The directory containing a CMake configuration file for DART.
 DART_DIR:PATH=/usr/share/dart/cmake
 
@@ -596,6 +599,9 @@ Protobuf_PROTOC_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libprotoc.so
 //Path to a program.
 Python3_EXECUTABLE:FILEPATH=/usr/bin/python3
 
+//Select ROS middleware implementation to link against
+RMW_IMPLEMENTATION:STRING=rmw_cyclonedds_cpp
+
 //Name of the computer/site where compile is being run
 SITE:STRING=abanoub-XPS-15-9530
 
@@ -794,6 +800,15 @@ geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
 //The directory containing a CMake configuration file for hardware_interface.
 hardware_interface_DIR:PATH=/opt/ros/humble/share/hardware_interface/cmake
 
+//The directory containing a CMake configuration file for iceoryx_binding_c.
+iceoryx_binding_c_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_binding_c
+
+//The directory containing a CMake configuration file for iceoryx_hoofs.
+iceoryx_hoofs_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_hoofs
+
+//The directory containing a CMake configuration file for iceoryx_posh.
+iceoryx_posh_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_posh
+
 //The directory containing a CMake configuration file for ignition-cmake2.
 ignition-cmake2_DIR:PATH=/usr/share/cmake/ignition-cmake2
 
@@ -949,6 +964,9 @@ realtime_tools_DIR:PATH=/opt/ros/humble/share/realtime_tools/cmake
 
 //The directory containing a CMake configuration file for rmw.
 rmw_DIR:PATH=/opt/ros/humble/share/rmw/cmake
+
+//The directory containing a CMake configuration file for rmw_cyclonedds_cpp.
+rmw_cyclonedds_cpp_DIR:PATH=/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake
 
 //The directory containing a CMake configuration file for rmw_dds_common.
 rmw_dds_common_DIR:PATH=/opt/ros/humble/share/rmw_dds_common/cmake
@@ -1271,7 +1289,7 @@ CURL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 CURL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 DART_DEFINITIONS:INTERNAL=
 DART_INCLUDE_DIRS:INTERNAL=/usr/include
-DART_LIBRARIES:INTERNAL=dart
+DART_LIBRARIES:INTERNAL=dart;dart
 //Boost min version requirement
 DART_MIN_BOOST_VERSION:INTERNAL=1.58.0
 DART_dart_DEFINITIONS:INTERNAL=
@@ -1288,7 +1306,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boo
 //Details about finding CURL
 FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurl.so][/usr/include/x86_64-linux-gnu][c ][v7.81.0()]
 //Details about finding DART
-FIND_PACKAGE_MESSAGE_DETAILS_DART:INTERNAL=[/usr/include][dart][cfound components: dart ][v(6.6)]
+FIND_PACKAGE_MESSAGE_DETAILS_DART:INTERNAL=[/usr/include][dart;dart][cfound components: dart ][v(6.6)]
 //Details about finding DL
 FIND_PACKAGE_MESSAGE_DETAILS_DL:INTERNAL=[true][v()]
 //Details about finding FastRTPS

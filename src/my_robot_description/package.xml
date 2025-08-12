@@ -12,6 +12,8 @@
   <depend>gazebo_ros</depend>
   <depend>ros2launch</depend>
   <depend>xacro</depend>
+  <exec_depend>robot_localization</exec_depend>
+
 
   <!-- Export information -->
   <export>

@@ -1,0 +1,22 @@
+ekf_odom:
+  ros__parameters:
+    use_sim_time: true
+    frequency: 50.0
+    two_d_mode: true
+    publish_tf: true
+
+    base_link_frame: base_link
+    odom_frame: odom
+    world_frame: odom
+
+    # Wheel odom (remapped below to /wheel_odom)
+    odom0: /wheel_odom
+    # x,y pose + x,y twist
+    odom0_config: [true, true, false,  false, false, false,   true, true, false,  false, false, false,  false, false, false]
+    odom0_queue_size: 10
+
+    # IMU (yaw orientation + yaw rate)
+    imu0: /imu
+    imu0_config: [false, false, false,  false, false, true,   false, false, false,  false, false, true,  false, false, false]
+    imu0_remove_gravitational_acceleration: true
+    imu0_queue_size: 50
