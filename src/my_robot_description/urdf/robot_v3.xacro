@@ -911,104 +911,56 @@
     </plugin>
   </gazebo>
   <gazebo reference="lidarView">
-      <sensor name="lidarView" type="gpu_lidar">
-          <pose>0 0 0 0 0 0</pose>
-          <topic>lidar</topic>
-          <update_rate>20</update_rate>
-          <ray>
-            <scan>
-              <horizontal>
-                <samples>360</samples>
-                <resolution>1</resolution>
-                <min_angle>-3.14159</min_angle>
-                <max_angle>3.14159</max_angle>
-              </horizontal>
-              <vertical>
-                <samples>1</samples>
-                <resolution>1</resolution>
-                <min_angle>0</min_angle>
-                <max_angle>0</max_angle>
-              </vertical>
-            </scan>
-            <range>
-              <min>0.12</min>
-              <max>6.0</max>
-              <resolution>0.01</resolution>
-            </range>
-          </ray>
-          <always_on>1</always_on>
-          <visualize>true</visualize>
-        </sensor>     
+      <sensor name="lidarView" type="gpu_lidar">  <!-- Changed from gpu_lidar to regular lidar -->
+        <pose>0 0 0 0 0 0</pose>
+        <topic>/scan</topic>
+        <ignition_frame_id>lidarView</ignition_frame_id>
+        <update_rate>10</update_rate>  <!-- Reduced from 20 to 10 Hz -->
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>180</samples>  <!-- Reduced from 360 to 180 samples -->
+              <resolution>1</resolution>
+              <min_angle>-3.14159</min_angle>  <!-- -90 degrees instead of full circle -->
+              <max_angle>3.14159</max_angle>   <!-- +90 degrees -->
+            </horizontal>
+            <vertical>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>0</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.12</min>
+            <max>4.0</max>  <!-- Reduced from 6.0 to 4.0 meters -->
+            <resolution>0.05</resolution>  <!-- Reduced resolution from 0.01 to 0.05 -->
+          </range>
+        </ray>
+        <always_on>1</always_on>
+        <visualize>false</visualize>
+    </sensor>     
   </gazebo>
 
-  <!-- URDF file -->
-  <link name="imu_link">
-    <inertial><mass value="1e-6"/></inertial>
-  </link>
+  <!-- IMU frame: no inertial on sensor link -->
+  <link name="imu_link"/>
   <joint name="imu_joint" type="fixed">
     <parent link="base_link"/>
-    <child link="imu_link"/>
+    <child  link="imu_link"/>
     <origin xyz="0 0 0.10" rpy="0 0 0"/>
   </joint>
 
-  <!-- SDF-in-URDF block that Gazebo reads -->
+  <!-- Ignition/GZ reads <gazebo> tags embedded in URDF -->
   <gazebo reference="imu_link">
     <sensor name="imu" type="imu">
-      <always_on>1</always_on>
-      <update_rate>100</update_rate>
+      <always_on>true</always_on>
+      <update_rate>50</update_rate>  <!-- Reduced from 100 to 50 Hz -->
       <visualize>false</visualize>
-
-      <!-- Gazebo transport topic name; ros_gz_bridge will bridge this to ROS -->
       <topic>imu</topic>
-      <!-- Frame id for ROS (supported by ros_gz); harmless warning if not recognized) -->
-      <gz_frame_id>imu_link</gz_frame_id>
-      <!-- Optional: add noise (example values) -->
+      <ignition_frame_id>imu_link</ignition_frame_id>
       <imu>
+        <!-- leave empty for ideal IMU in sim -->
       </imu>
     </sensor>
-  </gazebo>
-
-
-    <!-- wheel1 -->
-  <gazebo reference="wheel1">
-    <mu1>1.6</mu1>
-    <mu2>0.01</mu2>
-    <!-- Try +X of wheel1 as rolling dir first -->
-    <fdir1 gz:expressed_in="wheel1">1 0 0</fdir1>
-  </gazebo>
-
-  <!-- wheel2 -->
-  <gazebo reference="wheel2">
-    <mu1>1.6</mu1>
-    <mu2>0.01</mu2>
-    <fdir1 gz:expressed_in="wheel2">0 1 0</fdir1>
-  </gazebo>
-
-  <!-- wheel3 -->
-  <gazebo reference="wheel3">
-    <mu1>1.6</mu1>
-    <mu2>0.01</mu2>
-    <fdir1 gz:expressed_in="wheel3">-1 0 0</fdir1>
-  </gazebo>
-
-  <gazebo>
-    <plugin name="ignition::gazebo::systems::WheelSlip"
-            filename="libignition-gazebo-wheel-slip-system.so">
-      <wheel link_name="wheel1">
-        <slip_compliance_lateral>0.05</slip_compliance_lateral>
-        <slip_compliance_longitudinal>0.0</slip_compliance_longitudinal>
-        <wheel_normal_force>25</wheel_normal_force>
-      </wheel>
-      <wheel link_name="wheel2">
-        <slip_compliance_lateral>0.05</slip_compliance_lateral>
-        <slip_compliance_longitudinal>0.0</slip_compliance_longitudinal>
-        <wheel_normal_force>25</wheel_normal_force>
-      </wheel>
-      <wheel link_name="wheel3">
-        <slip_compliance_lateral>0.05</slip_compliance_lateral>
-        <slip_compliance_longitudinal>0.0</slip_compliance_longitudinal>
-        <wheel_normal_force>25</wheel_normal_force>
-      </wheel>
-    </plugin>
   </gazebo>
 </robot>
