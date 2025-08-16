@@ -55,7 +55,7 @@ def generate_launch_description():
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[
-            '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock',
+            '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
             '/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
             '/imu@sensor_msgs/msg/Imu@gz.msgs.IMU',
         ],
@@ -136,7 +136,7 @@ def generate_launch_description():
             'wheel_radius': 0.024,
             'robot_radius': 0.1155,
             'use_sim_time': True,
-            'publish_tf': False, 
+            'publish_tf': True, 
         }],
         remappings=[('/odom', '/wheel_odom')]  
     )
@@ -152,24 +152,25 @@ def generate_launch_description():
     slam = Node(
         package='slam_toolbox',
         executable='async_slam_toolbox_node',
-        name='slam_toolbox',
+        name='async_slam_toolbox_node',  # (name can be anything; using default is fine)
         output='screen',
         parameters=[{
             'use_sim_time': True,
             'base_frame': 'base_link',
             'odom_frame': 'odom',
             'map_frame': 'map',
-            'transform_publish_period': 0.05,
-            'minimum_laser_range': 0.12,
-            'maximum_laser_range': 6.0,
             'mode': 'mapping',
             'resolution': 0.05,
-            'scan_queue_size': 5,
             'throttle_scans': 1,
+            'minimum_laser_range': 0.12,
+            'maximum_laser_range': 6.0,
             'minimum_travel_distance': 0.05,
             'minimum_travel_heading': 0.05,
+            'transform_publish_period': 0.05,
+            'transform_timeout': 1.0,     
             'tf_buffer_duration': 30.0,
-            'provide_odom_frame': False
+            'provide_odom_frame': False,  
+            'scan_topic': '/scan',    
         }],
     )
 
