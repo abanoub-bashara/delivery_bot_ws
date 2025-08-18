@@ -5,7 +5,7 @@
 /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/global_costmap.yaml
 /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/local_costmap.yaml
 /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/nav2_params.yaml
-/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/slam_params.yaml
+/home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/slam.params.yaml
 /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/build/.built_by
 /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/build/COLCON_IGNORE
 /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/.colcon_install_layout

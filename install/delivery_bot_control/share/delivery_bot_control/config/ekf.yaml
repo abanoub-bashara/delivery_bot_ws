@@ -5,12 +5,12 @@ ekf_odom:
     reset_on_time_jump: true
     two_d_mode: true
     publish_tf: true
-    frequency: 30.0  # Reduced from 50.0 for stability
+    frequency: 70.0  # Reduced from 50.0 for stability
     sensor_timeout: 0.2  # Increased from 0.1 for simulation
     
     base_link_frame: base_link
     odom_frame: odom
-    world_frame: odom
+    world_frame: odom 
     
     # Wheel odometry configuration
     odom0: /wheel_odom

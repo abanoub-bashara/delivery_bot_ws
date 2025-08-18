@@ -43,6 +43,7 @@ install(
     src/omni_kinematics_node.py
     src/odometry_node.py
     src/recommend_fdir1.py
+    src/wheel_direction_test.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

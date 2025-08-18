@@ -2,6 +2,7 @@
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/omni_kinematics_node.py
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/odometry_node.py
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/recommend_fdir1.py
+/home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/wheel_direction_test.py
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/ekf.yaml
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/omni_drive_controller.params.yaml
 /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/teleop_joy.yaml

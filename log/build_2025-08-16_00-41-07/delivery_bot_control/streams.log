@@ -1,0 +1,110 @@
+[0.053s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20
+[0.595s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.514s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[3.635s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.741s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.994s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.246s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.590s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.607s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.664s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[6.490s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[8.371s] -- Found rclcpp_components: 16.0.14 (/opt/ros/humble/share/rclcpp_components/cmake)
+[9.170s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[9.982s] -- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[10.358s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[10.754s] -- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)
+[12.818s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[13.270s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[13.500s] -- Found hardware_interface: 2.51.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[14.180s] -- Found ros2_control: 2.51.0 (/opt/ros/humble/share/ros2_control/cmake)
+[14.210s] -- Found controller_manager: 2.51.0 (/opt/ros/humble/share/controller_manager/cmake)
+[14.874s] -- Found ros2_controllers: 2.48.0 (/opt/ros/humble/share/ros2_controllers/cmake)
+[14.902s] -- Found gazebo_ros2_control: 0.4.10 (/opt/ros/humble/share/gazebo_ros2_control/cmake)
+[15.936s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[16.676s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[16.795s] -- Looking for ignition-math6 -- found version 6.15.1
+[17.074s] -- Searching for dependencies of ignition-math6
+[17.164s] -- Looking for OGRE...
+[17.209s] -- Found Ogre Ghadamon (1.9.0)
+[17.237s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[17.282s] -- Looking for OGRE_Paging...
+[17.282s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[17.283s] -- Looking for OGRE_Terrain...
+[17.283s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[17.283s] -- Looking for OGRE_Property...
+[17.283s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[17.283s] -- Looking for OGRE_RTShaderSystem...
+[17.284s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[17.284s] -- Looking for OGRE_Volume...
+[17.284s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[17.284s] -- Looking for OGRE_Overlay...
+[17.284s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[17.782s] -- Looking for ignition-math6 -- found version 6.15.1
+[17.830s] -- Looking for ignition-transport8 -- found version 8.2.1
+[17.832s] -- Searching for dependencies of ignition-transport8
+[17.925s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[17.982s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[18.000s] -- Checking for module 'libzmq >= 4'
+[18.299s] --   Found libzmq , version 4.3.4
+[18.485s] -- Checking for module 'uuid'
+[18.556s] --   Found uuid, version 2.37.2
+[18.706s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[18.708s] -- Searching for dependencies of ignition-msgs5
+[18.785s] -- Looking for ignition-math6 -- found version 6.15.1
+[18.888s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[18.924s] -- Looking for ignition-common3 -- found version 3.14.0
+[18.926s] -- Searching for dependencies of ignition-common3
+[18.938s] -- Looking for dlfcn.h - found
+[18.938s] -- Looking for libdl - found
+[19.087s] -- Searching for <ignition-common3> component [graphics]
+[19.118s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[19.120s] -- Searching for dependencies of ignition-common3-graphics
+[19.122s] -- Looking for ignition-math6 -- found version 6.15.1
+[19.183s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[19.185s] -- Searching for dependencies of ignition-fuel_tools4
+[19.477s] -- Checking for module 'jsoncpp'
+[19.569s] --   Found jsoncpp, version 1.9.5
+[19.732s] -- Checking for module 'libzip'
+[19.808s] --   Found libzip, version 1.7.3
+[19.937s] -- Looking for ignition-common3 -- found version 3.14.0
+[19.939s] -- Looking for ignition-math6 -- found version 6.15.1
+[19.940s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[20.041s] -- Gazebo version: 11.10
+[21.006s] -- Configuring done
+[21.777s] -- Generating done
+[21.802s] -- Build files have been written to: /home/abanoub/delivery_bot_ws/build/delivery_bot_control
+[21.960s] [35m[1mConsolidate compiler generated dependencies of target hardware_bridge_node[0m
+[22.011s] [100%] Built target hardware_bridge_node
+[22.047s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20
+[22.051s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_control
+[22.073s] -- Install configuration: ""
+[22.075s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/hardware_bridge_node
+[22.075s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/omni_kinematics_node.py
+[22.076s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/odometry_node.py
+[22.076s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/recommend_fdir1.py
+[22.076s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/wheel_direction_test.py
+[22.077s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config
+[22.078s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/ekf.yaml
+[22.078s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/omni_drive_controller.params.yaml
+[22.079s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/config/teleop_joy.yaml
+[22.079s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch
+[22.079s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/launch/controls.launch.py
+[22.080s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/DefaultRobotHWSim.xml
+[22.081s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/package_run_dependencies/delivery_bot_control
+[22.082s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/parent_prefix_path/delivery_bot_control
+[22.082s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/ament_prefix_path.sh
+[22.082s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/ament_prefix_path.dsv
+[22.082s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/path.sh
+[22.082s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/environment/path.dsv
+[22.083s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.bash
+[22.083s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.sh
+[22.083s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.zsh
+[22.083s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/local_setup.dsv
+[22.083s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.dsv
+[22.083s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/packages/delivery_bot_control
+[22.083s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/delivery_bot_control
+[22.084s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/cmake/delivery_bot_controlConfig.cmake
+[22.084s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/cmake/delivery_bot_controlConfig-version.cmake
+[22.084s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/share/delivery_bot_control/package.xml
+[22.089s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_control

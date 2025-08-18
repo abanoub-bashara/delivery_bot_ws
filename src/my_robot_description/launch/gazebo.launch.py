@@ -11,16 +11,17 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
     # --- Paths ---
     description_pkg = get_package_share_directory('my_robot_description')
+    control_pkg = get_package_share_directory('delivery_bot_control')
+    nav_pkg = get_package_share_directory('delivery_bot_nav')
+
+    #load urdf description 
     xacro_path = os.path.join(description_pkg, 'urdf', 'robot_v3.xacro')
-    
-    # Controller configuration file
-    controller_config_file = os.path.expanduser('~/delivery_bot_ws/src/delivery_bot_control/config/controllers.yaml')
-    
-    # Process xacro with controller config parameter
-    robot_desc = process_file(xacro_path, mappings={'controller_config_file': controller_config_file}).toxml()
-    
-    # Config file for teleop
-    teleop_config_file = os.path.expanduser('~/delivery_bot_ws/src/delivery_bot_control/config/teleop_joy.yaml')
+    robot_desc = process_file(xacro_path).toxml()
+
+    #load config files for nodes
+    teleop_config_file = os.path.join(control_pkg, 'config', 'teleop_joy.yaml')
+    ekf_config_file = os.path.join(control_pkg, 'config', 'ekf.yaml')
+    slam_config_file = os.path.join(nav_pkg, 'config', 'slam.params.yaml')
 
     # Built‑in empty world for Ignition Gazebo 6 (Fortress)
     world_path = '/home/abanoub/delivery_bot_ws/src/my_worlds/worlds/empty_with_lidar.sdf'
@@ -109,6 +110,23 @@ def generate_launch_description():
             )
         ]
     )
+    
+    # wheel_test_node = TimerAction(
+    #     period=20.0,  # Start after controllers are fully initialized
+    #     actions=[
+    #         Node(
+    #             package='delivery_bot_control',
+    #             executable='wheel_direction_test',  # Make sure this matches your executable name
+    #             output='screen',
+    #             parameters=[{
+    #                 'wheel_radius': 0.024,
+    #                 'robot_radius': 0.1155,
+    #                 'wheel_angles_deg': [0.0, 120.0, 240.0],
+    #                 'use_sim_time': True,
+    #             }]
+    #         )
+    #     ]
+    # )
 
     # 6) YOUR CUSTOM NODES
     kinematics_node = Node(
@@ -118,13 +136,17 @@ def generate_launch_description():
         parameters=[{
             'wheel_radius': 0.024,
             'robot_radius': 0.1155,
-            'wheel_angles_deg': [0.0, 120.0, 240.0],
+            'wheel_angles_deg': [150.0, 30.0, 270.0],
             'cmd_rate': 50.0,
             'cmd_timeout': 0.5,
             'use_sim_time': True,
             'max_wheel_accel': 20.0,
             'max_wheel_speed': 80.0,
             'max_wheel_jerk': 0.0,
+            # ADD THESE MISSING PARAMETERS:
+            'ramp_mode': 'body_coordinated',
+            'wheel_joint_names': ['wheel1_joint', 'wheel2_joint', 'wheel3_joint'],
+            'sign_correction': [1.0, 1.0, 1.0]
         }]
     )
 
@@ -136,7 +158,7 @@ def generate_launch_description():
             'wheel_radius': 0.024,
             'robot_radius': 0.1155,
             'use_sim_time': True,
-            'publish_tf': True, 
+            'publish_tf': False, 
         }],
         remappings=[('/odom', '/wheel_odom')]  
     )
@@ -146,32 +168,19 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_odom',
         output='screen',
-        parameters=['/home/abanoub/delivery_bot_ws/src/delivery_bot_control/config/ekf.yaml']
+        parameters=[ekf_config_file],
+        remappings=[
+            ('odometry/filtered', '/odom'),  # Remap EKF output from /odometry/filtered to /odom
+        ]
     )
-
+    
     slam = Node(
         package='slam_toolbox',
         executable='async_slam_toolbox_node',
-        name='async_slam_toolbox_node',  # (name can be anything; using default is fine)
+        name='async_slam_toolbox_node',
         output='screen',
-        parameters=[{
-            'use_sim_time': True,
-            'base_frame': 'base_link',
-            'odom_frame': 'odom',
-            'map_frame': 'map',
-            'mode': 'mapping',
-            'resolution': 0.05,
-            'throttle_scans': 1,
-            'minimum_laser_range': 0.12,
-            'maximum_laser_range': 6.0,
-            'minimum_travel_distance': 0.05,
-            'minimum_travel_heading': 0.05,
-            'transform_publish_period': 0.05,
-            'transform_timeout': 1.0,     
-            'tf_buffer_duration': 30.0,
-            'provide_odom_frame': False,  
-            'scan_topic': '/scan',    
-        }],
+        parameters=[{'use_sim_time': True}, 
+                    slam_config_file],
     )
 
     joy_node = Node(
@@ -208,6 +217,7 @@ def generate_launch_description():
         spawn,
         wait_for_controllers,
         spawn_drive_controller,
+        # wheel_test_node,
         kinematics_node,
         odometry_node,
         ekf,

@@ -1,0 +1,74 @@
+async_slam_toolbox_node:
+  ros__parameters:
+    # Frames & input
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link
+    scan_topic: /scan          # absolute path, as required
+    restamp_tf: true #idk about this one
+    scan_queue_size: 1         # async mode -> keep at 1
+
+    # Map & publishing cadence
+    resolution: 0.05           # 5 cm cells
+    transform_publish_period: 0.02
+    transform_timeout: 1.0
+    tf_buffer_duration: 30.0
+    map_update_interval: 1.0   # update /map periodically for viz/consumers
+
+    # Ranging limits (occupancy rasterization)
+    min_laser_range: 0.12
+    max_laser_range: 6.0
+
+    # Motion gating / throttling
+    throttle_scans: 1          # (used in synchronous mode; harmless here)
+    minimum_travel_distance: 0.02
+    minimum_travel_heading: 0.02
+    minimum_time_interval: 0.0 # not used in async, keep 0
+
+    # Optional behaviors / UX
+    enable_interactive_mode: false
+    debug_logging: false
+    use_map_saver: true
+    map_file_name: ""
+    map_start_pose: [0.0, 0.0, 0.0]
+    map_start_at_dock: false
+    localization_on_configure: false
+
+    # Covariance scaling (downstream filter influence)
+    position_covariance_scale: 1.0
+    yaw_covariance_scale: 1.0
+
+    # Matcher (kept minimal + valid)
+    use_scan_matching: true
+    use_scan_barycenter: false
+    scan_buffer_size: 10
+    scan_buffer_maximum_scan_distance: 10.0
+    link_match_minimum_response_fine: 0.1
+    link_scan_maximum_distance: 1.5
+    loop_search_maximum_distance: 3.0
+    do_loop_closing: true
+    loop_match_minimum_chain_size: 10
+    loop_match_maximum_variance_coarse: 1.0
+    loop_match_minimum_response_coarse: 0.2
+    loop_match_minimum_response_fine: 0.1
+    correlation_search_space_dimension: 0.5
+    correlation_search_space_resolution: 0.01
+    correlation_search_space_smear_deviation: 0.1
+    loop_search_space_dimension: 8.0
+    loop_search_space_resolution: 0.05
+    loop_search_space_smear_deviation: 0.1
+    distance_variance_penalty: 0.5
+    angle_variance_penalty: 1.0
+    fine_search_angle_offset: 0.003
+    coarse_search_angle_offset: 0.05
+    coarse_angle_resolution: 0.01
+    minimum_angle_penalty: 0.0
+    minimum_distance_penalty: 0.0
+    use_response_expansion: true
+
+    # Occupancy filter
+    min_pass_through: 0
+    occupancy_threshold: 0.05
+
+    # Serialization helper (leave default or tune if needed)
+    stack_size_to_use: 40000000

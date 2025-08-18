@@ -54,7 +54,6 @@
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/wheel.stl
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/model.config
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/urdf/config.json
-/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/urdf/robot_v2.xacro
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/urdf/robot_v3.xacro
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/launch/gazebo.launch.py
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/launch/gazebo_v2.launch.py

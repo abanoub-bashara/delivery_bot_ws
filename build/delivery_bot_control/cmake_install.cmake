@@ -67,6 +67,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/abanoub/delivery_bot_ws/src/delivery_bot_control/src/omni_kinematics_node.py"
     "/home/abanoub/delivery_bot_ws/src/delivery_bot_control/src/odometry_node.py"
     "/home/abanoub/delivery_bot_ws/src/delivery_bot_control/src/recommend_fdir1.py"
+    "/home/abanoub/delivery_bot_ws/src/delivery_bot_control/src/wheel_direction_test.py"
     )
 endif()
 

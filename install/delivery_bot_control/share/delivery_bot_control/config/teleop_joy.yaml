@@ -1,14 +1,14 @@
 teleop_twist_joy_node:
   ros__parameters:
     require_enable_button: true
-    enable_button: 5        # R1 hold-to-drive
+    enable_button: 5        # L1 hold-to-drive
     enable_turbo_button: 4  # L1 + R1 = turbo (optional)
 
     # Left stick → linear
-    axis_linear.x: 1        # left stick Y
-    axis_linear.y: 0        # left stick X
-    scale_linear.x: -0.6    # negative so UP gives +x
-    scale_linear.y: 0.6    # negative so LEFT gives +y
+    axis_linear.x: 0        # left stick Y
+    axis_linear.y: 1        # left stick X
+    scale_linear.x: -0.05    # negative so UP gives +x
+    scale_linear.y: 0.05   # negative so LEFT gives +y
 
     # Right stick X → spin
     axis_angular.yaw: 3     # try 2 if your driver maps it there

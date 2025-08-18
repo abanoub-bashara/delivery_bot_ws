@@ -742,6 +742,7 @@
     <child link="lidarView"/>
     <axis xyz="0 0 0"/>
   </joint>
+  
   <!-- Link wheel -->
   <link name="wheel1">
     <inertial>
@@ -764,27 +765,20 @@
       <geometry>
         <mesh filename="file://$(find my_robot_description)/models/delivery_bot/meshes/wheel.stl"/>
       </geometry>
-      <surface>
-        <friction>
-          <ode>
-            <mu>1.0</mu>
-            <mu2>1.0</mu2>
-          </ode>
-        </friction>
-      </surface>
     </collision>
   </link>
   <!-- wheel1: make it continuous and remove position limits -->
   <joint name="wheel1_joint" type="continuous">
-    <origin xyz="-0.100026 0.05775 -0.0195" rpy="1.5708 1.48832 1.0472"/>
+    <origin xyz="-0.100026 0.05775 -0.0195" rpy="1.5708 1.48832 1.0472"/> 
+    <!-- 1.48832 -->
     <parent link="base_link"/>
     <child link="wheel1"/>
     <!-- Axis must be the wheel's spin axis in the JOINT frame -->
     <axis xyz="0 0 1"/>
     <!-- Continuous joints ignore lower/upper. Keep effort/velocity. -->
-    <limit effort="5.0" velocity="100.0"/>
+    <limit effort="15.0" velocity="100.0"/>
     <!-- Helps kill jitter -->
-    <dynamics damping="0.2" friction="0.0"/>
+    <dynamics damping="0.1" friction="0.05"/>
   </joint>
 
 
@@ -810,14 +804,6 @@
       <geometry>
         <mesh filename="file://$(find my_robot_description)/models/delivery_bot/meshes/wheel.stl"/>
       </geometry>
-      <surface>
-        <friction>
-          <ode>
-            <mu>1.0</mu>
-            <mu2>1.0</mu2>
-          </ode>
-        </friction>
-      </surface>
     </collision>
   </link>  <!-- wheel2: make it continuous and remove position limits -->
   <joint name="wheel2_joint" type="continuous">
@@ -827,9 +813,9 @@
     <!-- Axis must be the wheel's spin axis in the JOINT frame -->
     <axis xyz="0 0 1"/>
     <!-- Continuous joints ignore lower/upper. Keep effort/velocity. -->
-    <limit effort="5.0" velocity="100.0"/>
+    <limit effort="15.0" velocity="100.0"/>
     <!-- Helps kill jitter -->
-    <dynamics damping="0.2" friction="0.0"/>
+    <dynamics damping="0.1" friction="0.05"/>
   </joint>
 
 
@@ -855,14 +841,6 @@
       <geometry>
         <mesh filename="file://$(find my_robot_description)/models/delivery_bot/meshes/wheel.stl"/>
       </geometry>
-      <surface>
-        <friction>
-          <ode>
-            <mu>1.0</mu>
-            <mu2>1.0</mu2>
-          </ode>
-        </friction>
-      </surface>
     </collision>
   </link>
 <!-- Joint from base_link to wheel3 -->
@@ -874,11 +852,55 @@
     <!-- Axis must be the wheel's spin axis in the JOINT frame -->
     <axis xyz="0 0 1"/>
     <!-- Continuous joints ignore lower/upper. Keep effort/velocity. -->
-    <limit effort="5.0" velocity="100.0"/>
+    <limit effort="15.0" velocity="100.0"/>
     <!-- Helps kill jitter -->
-    <dynamics damping="0.2" friction="0.0"/>
+    <dynamics damping="0.1" friction="0.05"/>
   </joint>
 
+  <!-- Gazebo properties for wheel1 -->
+  <gazebo reference="wheel1">
+    <surface>
+      <friction>
+        <ode>
+          <mu>0.1</mu>      <!-- Rolling direction -->
+          <mu2>1.0</mu2>    <!-- Perpendicular direction -->
+          <slip1>0.0</slip1>
+          <slip2>1.0</slip2>
+        </ode>
+      </friction>
+    </surface>
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <!-- Gazebo properties for wheel2 -->
+  <gazebo reference="wheel2">
+    <surface>
+      <friction>
+        <ode>
+          <mu>0.1</mu>      <!-- Rolling direction -->
+          <mu2>1.0</mu2>    <!-- Perpendicular direction -->
+          <slip1>0.0</slip1>
+          <slip2>1.0</slip2>
+        </ode>
+      </friction>
+    </surface>
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <!-- Gazebo properties for wheel3 -->
+  <gazebo reference="wheel3">
+    <surface>
+      <friction>
+        <ode>
+          <mu>0.1</mu>      <!-- Rolling direction -->
+          <mu2>1.0</mu2>    <!-- Perpendicular direction -->
+          <slip1>0.0</slip1>
+          <slip2>1.0</slip2>
+        </ode>
+      </friction>
+    </surface>
+    <material>Gazebo/Blue</material>
+  </gazebo>
   <!-- ROS2 Control for Fortress -->
   <ros2_control name="GazeboSimSystem" type="system">
     <hardware>
@@ -915,11 +937,11 @@
       <pose>0 0 0 0 0 0</pose>
       <topic>/scan</topic>
       <gz_frame_id>lidarView</gz_frame_id>
-      <update_rate>10</update_rate>  <!-- Reduced from 20 to 10 Hz -->
+      <update_rate>25</update_rate>  <!-- Reduced from 20 to 10 Hz -->
       <ray>
         <scan>
           <horizontal>
-            <samples>180</samples>  <!-- Reduced from 360 to 180 samples -->
+            <samples>360</samples>  <!-- Reduced from 360 to 180 samples -->
             <resolution>1</resolution>
             <min_angle>-3.14159</min_angle>  <!-- -90 degrees instead of full circle -->
             <max_angle>3.14159</max_angle>   <!-- +90 degrees -->
@@ -963,4 +985,5 @@
       </imu>
     </sensor>
   </gazebo>
+
 </robot>

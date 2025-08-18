@@ -16,7 +16,7 @@ class OdometryNode(Node):
         # --- Params (must match your kinematics/controller) ---
         self.declare_parameter('wheel_radius', 0.024)
         self.declare_parameter('robot_radius', 0.1155)
-        self.declare_parameter('wheel_angles_deg', [0.0, 120.0, 240.0])
+        self.declare_parameter('wheel_angles_deg', [150.0, 30.0, 270.0])
         self.declare_parameter('joint_names', ['wheel1_joint','wheel2_joint','wheel3_joint'])
         self.declare_parameter('frame_id', 'odom')
         self.declare_parameter('child_frame_id', 'base_link')

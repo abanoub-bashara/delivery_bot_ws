@@ -1,0 +1,12 @@
+[100%] Built target hardware_bridge_node
+-- Install configuration: ""
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/hardware_bridge_node
+[31mCMake Error at cmake_install.cmake:66 (file):
+  file INSTALL cannot find
+  "/home/abanoub/delivery_bot_ws/src/delivery_bot_control/src/wheel_direction_test.py":
+  No such file or directory.
+
+[0m
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/omni_kinematics_node.py
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/odometry_node.py
+-- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_control/lib/delivery_bot_control/recommend_fdir1.py
