@@ -319,14 +319,14 @@ ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/delivery_bo
 # install(FILES "/home/abanoub/delivery_bot_ws/build/delivery_bot_nav/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/delivery_bot_nav" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" FILES "/home/abanoub/delivery_bot_ws/build/delivery_bot_nav/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/delivery_bot_nav" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/delivery_bot_nav/environment")
-ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/delivery_bot_nav/environment")
+# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/delivery_bot_nav/environment")
+ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/delivery_bot_nav/environment")
 
 # install(FILES "/home/abanoub/delivery_bot_ws/build/delivery_bot_nav/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/delivery_bot_nav/environment")
 ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" FILES "/home/abanoub/delivery_bot_ws/build/delivery_bot_nav/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/delivery_bot_nav/environment")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/delivery_bot_nav/environment")
-ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/delivery_bot_nav/environment")
+# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/delivery_bot_nav/environment")
+ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/delivery_bot_nav/environment")
 
 # install(FILES "/home/abanoub/delivery_bot_ws/build/delivery_bot_nav/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/delivery_bot_nav/environment")
 ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" FILES "/home/abanoub/delivery_bot_ws/build/delivery_bot_nav/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/delivery_bot_nav/environment")

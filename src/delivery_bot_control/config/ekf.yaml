@@ -5,7 +5,7 @@ ekf_odom:
     reset_on_time_jump: true
     two_d_mode: true
     publish_tf: true
-    frequency: 70.0  # Reduced from 50.0 for stability
+    frequency: 80.0  # Reduced from 50.0 for stability
     sensor_timeout: 0.2  # Increased from 0.1 for simulation
     
     base_link_frame: base_link
@@ -13,7 +13,7 @@ ekf_odom:
     world_frame: odom 
     
     # Wheel odometry configuration
-    odom0: /wheel_odom
+    odom0: /omni_drive_controller/odom
     odom0_queue_size: 10
     odom0_config: [true,  true,  false,    # x, y, z position
                    false, false, false,    # roll, pitch, yaw orientation  
@@ -29,7 +29,7 @@ ekf_odom:
     imu0_nodelay: false  # Changed to false for simulation stability
     imu0_differential: false
     imu0_relative: false
-    imu0_remove_gravity: true
+    imu0_remove_gravitational_acceleration: true
     # Only use yaw orientation and angular velocity - be conservative
     imu0_config: [false, false, false,    # x, y, z position
                   false, false, true,     # roll, pitch, yaw orientation

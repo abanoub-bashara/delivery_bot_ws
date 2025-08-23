@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>delivery_bot_control</name>
+  <version>0.1.0</version>
+  <description>
+    Motion‐control nodes for the delivery_bot: hardware bridge, odometry, kinematics.
+  </description>
+
+  <maintainer email="abanoubbashara5@icloud.com">Abanoub Bashara</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- build tool -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- core ROS client libraries -->
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+
+  <!-- messages your nodes use -->
+  <depend>sensor_msgs</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>control_msgs</depend>
+
+  <!-- plugin infrastructure & hardware abstraction -->
+  <depend>pluginlib</depend>
+  <depend>hardware_interface</depend>
+
+  <!-- ros2_control core and controller packages -->
+  <depend>ros2_control</depend>
+  <depend>controller_manager</depend>
+  <depend>ros2_controllers</depend>
+  <depend>gazebo_ros2_control</depend>
+
+  <export>
+    <!-- ament build type -->
+    <build_type>ament_cmake</build_type>
+    <!-- point pluginlib to your hardware_sim plugin xml -->
+    <pluginlib plugin="${prefix}/DefaultRobotHWSim.xml"/>
+  </export>
+</package>

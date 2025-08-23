@@ -19,7 +19,7 @@ find_package(hardware_interface REQUIRED)
 find_package(ros2_control       REQUIRED)
 find_package(controller_manager REQUIRED)
 find_package(ros2_controllers   REQUIRED)
-find_package(gazebo_ros2_control REQUIRED)
+find_package(gz_ros2_control REQUIRED)  # CHANGED: gazebo_ros2_control -> gz_ros2_control
 
 # 1) C++ hardware‐bridge node
 add_executable(hardware_bridge_node src/hardware_bridge_node.cpp)

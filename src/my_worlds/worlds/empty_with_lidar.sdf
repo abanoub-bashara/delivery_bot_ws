@@ -1,16 +1,15 @@
 <?xml version="1.0" ?>
-<sdf version="1.8">
+<sdf version="1.10">
   <world name="empty_with_lidar">
     
     <!-- Essential plugins only -->
-    <plugin filename="libignition-gazebo-physics-system.so" name="ignition::gazebo::systems::Physics"/>
-    <plugin filename="libignition-gazebo-user-commands-system.so" name="ignition::gazebo::systems::UserCommands"/>
-    <plugin filename="libignition-gazebo-scene-broadcaster-system.so" name="ignition::gazebo::systems::SceneBroadcaster"/>
-    <plugin filename="libignition-gazebo-sensors-system.so" name="ignition::gazebo::systems::Sensors">
-      <render_engine>ogre2</render_engine>
-    </plugin>
-    <plugin filename="libignition-gazebo-imu-system.so" name="ignition::gazebo::systems::Imu"/>
 
+<!-- Updated plugins for Gazebo Harmonic -->
+    <plugin filename="libgz-sim-physics-system.so" name="gz::sim::systems::Physics"/>
+    <plugin filename="libgz-sim-user-commands-system.so" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="libgz-sim-scene-broadcaster-system.so" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="libgz-sim-imu-system.so" name="gz::sim::systems::Imu"/>
+    
     <!-- Physics -->
     <physics name="1ms" type="ignored">
       <max_step_size>0.001</max_step_size>
@@ -56,6 +55,148 @@
       </link>
     </model>
 
+    
+    <model name="maze_env">
+      <static>true</static>
+
+      <!-- Helper material colors -->
+      <!-- Perimeter walls (darker) -->
+      <!-- Internal walls (lighter) -->
+
+      <!-- Perimeter (square ~20x20) -->
+      <link name="wall_north">
+        <pose>0 10 0.5 0 0 0</pose>
+        <collision name="col">
+          <geometry><box><size>20 0.2 1</size></box></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><box><size>20 0.2 1</size></box></geometry>
+          <material><diffuse>0.3 0.3 0.3 1</diffuse></material>
+        </visual>
+      </link>
+
+      <link name="wall_south">
+        <pose>0 -10 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>20 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>20 0.2 1</size></box></geometry><material><diffuse>0.3 0.3 0.3 1</diffuse></material></visual>
+      </link>
+
+      <link name="wall_east">
+        <pose>10 0 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>0.2 20 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.2 20 1</size></box></geometry><material><diffuse>0.3 0.3 0.3 1</diffuse></material></visual>
+      </link>
+
+      <link name="wall_west">
+        <pose>-10 0 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>0.2 20 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.2 20 1</size></box></geometry><material><diffuse>0.3 0.3 0.3 1</diffuse></material></visual>
+      </link>
+
+      <!-- Entrances (gaps) by shortening perimeter walls with small stubs -->
+      <!-- North entrance gap centered at x = -6 to -3 -->
+      <link name="north_stub_left">
+        <pose>-8.5 10 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>3 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>3 0.2 1</size></box></geometry><material><diffuse>0.25 0.25 0.25 1</diffuse></material></visual>
+      </link>
+      <link name="north_stub_right">
+        <pose>-1.5 10 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>3 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>3 0.2 1</size></box></geometry><material><diffuse>0.25 0.25 0.25 1</diffuse></material></visual>
+      </link>
+
+      <!-- South entrance gap centered at x = 5 to 8 -->
+      <link name="south_stub_left">
+        <pose>1.5 -10 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>3 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>3 0.2 1</size></box></geometry><material><diffuse>0.25 0.25 0.25 1</diffuse></material></visual>
+      </link>
+      <link name="south_stub_right">
+        <pose>8.5 -10 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>3 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>3 0.2 1</size></box></geometry><material><diffuse>0.25 0.25 0.25 1</diffuse></material></visual>
+      </link>
+
+      <!-- Internal walls (simple maze) -->
+      <!-- Long vertical spine -->
+      <link name="inner_vert_spine">
+        <pose>-5 0 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>0.2 14 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.2 14 1</size></box></geometry><material><diffuse>0.7 0.7 0.7 1</diffuse></material></visual>
+      </link>
+
+      <!-- Horizontal segments branching from spine -->
+      <link name="h1">
+        <pose>-2 6 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>6 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>6 0.2 1</size></box></geometry><material><diffuse>0.7 0.7 0.7 1</diffuse></material></visual>
+      </link>
+
+      <link name="h2">
+        <pose>-8 2 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>4 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>4 0.2 1</size></box></geometry><material><diffuse>0.7 0.7 0.7 1</diffuse></material></visual>
+      </link>
+
+      <link name="h3">
+        <pose>-2 -2 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>7 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>7 0.2 1</size></box></geometry><material><diffuse>0.7 0.7 0.7 1</diffuse></material></visual>
+      </link>
+
+      <link name="h4">
+        <pose>-8 -6 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>5 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>5 0.2 1</size></box></geometry><material><diffuse>0.7 0.7 0.7 1</diffuse></material></visual>
+      </link>
+
+      <!-- Right side mini‑maze -->
+      <link name="right_vert1">
+        <pose>3 7 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>0.2 6 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.2 6 1</size></box></geometry><material><diffuse>0.6 0.6 0.6 1</diffuse></material></visual>
+      </link>
+
+      <link name="right_vert2">
+        <pose>6 1 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>0.2 10 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.2 10 1</size></box></geometry><material><diffuse>0.6 0.6 0.6 1</diffuse></material></visual>
+      </link>
+
+      <link name="right_h1">
+        <pose>3 4 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>6 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>6 0.2 1</size></box></geometry><material><diffuse>0.6 0.6 0.6 1</diffuse></material></visual>
+      </link>
+
+      <link name="right_h2">
+        <pose>7 -3 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>4 0.2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>4 0.2 1</size></box></geometry><material><diffuse>0.6 0.6 0.6 1</diffuse></material></visual>
+      </link>
+
+      <link name="right_vert3">
+        <pose>8 -6 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>0.2 6 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.2 6 1</size></box></geometry><material><diffuse>0.6 0.6 0.6 1</diffuse></material></visual>
+      </link>
+
+      <!-- A couple of small pillars as landmarks -->
+      <link name="pillar1">
+        <pose>-3 8 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>0.5 0.5 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.5 0.5 1</size></box></geometry><material><diffuse>0.4 0.5 0.7 1</diffuse></material></visual>
+      </link>
+
+      <link name="pillar2">
+        <pose>5 -8 0.5 0 0 0</pose>
+        <collision name="col"><geometry><box><size>0.5 0.5 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.5 0.5 1</size></box></geometry><material><diffuse>0.7 0.5 0.4 1</diffuse></material></visual>
+      </link>
+
+    </model>
+    <!-- ============================= -->
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
 

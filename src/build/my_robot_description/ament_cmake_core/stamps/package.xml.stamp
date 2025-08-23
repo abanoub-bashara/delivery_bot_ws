@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_robot_description</name>
+  <version>0.1.0</version>
+  <description>URDF and Gazebo simulation for my robot</description>
+  <maintainer email="abanoubbashara5@icloud.com">Abanoub Bashara</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Runtime Dependencies -->
+  <depend>gazebo_ros</depend>
+  <depend>ros2launch</depend>
+  <depend>xacro</depend>
+  <exec_depend>robot_localization</exec_depend>
+
+
+  <!-- Export information -->
+  <export>
+    <build_type>ament_cmake</build_type>
+    <gazebo_ros gazebo_model_path="${prefix}/share/my_robot_description/models"/>
+  </export>
+</package>

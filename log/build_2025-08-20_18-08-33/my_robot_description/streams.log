@@ -1,0 +1,11 @@
+[0.035s] Invoking command in '/home/abanoub/delivery_bot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/my_robot_description -- -j20 -l20
+[0.079s] -- Found robot_localization: 3.8.2 (/opt/ros/jazzy/share/robot_localization/cmake)
+[0.380s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.562s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.812s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.841s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.887s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.927s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.669s] -- Configuring done (2.6s)
+[2.700s] -- Generating done (0.0s)
+[2.714s] -- Build files have been written to: /home/abanoub/delivery_bot_ws/build/my_robot_description

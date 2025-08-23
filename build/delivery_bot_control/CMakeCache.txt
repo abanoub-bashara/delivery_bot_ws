@@ -46,7 +46,7 @@ BUILD_TESTING:BOOL=ON
 Boost_DATE_TIME_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.74.0
 
 //The directory containing a CMake configuration file for Boost.
-Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0
+Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0
 
 Boost_FILESYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0
 
@@ -77,7 +77,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -103,7 +103,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -148,6 +148,9 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+
+//Value Computed by CMake.
+CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/abanoub/delivery_bot_ws/build/delivery_bot_control/CMakeFiles/pkgRedirects
 
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/home/abanoub/delivery_bot_ws/install/delivery_bot_control
@@ -252,6 +255,9 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
+//Path to a program.
+CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -274,7 +280,7 @@ CURL_LIBRARY_DEBUG:FILEPATH=CURL_LIBRARY_DEBUG-NOTFOUND
 CURL_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libcurl.so
 
 //The directory containing a CMake configuration file for CycloneDDS.
-CycloneDDS_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/CycloneDDS
+CycloneDDS_DIR:PATH=/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/CycloneDDS
 
 //The directory containing a CMake configuration file for DART.
 DART_DIR:PATH=/usr/share/dart/cmake
@@ -624,7 +630,7 @@ TINYXML2_LIBRARY_/usr/lib/x86_64-linux-gnu/libtinyxml2.so:FILEPATH=TINYXML2_LIBR
 TINYXML2_LIBRARY_tinyxml2:FILEPATH=/usr/lib/x86_64-linux-gnu/libtinyxml2.so
 
 //The directory containing a CMake configuration file for TinyXML2.
-TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
+TinyXML2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/tinyxml2
 
 //Path to a library.
 UUID_LIBRARY_/usr/lib/x86_64-linux-gnu/libuuid.so:FILEPATH=UUID_LIBRARY_/usr/lib/x86_64-linux-gnu/libuuid.so-NOTFOUND
@@ -642,61 +648,61 @@ ZeroMQ_DIR:PATH=ZeroMQ_DIR-NOTFOUND
 ZeroMQ_LIBRARY_zmq:FILEPATH=/usr/lib/x86_64-linux-gnu/libzmq.so
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libgazebo_hardware_plugins.so
+_lib:FILEPATH=/opt/ros/jazzy/lib/libgz_hardware_plugins.so
 
 //The directory containing a CMake configuration file for action_msgs.
-action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
+action_msgs_DIR:PATH=/opt/ros/jazzy/share/action_msgs/cmake
 
 //The directory containing a CMake configuration file for ament_cmake.
-ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
+ament_cmake_DIR:PATH=/opt/ros/jazzy/share/ament_cmake/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_core.
-ament_cmake_core_DIR:PATH=/opt/ros/humble/share/ament_cmake_core/cmake
+ament_cmake_core_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_core/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_definitions.
-ament_cmake_export_definitions_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_definitions/cmake
+ament_cmake_export_definitions_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_export_definitions/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_dependencies.
-ament_cmake_export_dependencies_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_dependencies/cmake
+ament_cmake_export_dependencies_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_export_dependencies/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_include_directories.
-ament_cmake_export_include_directories_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_include_directories/cmake
+ament_cmake_export_include_directories_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_export_include_directories/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_interfaces.
-ament_cmake_export_interfaces_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_interfaces/cmake
+ament_cmake_export_interfaces_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_export_interfaces/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_libraries.
-ament_cmake_export_libraries_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_libraries/cmake
+ament_cmake_export_libraries_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_export_libraries/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_link_flags.
-ament_cmake_export_link_flags_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_link_flags/cmake
+ament_cmake_export_link_flags_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_export_link_flags/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_targets.
-ament_cmake_export_targets_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_targets/cmake
+ament_cmake_export_targets_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_export_targets/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_gen_version_h.
-ament_cmake_gen_version_h_DIR:PATH=/opt/ros/humble/share/ament_cmake_gen_version_h/cmake
+ament_cmake_gen_version_h_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_gen_version_h/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_include_directories.
-ament_cmake_include_directories_DIR:PATH=/opt/ros/humble/share/ament_cmake_include_directories/cmake
+ament_cmake_include_directories_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_include_directories/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_libraries.
-ament_cmake_libraries_DIR:PATH=/opt/ros/humble/share/ament_cmake_libraries/cmake
+ament_cmake_libraries_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_libraries/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_python.
-ament_cmake_python_DIR:PATH=/opt/ros/humble/share/ament_cmake_python/cmake
+ament_cmake_python_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_python/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_target_dependencies.
-ament_cmake_target_dependencies_DIR:PATH=/opt/ros/humble/share/ament_cmake_target_dependencies/cmake
+ament_cmake_target_dependencies_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_test.
-ament_cmake_test_DIR:PATH=/opt/ros/humble/share/ament_cmake_test/cmake
+ament_cmake_test_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_test/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_version.
-ament_cmake_version_DIR:PATH=/opt/ros/humble/share/ament_cmake_version/cmake
+ament_cmake_version_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_version/cmake
 
 //The directory containing a CMake configuration file for ament_index_cpp.
-ament_index_cpp_DIR:PATH=/opt/ros/humble/share/ament_index_cpp/cmake
+ament_index_cpp_DIR:PATH=/opt/ros/jazzy/share/ament_index_cpp/cmake
 
 //The directory containing a CMake configuration file for angles.
 angles_DIR:PATH=/opt/ros/humble/share/angles/cmake
@@ -711,7 +717,7 @@ boost_date_time_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_date_time-1.74.0
 boost_filesystem_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.74.0
 
 //The directory containing a CMake configuration file for boost_headers.
-boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0
+boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.83.0
 
 //The directory containing a CMake configuration file for boost_iostreams.
 boost_iostreams_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_iostreams-1.74.0
@@ -729,31 +735,31 @@ boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.74.0
 boost_thread_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.74.0
 
 //The directory containing a CMake configuration file for builtin_interfaces.
-builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
+builtin_interfaces_DIR:PATH=/opt/ros/jazzy/share/builtin_interfaces/cmake
 
 //The directory containing a CMake configuration file for ccd.
 ccd_DIR:PATH=/usr/lib/x86_64-linux-gnu/ccd
 
 //The directory containing a CMake configuration file for class_loader.
-class_loader_DIR:PATH=/opt/ros/humble/share/class_loader/cmake
+class_loader_DIR:PATH=/opt/ros/jazzy/share/class_loader/cmake
 
 //The directory containing a CMake configuration file for composition_interfaces.
-composition_interfaces_DIR:PATH=/opt/ros/humble/share/composition_interfaces/cmake
+composition_interfaces_DIR:PATH=/opt/ros/jazzy/share/composition_interfaces/cmake
 
 //The directory containing a CMake configuration file for console_bridge.
 console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
 
 //The directory containing a CMake configuration file for control_msgs.
-control_msgs_DIR:PATH=/opt/ros/humble/share/control_msgs/cmake
+control_msgs_DIR:PATH=/opt/ros/jazzy/share/control_msgs/cmake
 
 //The directory containing a CMake configuration file for controller_interface.
-controller_interface_DIR:PATH=/opt/ros/humble/share/controller_interface/cmake
+controller_interface_DIR:PATH=/opt/ros/jazzy/share/controller_interface/cmake
 
 //The directory containing a CMake configuration file for controller_manager.
-controller_manager_DIR:PATH=/opt/ros/humble/share/controller_manager/cmake
+controller_manager_DIR:PATH=/opt/ros/jazzy/share/controller_manager/cmake
 
 //The directory containing a CMake configuration file for controller_manager_msgs.
-controller_manager_msgs_DIR:PATH=/opt/ros/humble/share/controller_manager_msgs/cmake
+controller_manager_msgs_DIR:PATH=/opt/ros/jazzy/share/controller_manager_msgs/cmake
 
 //Value Computed by CMake
 delivery_bot_control_BINARY_DIR:STATIC=/home/abanoub/delivery_bot_ws/build/delivery_bot_control
@@ -764,14 +770,20 @@ delivery_bot_control_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 delivery_bot_control_SOURCE_DIR:STATIC=/home/abanoub/delivery_bot_ws/src/delivery_bot_control
 
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/jazzy/share/diagnostic_msgs/cmake
+
+//The directory containing a CMake configuration file for diagnostic_updater.
+diagnostic_updater_DIR:PATH=/opt/ros/jazzy/share/diagnostic_updater/cmake
+
 //The directory containing a CMake configuration file for fastcdr.
-fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
+fastcdr_DIR:PATH=/opt/ros/jazzy/lib/cmake/fastcdr
 
 //The directory containing a CMake configuration file for fastrtps.
 fastrtps_DIR:PATH=/opt/ros/humble/share/fastrtps/cmake
 
 //The directory containing a CMake configuration file for fastrtps_cmake_module.
-fastrtps_cmake_module_DIR:PATH=/opt/ros/humble/share/fastrtps_cmake_module/cmake
+fastrtps_cmake_module_DIR:PATH=/opt/ros/jazzy/share/fastrtps_cmake_module/cmake
 
 //The directory containing a CMake configuration file for fmt.
 fmt_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/fmt
@@ -789,25 +801,31 @@ gazebo_dev_DIR:PATH=/opt/ros/humble/share/gazebo_dev/cmake
 gazebo_proto_msgs_lib:FILEPATH=/usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
 
 //The directory containing a CMake configuration file for gazebo_ros2_control.
-gazebo_ros2_control_DIR:PATH=/opt/ros/humble/share/gazebo_ros2_control/cmake
+gazebo_ros2_control_DIR:PATH=gazebo_ros2_control_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for gazebo_ros.
 gazebo_ros_DIR:PATH=/opt/ros/humble/share/gazebo_ros/cmake
 
+//The directory containing a CMake configuration file for generate_parameter_library.
+generate_parameter_library_DIR:PATH=/opt/ros/jazzy/share/generate_parameter_library/cmake
+
 //The directory containing a CMake configuration file for geometry_msgs.
-geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
+geometry_msgs_DIR:PATH=/opt/ros/jazzy/share/geometry_msgs/cmake
+
+//The directory containing a CMake configuration file for gz_ros2_control.
+gz_ros2_control_DIR:PATH=/opt/ros/jazzy/share/gz_ros2_control/cmake
 
 //The directory containing a CMake configuration file for hardware_interface.
-hardware_interface_DIR:PATH=/opt/ros/humble/share/hardware_interface/cmake
+hardware_interface_DIR:PATH=/opt/ros/jazzy/share/hardware_interface/cmake
 
 //The directory containing a CMake configuration file for iceoryx_binding_c.
-iceoryx_binding_c_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_binding_c
+iceoryx_binding_c_DIR:PATH=/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/iceoryx_binding_c
 
 //The directory containing a CMake configuration file for iceoryx_hoofs.
-iceoryx_hoofs_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_hoofs
+iceoryx_hoofs_DIR:PATH=/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/iceoryx_hoofs
 
 //The directory containing a CMake configuration file for iceoryx_posh.
-iceoryx_posh_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_posh
+iceoryx_posh_DIR:PATH=/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/iceoryx_posh
 
 //The directory containing a CMake configuration file for ignition-cmake2.
 ignition-cmake2_DIR:PATH=/usr/share/cmake/ignition-cmake2
@@ -830,29 +848,44 @@ ignition-msgs5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-msgs5
 //The directory containing a CMake configuration file for ignition-transport8.
 ignition-transport8_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-transport8
 
+//The directory containing a CMake configuration file for joint_limits.
+joint_limits_DIR:PATH=/opt/ros/jazzy/share/joint_limits/cmake
+
 //The directory containing a CMake configuration file for jsoncpp.
 jsoncpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/jsoncpp
 
 //The directory containing a CMake configuration file for libstatistics_collector.
-libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/cmake
+libstatistics_collector_DIR:PATH=/opt/ros/jazzy/share/libstatistics_collector/cmake
 
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
 
 //The directory containing a CMake configuration file for lifecycle_msgs.
-lifecycle_msgs_DIR:PATH=/opt/ros/humble/share/lifecycle_msgs/cmake
+lifecycle_msgs_DIR:PATH=/opt/ros/jazzy/share/lifecycle_msgs/cmake
 
 //The directory containing a CMake configuration file for message_filters.
-message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
+message_filters_DIR:PATH=/opt/ros/jazzy/share/message_filters/cmake
 
 //The directory containing a CMake configuration file for nav_msgs.
-nav_msgs_DIR:PATH=/opt/ros/humble/share/nav_msgs/cmake
+nav_msgs_DIR:PATH=/opt/ros/jazzy/share/nav_msgs/cmake
 
 //The directory containing a CMake configuration file for octomap.
 octomap_DIR:PATH=/opt/ros/humble/share/octomap
 
 //Path to a library.
-onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
+onelib:FILEPATH=/opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_world.so
+
+//Path to a library.
+onelibd:FILEPATH=onelibd-NOTFOUND
+
+//The directory containing a CMake configuration file for pal_statistics.
+pal_statistics_DIR:PATH=/opt/ros/jazzy/share/pal_statistics/cmake
+
+//The directory containing a CMake configuration file for pal_statistics_msgs.
+pal_statistics_msgs_DIR:PATH=/opt/ros/jazzy/share/pal_statistics_msgs/cmake
+
+//The directory containing a CMake configuration file for parameter_traits.
+parameter_traits_DIR:PATH=/opt/ros/jazzy/share/parameter_traits/cmake
 
 //Path to a library.
 pkgcfg_lib_BULLET_BulletCollision:FILEPATH=/usr/lib/x86_64-linux-gnu/libBulletCollision.so
@@ -918,58 +951,61 @@ pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 
 //The directory containing a CMake configuration file for pluginlib.
-pluginlib_DIR:PATH=/opt/ros/humble/share/pluginlib/cmake
+pluginlib_DIR:PATH=/opt/ros/jazzy/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for rcl.
-rcl_DIR:PATH=/opt/ros/humble/share/rcl/cmake
+rcl_DIR:PATH=/opt/ros/jazzy/share/rcl/cmake
 
 //The directory containing a CMake configuration file for rcl_action.
-rcl_action_DIR:PATH=/opt/ros/humble/share/rcl_action/cmake
+rcl_action_DIR:PATH=/opt/ros/jazzy/share/rcl_action/cmake
 
 //The directory containing a CMake configuration file for rcl_interfaces.
-rcl_interfaces_DIR:PATH=/opt/ros/humble/share/rcl_interfaces/cmake
+rcl_interfaces_DIR:PATH=/opt/ros/jazzy/share/rcl_interfaces/cmake
 
 //The directory containing a CMake configuration file for rcl_lifecycle.
-rcl_lifecycle_DIR:PATH=/opt/ros/humble/share/rcl_lifecycle/cmake
+rcl_lifecycle_DIR:PATH=/opt/ros/jazzy/share/rcl_lifecycle/cmake
 
 //The directory containing a CMake configuration file for rcl_logging_interface.
-rcl_logging_interface_DIR:PATH=/opt/ros/humble/share/rcl_logging_interface/cmake
+rcl_logging_interface_DIR:PATH=/opt/ros/jazzy/share/rcl_logging_interface/cmake
 
 //The directory containing a CMake configuration file for rcl_logging_spdlog.
 rcl_logging_spdlog_DIR:PATH=/opt/ros/humble/share/rcl_logging_spdlog/cmake
 
 //The directory containing a CMake configuration file for rcl_yaml_param_parser.
-rcl_yaml_param_parser_DIR:PATH=/opt/ros/humble/share/rcl_yaml_param_parser/cmake
+rcl_yaml_param_parser_DIR:PATH=/opt/ros/jazzy/share/rcl_yaml_param_parser/cmake
 
 //The directory containing a CMake configuration file for rclcpp.
-rclcpp_DIR:PATH=/opt/ros/humble/share/rclcpp/cmake
+rclcpp_DIR:PATH=/opt/ros/jazzy/share/rclcpp/cmake
 
 //The directory containing a CMake configuration file for rclcpp_action.
-rclcpp_action_DIR:PATH=/opt/ros/humble/share/rclcpp_action/cmake
+rclcpp_action_DIR:PATH=/opt/ros/jazzy/share/rclcpp_action/cmake
 
 //The directory containing a CMake configuration file for rclcpp_components.
-rclcpp_components_DIR:PATH=/opt/ros/humble/share/rclcpp_components/cmake
+rclcpp_components_DIR:PATH=/opt/ros/jazzy/share/rclcpp_components/cmake
 
 //The directory containing a CMake configuration file for rclcpp_lifecycle.
-rclcpp_lifecycle_DIR:PATH=/opt/ros/humble/share/rclcpp_lifecycle/cmake
+rclcpp_lifecycle_DIR:PATH=/opt/ros/jazzy/share/rclcpp_lifecycle/cmake
+
+//The directory containing a CMake configuration file for rclpy.
+rclpy_DIR:PATH=/opt/ros/jazzy/share/rclpy/cmake
 
 //The directory containing a CMake configuration file for rcpputils.
-rcpputils_DIR:PATH=/opt/ros/humble/share/rcpputils/cmake
+rcpputils_DIR:PATH=/opt/ros/jazzy/share/rcpputils/cmake
 
 //The directory containing a CMake configuration file for rcutils.
-rcutils_DIR:PATH=/opt/ros/humble/share/rcutils/cmake
+rcutils_DIR:PATH=/opt/ros/jazzy/share/rcutils/cmake
 
 //The directory containing a CMake configuration file for realtime_tools.
-realtime_tools_DIR:PATH=/opt/ros/humble/share/realtime_tools/cmake
+realtime_tools_DIR:PATH=/opt/ros/jazzy/share/realtime_tools/cmake
 
 //The directory containing a CMake configuration file for rmw.
-rmw_DIR:PATH=/opt/ros/humble/share/rmw/cmake
+rmw_DIR:PATH=/opt/ros/jazzy/share/rmw/cmake
 
 //The directory containing a CMake configuration file for rmw_cyclonedds_cpp.
-rmw_cyclonedds_cpp_DIR:PATH=/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake
+rmw_cyclonedds_cpp_DIR:PATH=/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake
 
 //The directory containing a CMake configuration file for rmw_dds_common.
-rmw_dds_common_DIR:PATH=/opt/ros/humble/share/rmw_dds_common/cmake
+rmw_dds_common_DIR:PATH=/opt/ros/jazzy/share/rmw_dds_common/cmake
 
 //The directory containing a CMake configuration file for rmw_fastrtps_cpp.
 rmw_fastrtps_cpp_DIR:PATH=/opt/ros/humble/share/rmw_fastrtps_cpp/cmake
@@ -978,22 +1014,22 @@ rmw_fastrtps_cpp_DIR:PATH=/opt/ros/humble/share/rmw_fastrtps_cpp/cmake
 rmw_fastrtps_shared_cpp_DIR:PATH=/opt/ros/humble/share/rmw_fastrtps_shared_cpp/cmake
 
 //The directory containing a CMake configuration file for rmw_implementation.
-rmw_implementation_DIR:PATH=/opt/ros/humble/share/rmw_implementation/cmake
+rmw_implementation_DIR:PATH=/opt/ros/jazzy/share/rmw_implementation/cmake
 
 //The directory containing a CMake configuration file for rmw_implementation_cmake.
-rmw_implementation_cmake_DIR:PATH=/opt/ros/humble/share/rmw_implementation_cmake/cmake
+rmw_implementation_cmake_DIR:PATH=/opt/ros/jazzy/share/rmw_implementation_cmake/cmake
 
 //The directory containing a CMake configuration file for ros2_control.
-ros2_control_DIR:PATH=/opt/ros/humble/share/ros2_control/cmake
+ros2_control_DIR:PATH=/opt/ros/jazzy/share/ros2_control/cmake
 
 //The directory containing a CMake configuration file for ros2_control_test_assets.
 ros2_control_test_assets_DIR:PATH=/opt/ros/humble/share/ros2_control_test_assets/cmake
 
 //The directory containing a CMake configuration file for ros2_controllers.
-ros2_controllers_DIR:PATH=/opt/ros/humble/share/ros2_controllers/cmake
+ros2_controllers_DIR:PATH=/opt/ros/jazzy/share/ros2_controllers/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
-rosgraph_msgs_DIR:PATH=/opt/ros/humble/share/rosgraph_msgs/cmake
+rosgraph_msgs_DIR:PATH=/opt/ros/jazzy/share/rosgraph_msgs/cmake
 
 //The directory containing a CMake configuration file for rosidl_adapter.
 rosidl_adapter_DIR:PATH=/opt/ros/humble/share/rosidl_adapter/cmake
@@ -1001,47 +1037,62 @@ rosidl_adapter_DIR:PATH=/opt/ros/humble/share/rosidl_adapter/cmake
 //The directory containing a CMake configuration file for rosidl_cmake.
 rosidl_cmake_DIR:PATH=/opt/ros/humble/share/rosidl_cmake/cmake
 
+//The directory containing a CMake configuration file for rosidl_core_runtime.
+rosidl_core_runtime_DIR:PATH=/opt/ros/jazzy/share/rosidl_core_runtime/cmake
+
 //The directory containing a CMake configuration file for rosidl_default_runtime.
-rosidl_default_runtime_DIR:PATH=/opt/ros/humble/share/rosidl_default_runtime/cmake
+rosidl_default_runtime_DIR:PATH=/opt/ros/jazzy/share/rosidl_default_runtime/cmake
+
+//The directory containing a CMake configuration file for rosidl_dynamic_typesupport.
+rosidl_dynamic_typesupport_DIR:PATH=/opt/ros/jazzy/share/rosidl_dynamic_typesupport/cmake
 
 //The directory containing a CMake configuration file for rosidl_generator_c.
-rosidl_generator_c_DIR:PATH=/opt/ros/humble/share/rosidl_generator_c/cmake
+rosidl_generator_c_DIR:PATH=/opt/ros/jazzy/share/rosidl_generator_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_generator_cpp.
-rosidl_generator_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_generator_cpp/cmake
+rosidl_generator_cpp_DIR:PATH=/opt/ros/jazzy/share/rosidl_generator_cpp/cmake
+
+//The directory containing a CMake configuration file for rosidl_generator_type_description.
+rosidl_generator_type_description_DIR:PATH=/opt/ros/jazzy/share/rosidl_generator_type_description/cmake
 
 //The directory containing a CMake configuration file for rosidl_runtime_c.
-rosidl_runtime_c_DIR:PATH=/opt/ros/humble/share/rosidl_runtime_c/cmake
+rosidl_runtime_c_DIR:PATH=/opt/ros/jazzy/share/rosidl_runtime_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_runtime_cpp.
-rosidl_runtime_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_runtime_cpp/cmake
+rosidl_runtime_cpp_DIR:PATH=/opt/ros/jazzy/share/rosidl_runtime_cpp/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_c.
-rosidl_typesupport_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_c/cmake
+rosidl_typesupport_c_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesupport_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_cpp.
-rosidl_typesupport_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_cpp/cmake
+rosidl_typesupport_cpp_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesupport_cpp/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_fastrtps_c.
-rosidl_typesupport_fastrtps_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake
+rosidl_typesupport_fastrtps_c_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_fastrtps_cpp.
-rosidl_typesupport_fastrtps_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/cmake
+rosidl_typesupport_fastrtps_cpp_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_interface.
-rosidl_typesupport_interface_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_interface/cmake
+rosidl_typesupport_interface_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesupport_interface/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_introspection_c.
-rosidl_typesupport_introspection_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_introspection_c/cmake
+rosidl_typesupport_introspection_c_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesupport_introspection_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_introspection_cpp.
-rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/cmake
+rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/cmake
+
+//The directory containing a CMake configuration file for rsl.
+rsl_DIR:PATH=/opt/ros/jazzy/share/rsl/cmake
 
 //The directory containing a CMake configuration file for sdformat9.
 sdformat9_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/sdformat9
 
 //The directory containing a CMake configuration file for sensor_msgs.
-sensor_msgs_DIR:PATH=/opt/ros/humble/share/sensor_msgs/cmake
+sensor_msgs_DIR:PATH=/opt/ros/jazzy/share/sensor_msgs/cmake
+
+//The directory containing a CMake configuration file for service_msgs.
+service_msgs_DIR:PATH=/opt/ros/jazzy/share/service_msgs/cmake
 
 //The directory containing a CMake configuration file for spdlog.
 spdlog_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/spdlog
@@ -1050,34 +1101,55 @@ spdlog_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/spdlog
 spdlog_vendor_DIR:PATH=/opt/ros/humble/share/spdlog_vendor/cmake
 
 //The directory containing a CMake configuration file for statistics_msgs.
-statistics_msgs_DIR:PATH=/opt/ros/humble/share/statistics_msgs/cmake
+statistics_msgs_DIR:PATH=/opt/ros/jazzy/share/statistics_msgs/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
-std_msgs_DIR:PATH=/opt/ros/humble/share/std_msgs/cmake
+std_msgs_DIR:PATH=/opt/ros/jazzy/share/std_msgs/cmake
+
+//The directory containing a CMake configuration file for tcb_span.
+tcb_span_DIR:PATH=/opt/ros/jazzy/share/tcb_span/cmake
 
 //The directory containing a CMake configuration file for tf2.
-tf2_DIR:PATH=/opt/ros/humble/share/tf2/cmake
+tf2_DIR:PATH=/opt/ros/jazzy/share/tf2/cmake
 
 //The directory containing a CMake configuration file for tf2_msgs.
-tf2_msgs_DIR:PATH=/opt/ros/humble/share/tf2_msgs/cmake
+tf2_msgs_DIR:PATH=/opt/ros/jazzy/share/tf2_msgs/cmake
 
 //The directory containing a CMake configuration file for tf2_ros.
-tf2_ros_DIR:PATH=/opt/ros/humble/share/tf2_ros/cmake
+tf2_ros_DIR:PATH=/opt/ros/jazzy/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tinyobjloader.
 tinyobjloader_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/tinyobjloader
 
 //The directory containing a CMake configuration file for tinyxml2_vendor.
-tinyxml2_vendor_DIR:PATH=/opt/ros/humble/share/tinyxml2_vendor/cmake
+tinyxml2_vendor_DIR:PATH=/opt/ros/jazzy/share/tinyxml2_vendor/cmake
+
+//The directory containing a CMake configuration file for tl_expected.
+tl_expected_DIR:PATH=/opt/ros/jazzy/share/tl_expected/cmake
 
 //The directory containing a CMake configuration file for tracetools.
-tracetools_DIR:PATH=/opt/ros/humble/share/tracetools/cmake
+tracetools_DIR:PATH=/opt/ros/jazzy/share/tracetools/cmake
 
 //The directory containing a CMake configuration file for trajectory_msgs.
-trajectory_msgs_DIR:PATH=/opt/ros/humble/share/trajectory_msgs/cmake
+trajectory_msgs_DIR:PATH=/opt/ros/jazzy/share/trajectory_msgs/cmake
+
+//The directory containing a CMake configuration file for type_description_interfaces.
+type_description_interfaces_DIR:PATH=/opt/ros/jazzy/share/type_description_interfaces/cmake
 
 //The directory containing a CMake configuration file for unique_identifier_msgs.
-unique_identifier_msgs_DIR:PATH=/opt/ros/humble/share/unique_identifier_msgs/cmake
+unique_identifier_msgs_DIR:PATH=/opt/ros/jazzy/share/unique_identifier_msgs/cmake
+
+//The directory containing a CMake configuration file for urdf.
+urdf_DIR:PATH=/opt/ros/jazzy/share/urdf/cmake
+
+//The directory containing a CMake configuration file for urdf_parser_plugin.
+urdf_parser_plugin_DIR:PATH=/opt/ros/jazzy/share/urdf_parser_plugin/cmake
+
+//The directory containing a CMake configuration file for urdfdom.
+urdfdom_DIR:PATH=/opt/ros/jazzy/lib/x86_64-linux-gnu/urdfdom/cmake
+
+//The directory containing a CMake configuration file for urdfdom_headers.
+urdfdom_headers_DIR:PATH=/opt/ros/jazzy/lib/x86_64-linux-gnu/urdfdom_headers/cmake
 
 //The directory containing a CMake configuration file for yaml-cpp.
 yaml-cpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp
@@ -1139,9 +1211,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/abanoub/delivery_bot_ws/build/delivery_bot_co
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=22
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=28
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -1246,7 +1318,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.22
+CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.28
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -1273,6 +1345,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_STRIP
 CMAKE_STRIP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_TAPI
+CMAKE_TAPI-ADVANCED:INTERNAL=1
 //uname command
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
@@ -1320,7 +1394,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding Protobuf
 FIND_PACKAGE_MESSAGE_DETAILS_Protobuf:INTERNAL=[/usr/lib/x86_64-linux-gnu/libprotobuf.so][/usr/include][v3.12.4(3)]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3][cfound components: Interpreter ][v3.10.12()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3][cfound components: Interpreter ][v3.12.3()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding UUID
@@ -1905,6 +1979,8 @@ ZeroMQ_libzmq _INCLUDEDIR:INTERNAL=
 ZeroMQ_libzmq _LIBDIR:INTERNAL=
 ZeroMQ_libzmq _PREFIX:INTERNAL=
 ZeroMQ_libzmq _VERSION:INTERNAL=
+//linker supports push/pop state
+_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 _OPENSSL_CFLAGS:INTERNAL=
 _OPENSSL_CFLAGS_I:INTERNAL=
 _OPENSSL_CFLAGS_OTHER:INTERNAL=
@@ -1940,10 +2016,16 @@ _OPENSSL_openssl_INCLUDEDIR:INTERNAL=
 _OPENSSL_openssl_LIBDIR:INTERNAL=
 _OPENSSL_openssl_PREFIX:INTERNAL=
 _OPENSSL_openssl_VERSION:INTERNAL=
+//Compiler reason failure
+_Python3_Compiler_REASON_FAILURE:INTERNAL=
+//Development reason failure
+_Python3_Development_REASON_FAILURE:INTERNAL=
 _Python3_EXECUTABLE:INTERNAL=/usr/bin/python3
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;cpython-310-x86_64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=0f3e53742e142b1d9e50e4ca5b901dd8
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;3;64;32;;cpython-312-x86_64-linux-gnu;abi3;/usr/lib/python3.12;/usr/lib/python3.12;/usr/local/lib/python3.12/dist-packages;/usr/local/lib/python3.12/dist-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=4c8bfa8951e99fa32e4000a94f8c04a2
+//NumPy reason failure
+_Python3_NumPy_REASON_FAILURE:INTERNAL=
 __pkg_config_arguments_BULLET:INTERNAL=bullet>=2.82
 __pkg_config_arguments_JSONCPP:INTERNAL=jsoncpp
 __pkg_config_arguments_OGRE_PKGC:INTERNAL=OGRE

@@ -3,9 +3,10 @@ import os
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess, RegisterEventHandler, TimerAction
 from launch.event_handlers import OnProcessExit
-from launch_ros.actions import Node
+from launch_ros.actions import Node, LifecycleNode
 from xacro import process_file
 from ament_index_python.packages import get_package_share_directory
+
 
 
 def generate_launch_description():
@@ -19,10 +20,12 @@ def generate_launch_description():
     robot_desc = process_file(xacro_path).toxml()
 
     #load config files for nodes
-    teleop_config_file = os.path.join(control_pkg, 'config', 'teleop_joy.yaml')
+    teleop_config_file = os.path.join(control_pkg, 'config', 'teleop.yaml')
+    joy_config_file = os.path.join(control_pkg, 'config', 'joy.yaml')
     ekf_config_file = os.path.join(control_pkg, 'config', 'ekf.yaml')
     slam_config_file = os.path.join(nav_pkg, 'config', 'slam.params.yaml')
-
+    #make sure slam file is right: 
+    print(f"Slam config file: {slam_config_file}")
     # Built‑in empty world for Ignition Gazebo 6 (Fortress)
     world_path = '/home/abanoub/delivery_bot_ws/src/my_worlds/worlds/empty_with_lidar.sdf'
 
@@ -33,9 +36,10 @@ def generate_launch_description():
 
     # --- Nodes ---
 
-    # 1) Start Gazebo (server+GUI)
-    ign_gazebo = ExecuteProcess(
-        cmd=['ign', 'gazebo', world_path, '-r', '-v', '1'], #'-s' means headless (no gui)
+
+    # 1) Start Gazebo (server+GUI) - CHANGED: Use 'gz sim' instead of 'ign gazebo'
+    gz_gazebo = ExecuteProcess(
+        cmd=['gz', 'sim', world_path, '-r', '-v', '1'],  # Changed from 'ign gazebo'
         output='screen',
         additional_env={'GZ_SIM_RESOURCE_PATH': gazebo_model_path},
     )
@@ -51,18 +55,19 @@ def generate_launch_description():
         }],
     )
 
-    # 3) Bridge essentials (clock + lidar topics)
+    # 3) Bridge essentials - CHANGED: Updated bridge syntax
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[
             '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
-            '/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
-            '/imu@sensor_msgs/msg/Imu@gz.msgs.IMU',
+            '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',  # Fixed syntax
+            '/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',  # Fixed syntax
         ],
         parameters=[{'use_sim_time': True}],
         output='screen',
     )
+    
     
     spawn = Node(
         package='ros_gz_sim',
@@ -102,65 +107,13 @@ def generate_launch_description():
             Node(
                 package='controller_manager', executable='spawner', output='screen',
                 arguments=[
-                    'omni_wheel_drive_controller',
+                    'omni_drive_controller',  # Changed from 'omni_wheel_drive_controller'
                     '--controller-manager', '/controller_manager',
                     '--controller-manager-timeout', '60.0',
                     '--switch-timeout', '60.0',
                 ],
             )
         ]
-    )
-    
-    # wheel_test_node = TimerAction(
-    #     period=20.0,  # Start after controllers are fully initialized
-    #     actions=[
-    #         Node(
-    #             package='delivery_bot_control',
-    #             executable='wheel_direction_test',  # Make sure this matches your executable name
-    #             output='screen',
-    #             parameters=[{
-    #                 'wheel_radius': 0.024,
-    #                 'robot_radius': 0.1155,
-    #                 'wheel_angles_deg': [0.0, 120.0, 240.0],
-    #                 'use_sim_time': True,
-    #             }]
-    #         )
-    #     ]
-    # )
-
-    # 6) YOUR CUSTOM NODES
-    kinematics_node = Node(
-        package='delivery_bot_control',
-        executable='omni_kinematics_node.py',
-        output='screen',
-        parameters=[{
-            'wheel_radius': 0.024,
-            'robot_radius': 0.1155,
-            'wheel_angles_deg': [150.0, 30.0, 270.0],
-            'cmd_rate': 50.0,
-            'cmd_timeout': 0.5,
-            'use_sim_time': True,
-            'max_wheel_accel': 20.0,
-            'max_wheel_speed': 80.0,
-            'max_wheel_jerk': 0.0,
-            # ADD THESE MISSING PARAMETERS:
-            'ramp_mode': 'body_coordinated',
-            'wheel_joint_names': ['wheel1_joint', 'wheel2_joint', 'wheel3_joint'],
-            'sign_correction': [1.0, 1.0, 1.0]
-        }]
-    )
-
-    odometry_node = Node(
-        package='delivery_bot_control',
-        executable='odometry_node.py',
-        output='screen',
-        parameters=[{
-            'wheel_radius': 0.024,
-            'robot_radius': 0.1155,
-            'use_sim_time': True,
-            'publish_tf': False, 
-        }],
-        remappings=[('/odom', '/wheel_odom')]  
     )
 
     ekf = Node(
@@ -170,37 +123,50 @@ def generate_launch_description():
         output='screen',
         parameters=[ekf_config_file],
         remappings=[
-            ('odometry/filtered', '/odom'),  # Remap EKF output from /odometry/filtered to /odom
+            ('/odometry/filtered', '/odom'),  # Remap EKF output from /odometry/filtered to /odom
         ]
     )
     
-    slam = Node(
+    slam = LifecycleNode(
         package='slam_toolbox',
         executable='async_slam_toolbox_node',
-        name='async_slam_toolbox_node',
+        name='slam_toolbox',     # <-- must match the name below in node_names
+        namespace='',            # <-- REQUIRED in Jazzy even if empty
         output='screen',
-        parameters=[{'use_sim_time': True}, 
-                    slam_config_file],
+        parameters=[slam_config_file]
+    )
+
+    # 2) Lifecycle manager that will auto-configure/activate slam_toolbox
+    manager = Node(
+        package='nav2_lifecycle_manager',
+        executable='lifecycle_manager',
+        name='lifecycle_manager_slam',
+        output='screen',
+        parameters=[{
+            'autostart': True,            # drive transitions automatically
+            'node_names': ['slam_toolbox'],  # must match the LifecycleNode name
+            'use_sim_time': True
+        }]
     )
 
     joy_node = Node(
         package='joy',
         executable='joy_node',
         name='joy_node',
-        parameters=[teleop_config_file],
+        parameters=[joy_config_file],   # joystick params
         output='screen'
     )
 
     teleop_node = Node(
         package='teleop_twist_joy',
-        executable='teleop_node',
+        executable='teleop_node',       # <-- this is the correct executable
         name='teleop_twist_joy_node',
-        parameters=[teleop_config_file],
-        remappings=[
-            ('cmd_vel', '/cmd_vel'),
-        ],
+        parameters=[teleop_config_file,
+                    {'publish_stamped_twist': True}], # teleop params
+        remappings=[('/cmd_vel', '/omni_drive_controller/cmd_vel')],
         output='screen'
     )
+
 
     rviz = Node(
         package='rviz2',
@@ -211,18 +177,16 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        ign_gazebo,
+        gz_gazebo,
         state_pub,
         bridge,
         spawn,
         wait_for_controllers,
         spawn_drive_controller,
-        # wheel_test_node,
-        kinematics_node,
-        odometry_node,
         ekf,
         joy_node,
         teleop_node,
         slam,
+        manager,
         rviz,
     ])

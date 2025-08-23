@@ -319,14 +319,14 @@ ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/my_robot_de
 # install(FILES "/home/abanoub/delivery_bot_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_robot_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/my_robot_description" FILES "/home/abanoub/delivery_bot_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_robot_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/my_robot_description/environment")
-ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/my_robot_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/my_robot_description/environment")
+# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/my_robot_description/environment")
+ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/my_robot_description" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/my_robot_description/environment")
 
 # install(FILES "/home/abanoub/delivery_bot_ws/build/my_robot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/my_robot_description/environment")
 ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/my_robot_description" FILES "/home/abanoub/delivery_bot_ws/build/my_robot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/my_robot_description/environment")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/my_robot_description/environment")
-ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/my_robot_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/my_robot_description/environment")
+# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/my_robot_description/environment")
+ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/my_robot_description" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/my_robot_description/environment")
 
 # install(FILES "/home/abanoub/delivery_bot_ws/build/my_robot_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/my_robot_description/environment")
 ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/my_robot_description" FILES "/home/abanoub/delivery_bot_ws/build/my_robot_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/my_robot_description/environment")

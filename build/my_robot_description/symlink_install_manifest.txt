@@ -56,7 +56,7 @@
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/urdf/config.json
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/urdf/robot_v3.xacro
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/launch/gazebo.launch.py
-/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/launch/gazebo_v2.launch.py
+/home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/launch/slam.launch.py
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
 /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh

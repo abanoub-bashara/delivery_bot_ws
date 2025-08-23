@@ -1,1 +1,1 @@
-gazebo_ros:robot_localization:ros2launch:xacro
+nav2_lifecycle_manager:robot_localization:ros2launch:ros_gz_sim:slam_toolbox:xacro

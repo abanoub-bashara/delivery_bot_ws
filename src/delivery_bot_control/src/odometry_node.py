@@ -16,12 +16,12 @@ class OdometryNode(Node):
         # --- Params (must match your kinematics/controller) ---
         self.declare_parameter('wheel_radius', 0.024)
         self.declare_parameter('robot_radius', 0.1155)
-        self.declare_parameter('wheel_angles_deg', [150.0, 30.0, 270.0])
+        self.declare_parameter('wheel_angles_deg', [30.0, 150.0, 270.0])
         self.declare_parameter('joint_names', ['wheel1_joint','wheel2_joint','wheel3_joint'])
         self.declare_parameter('frame_id', 'odom')
         self.declare_parameter('child_frame_id', 'base_link')
         self.declare_parameter('rate', 50.0)  # only used for dt fallback
-        self.declare_parameter('publish_tf', True)
+        self.declare_parameter('publish_tf', False)
         self.publish_tf = bool(self.get_parameter('publish_tf').value)
 
 
@@ -44,7 +44,7 @@ class OdometryNode(Node):
 
         # IO
         self.sub = self.create_subscription(JointState, '/joint_states', self._on_js, 50)
-        self.odom_pub  = self.create_publisher(Odometry, '/odom', 50)
+        self.odom_pub  = self.create_publisher(Odometry, '/wheel_odom', 50)
         self.tf_br     = TransformBroadcaster(self)
 
         self.get_logger().info('Omni odometry ready.')

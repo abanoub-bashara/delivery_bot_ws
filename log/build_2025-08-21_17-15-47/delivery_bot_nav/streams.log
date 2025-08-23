@@ -1,0 +1,89 @@
+[0.016s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_nav -- -j20 -l20
+[0.048s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.297s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.320s] -- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.396s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.405s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.418s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.433s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.954s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.981s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.404s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.462s] -- Found FastRTPS: /opt/ros/humble/include (Required is at least version "2.13") 
+[1.505s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.042s] -- Found rclcpp_components: 28.1.11 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[2.221s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.379s] -- Found trajectory_msgs: 5.3.6 (/opt/ros/jazzy/share/trajectory_msgs/cmake)
+[2.508s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[2.626s] -- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[3.242s] -- Found control_msgs: 5.5.0 (/opt/ros/jazzy/share/control_msgs/cmake)
+[3.452s] -- Found pluginlib: 5.4.2 (/opt/ros/jazzy/share/pluginlib/cmake)
+[3.493s] -- Found hardware_interface: 4.35.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[4.678s] -- Found ros2_control: 4.35.0 (/opt/ros/jazzy/share/ros2_control/cmake)
+[4.699s] -- Found controller_manager: 4.35.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+[5.644s] -- Found ros2_controllers: 4.30.1 (/opt/ros/jazzy/share/ros2_controllers/cmake)
+[5.677s] -- Found gz_ros2_control: 1.2.14 (/opt/ros/jazzy/share/gz_ros2_control/cmake)
+[5.820s] -- Configuring done (5.8s)
+[5.837s] -- Generating done (0.0s)
+[5.841s] -- Build files have been written to: /home/abanoub/delivery_bot_ws/build/delivery_bot_nav
+[5.873s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_nav -- -j20 -l20
+[5.875s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_nav
+[5.883s] -- Install configuration: ""
+[5.883s] -- Execute custom install script
+[5.884s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/amcl_params.yaml
+[5.884s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/behaviour_trees/navigate_through_poses_w_replanning_and_recovery.xml
+[5.884s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/behaviour_trees/navigate_to_pose_w_replanning_and_recovery.xml
+[5.884s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/costmap_common.yaml
+[5.884s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/global_costmap.yaml
+[5.884s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/local_costmap.yaml
+[5.884s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/nav2_params.yaml
+[5.884s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/config/slam.params.yaml
+[5.885s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[5.885s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[5.885s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[5.885s]   Use the cmake_policy command to set the policy and suppress this warning.
+[5.885s] Call Stack (most recent call first):
+[5.885s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[5.885s]   cmake_install.cmake:46 (include)
+[5.885s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[5.885s] [0m
+[5.885s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/build/.built_by
+[5.885s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/build/COLCON_IGNORE
+[5.885s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/.colcon_install_layout
+[5.886s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/COLCON_IGNORE
+[5.886s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/_local_setup_util_ps1.py
+[5.886s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/_local_setup_util_sh.py
+[5.886s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/local_setup.bash
+[5.886s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/local_setup.ps1
+[5.886s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/local_setup.sh
+[5.886s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/local_setup.zsh
+[5.886s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/setup.bash
+[5.886s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/setup.ps1
+[5.886s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/setup.sh
+[5.887s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/install/setup.zsh
+[5.887s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/localization.launch.py
+[5.887s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/log/COLCON_IGNORE
+[5.887s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/log/build_2025-07-19_12-27-53/events.log
+[5.887s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/log/build_2025-07-19_12-27-53/logger_all.log
+[5.887s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/log/latest/events.log
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/log/latest/logger_all.log
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/log/latest_build/events.log
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/log/latest_build/logger_all.log
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/nav2_bringup.launch.py
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/launch/nav2_bt_navigator.launch.py
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/ament_index/resource_index/package_run_dependencies/delivery_bot_nav
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/ament_index/resource_index/parent_prefix_path/delivery_bot_nav
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/ament_prefix_path.sh
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/ament_prefix_path.dsv
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/path.sh
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/environment/path.dsv
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.bash
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.sh
+[5.888s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.zsh
+[5.889s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/local_setup.dsv
+[5.889s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.dsv
+[5.897s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/ament_index/resource_index/packages/delivery_bot_nav
+[5.897s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/cmake/delivery_bot_navConfig.cmake
+[5.897s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/cmake/delivery_bot_navConfig-version.cmake
+[5.897s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/delivery_bot_nav/share/delivery_bot_nav/package.xml
+[5.899s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_nav
