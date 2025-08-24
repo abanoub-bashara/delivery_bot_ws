@@ -24,7 +24,7 @@ omni_drive_controller:
         "wheel3_joint",
       ]
 
-    robot_radius: 0.128 #0.115 + 0.0125 (radius + half wheel width)
+    robot_radius: 0.1297 # for cylindrical wheels: 0.115 + 0.0125 (radius + half wheel width)
     wheel_radius: 0.024
 
     odom_frame_id: odom

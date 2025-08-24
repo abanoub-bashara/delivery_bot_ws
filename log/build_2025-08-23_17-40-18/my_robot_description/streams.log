@@ -1,0 +1,138 @@
+[0.168s] Invoking command in '/home/abanoub/delivery_bot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/my_robot_description -- -j20 -l20
+[0.324s] Invoked command in '/home/abanoub/delivery_bot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/my_robot_description -- -j20 -l20
+[0.414s] Invoking command in '/home/abanoub/delivery_bot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/my_robot_description
+[0.461s] -- Install configuration: ""
+[0.462s] -- Execute custom install script
+[0.463s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/base_link.part
+[0.463s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/base_link.stl
+[0.463s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/column_support.part
+[0.463s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/column_support.stl
+[0.463s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/geared_dc_motor_with_encoder___ts_25ga370h.part
+[0.463s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/geared_dc_motor_with_encoder___ts_25ga370h.stl
+[0.464s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/motor_mount.part
+[0.464s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/motor_mount.stl
+[0.464s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_1.part
+[0.464s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_1.stl
+[0.464s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_10.part
+[0.464s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_10.stl
+[0.464s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_11.part
+[0.464s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_11.stl
+[0.464s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_12.part
+[0.464s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_12.stl
+[0.465s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_13.part
+[0.465s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_13.stl
+[0.465s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_14.part
+[0.465s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_14.stl
+[0.465s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_15.part
+[0.465s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_15.stl
+[0.465s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_16.part
+[0.465s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_16.stl
+[0.465s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_17.part
+[0.465s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_17.stl
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_18.part
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_18.stl
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_19.part
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_19.stl
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_1__2.part
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_1__2.stl
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_2.part
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_2.stl
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_20.part
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_20.stl
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_3.part
+[0.466s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_3.stl
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_4.part
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_4.stl
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_5.part
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_5.stl
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_6.part
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_6.stl
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_7.part
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_7.stl
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_8.part
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_8.stl
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_9.part
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/part_9.stl
+[0.467s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/top_plate.part
+[0.468s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/top_plate.stl
+[0.468s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/wheel.part
+[0.468s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/meshes/wheel.stl
+[0.468s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot/model.config
+[0.468s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/base_link.part
+[0.474s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/base_link.stl
+[0.483s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/column_support.part
+[0.489s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/column_support.stl
+[0.497s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/geared_dc_motor_with_encoder___ts_25ga370h.part
+[0.505s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/geared_dc_motor_with_encoder___ts_25ga370h.stl
+[0.510s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/middle_plate.part
+[0.518s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/middle_plate.stl
+[0.525s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/motor_mount.part
+[0.530s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/motor_mount.stl
+[0.535s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/omni_wheel.part
+[0.541s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/omni_wheel.stl
+[0.546s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_1.part
+[0.553s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_1.stl
+[0.561s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_10.part
+[0.566s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_10.stl
+[0.571s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_11.part
+[0.579s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_11.stl
+[0.584s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_12.part
+[0.589s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_12.stl
+[0.596s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_13.part
+[0.603s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_13.stl
+[0.609s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_14.part
+[0.617s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_14.stl
+[0.622s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_15.part
+[0.627s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_15.stl
+[0.633s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_16.part
+[0.638s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_16.stl
+[0.645s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_17.part
+[0.651s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_17.stl
+[0.656s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_18.part
+[0.663s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_18.stl
+[0.668s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_19.part
+[0.673s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_19.stl
+[0.679s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_1__2.part
+[0.684s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_1__2.stl
+[0.689s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_2.part
+[0.694s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_2.stl
+[0.701s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_20.part
+[0.706s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_20.stl
+[0.711s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_3.part
+[0.719s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_3.stl
+[0.724s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_4.part
+[0.729s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_4.stl
+[0.735s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_5.part
+[0.742s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_5.stl
+[0.748s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_6.part
+[0.753s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_6.stl
+[0.761s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_7.part
+[0.765s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_7.stl
+[0.771s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_8.part
+[0.775s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_8.stl
+[0.780s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_9.part
+[0.785s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/part_9.stl
+[0.790s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/top_plate.part
+[0.795s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/meshes/top_plate.stl
+[0.801s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/models/delivery_bot_v2/model.config
+[0.806s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/urdf/config.json
+[0.806s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/urdf/robot_v3.xacro
+[0.806s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/urdf/robot_v4.xacro
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/launch/gazebo.launch.py
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/launch/slam.launch.py
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[0.811s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[0.811s] -- Symlinking: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[0.818s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[0.818s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[0.818s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[0.818s] -- Up-to-date symlink: /home/abanoub/delivery_bot_ws/install/my_robot_description/share/my_robot_description/package.xml
+[0.819s] Invoked command in '/home/abanoub/delivery_bot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/my_robot_description

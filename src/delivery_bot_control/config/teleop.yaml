@@ -12,12 +12,12 @@ teleop_twist_joy_node:
 
     # Right stick X → spin
     axis_angular.yaw: 3     # try 2 if your driver maps it there
-    scale_angular.yaw: 1.2
+    scale_angular.yaw: -1.2
 
     # Turbo scales (optional)
     scale_linear_turbo.x: 0.5
     scale_linear_turbo.y: -0.5
-    scale_angular_turbo.yaw: 2.0
+    scale_angular_turbo.yaw: -2.0
 
 
     

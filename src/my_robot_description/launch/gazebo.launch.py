@@ -75,7 +75,7 @@ def generate_launch_description():
         name='spawn_robot',
         output='screen',
         arguments=[
-            '-name', 'delivery_bot',
+            '-name', 'delivery_bot', #v2 or no v
             '-param', 'robot_description',
             '-world', 'empty_with_lidar',
             '-x', '0', '-y', '0', '-z', '0.5',
@@ -130,7 +130,7 @@ def generate_launch_description():
     slam = LifecycleNode(
         package='slam_toolbox',
         executable='async_slam_toolbox_node',
-        name='slam_toolbox',     # <-- must match the name below in node_names
+        name='async_slam_toolbox_node',     # <-- must match the name below in node_names
         namespace='',            # <-- REQUIRED in Jazzy even if empty
         output='screen',
         parameters=[slam_config_file]
@@ -144,7 +144,7 @@ def generate_launch_description():
         output='screen',
         parameters=[{
             'autostart': True,            # drive transitions automatically
-            'node_names': ['slam_toolbox'],  # must match the LifecycleNode name
+            'node_names': ['async_slam_toolbox_node'],  # must match the LifecycleNode name
             'use_sim_time': True
         }]
     )
@@ -178,15 +178,25 @@ def generate_launch_description():
 
     return LaunchDescription([
         gz_gazebo,
-        state_pub,
-        bridge,
-        spawn,
-        wait_for_controllers,
-        spawn_drive_controller,
-        ekf,
-        joy_node,
-        teleop_node,
-        slam,
-        manager,
-        rviz,
+        TimerAction(
+            period=5.0,
+            actions=[
+                state_pub,
+                bridge,
+                spawn,
+                wait_for_controllers,
+                spawn_drive_controller,
+            ]
+        ),
+        TimerAction(
+            period=5.0,
+            actions=[
+                ekf,
+                joy_node,
+                teleop_node,
+                slam,
+                manager,
+                rviz,
+            ]
+        )
     ])

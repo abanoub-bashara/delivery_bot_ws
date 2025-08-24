@@ -1,4 +1,4 @@
-slam_toolbox:
+async_slam_toolbox_node:
   ros__parameters:
     use_sim_time: true
 

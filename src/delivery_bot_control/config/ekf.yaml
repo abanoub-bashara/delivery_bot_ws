@@ -5,7 +5,7 @@ ekf_odom:
     reset_on_time_jump: true
     two_d_mode: true
     publish_tf: true
-    frequency: 80.0  # Reduced from 50.0 for stability
+    frequency: 300.0  # Reduced from 50.0 for stability
     sensor_timeout: 0.2  # Increased from 0.1 for simulation
     
     base_link_frame: base_link
