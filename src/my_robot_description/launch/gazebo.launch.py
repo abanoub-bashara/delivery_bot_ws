@@ -122,9 +122,9 @@ def generate_launch_description():
         name='ekf_odom',
         output='screen',
         parameters=[ekf_config_file],
-        remappings=[
-            ('/odometry/filtered', '/odom'),  # Remap EKF output from /odometry/filtered to /odom
-        ]
+        # remappings=[
+        #     ('/odometry/filtered', '/odom'),  # Remap EKF output from /odometry/filtered to /odom
+        # ]
     )
     
     slam = LifecycleNode(
@@ -145,6 +145,9 @@ def generate_launch_description():
         parameters=[{
             'autostart': True,            # drive transitions automatically
             'node_names': ['async_slam_toolbox_node'],  # must match the LifecycleNode name
+            'use_sim_time': True,
+            'bond_timeout': 15.0,  # Increase timeout
+            'attempt_respawn_reconnection': True,
             'use_sim_time': True
         }]
     )
@@ -176,6 +179,8 @@ def generate_launch_description():
         parameters=[{'use_sim_time': True}],
     )
 
+    #NAVIGATION FINALLY BABY
+
     return LaunchDescription([
         gz_gazebo,
         TimerAction(
@@ -195,8 +200,13 @@ def generate_launch_description():
                 joy_node,
                 teleop_node,
                 slam,
-                manager,
-                rviz,
+                TimerAction(
+                    period=15.0,
+                    actions=[
+                        manager,
+                        rviz,
+                    ]
+                )
             ]
         )
     ])
