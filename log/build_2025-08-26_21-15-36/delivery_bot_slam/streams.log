@@ -1,0 +1,24 @@
+[0.010s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abanoub/delivery_bot_ws/install/twist_to_stamped:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_slam -- -j20 -l20
+[0.044s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abanoub/delivery_bot_ws/install/twist_to_stamped:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_slam -- -j20 -l20
+[0.044s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abanoub/delivery_bot_ws/install/twist_to_stamped:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_slam
+[0.049s] -- Install configuration: ""
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/config
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/config/slam_params.yaml
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/launch
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/launch/slam.launch.py
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/ament_index/resource_index/package_run_dependencies/delivery_bot_slam
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/ament_index/resource_index/parent_prefix_path/delivery_bot_slam
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/environment/ament_prefix_path.sh
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/environment/ament_prefix_path.dsv
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/environment/path.sh
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/environment/path.dsv
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/local_setup.bash
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/local_setup.sh
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/local_setup.zsh
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/local_setup.dsv
+[0.049s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/package.dsv
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/ament_index/resource_index/packages/delivery_bot_slam
+[0.049s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/cmake/delivery_bot_slamConfig.cmake
+[0.050s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/cmake/delivery_bot_slamConfig-version.cmake
+[0.050s] -- Up-to-date: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/package.xml
+[0.056s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abanoub/delivery_bot_ws/install/twist_to_stamped:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_slam

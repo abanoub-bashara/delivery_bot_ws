@@ -1,0 +1,1027 @@
+<?xml version="1.0" ?>
+<robot name="delivery_bot" xmlns:gz="http://gazebosim.org/schema">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="1.47055e-09 -3.71873e-05 0.058853" rpy="0 0 0"/>
+      <mass value="0.823129"/>
+      <inertia ixx="0.00583389" ixy="-3.74483e-11" ixz="2.82676e-10" iyy="0.00580868" iyz="-6.14396e-06" izz="0.00565531"/>
+    </inertial>
+    <!-- Part column_support -->
+    <visual>
+      <origin xyz="-0.0513068 -0.08 0.126" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+      <material name="column_support_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0513068 -0.08 0.126" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part column_support_2 -->
+    <visual>
+      <origin xyz="0.0436286 0.084433 0.006" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+      <material name="column_support_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0436286 0.084433 0.006" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part geared_dc_motor_with_encoder___ts_25ga370h -->
+    <visual>
+      <origin xyz="4.16334e-17 -0.12125 -0.0195" rpy="2.0506e-16 4.64408e-16 1.94289e-16"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+      </geometry>
+      <material name="geared_dc_motor_with_encoder___ts_25ga370h_material">
+        <color rgba="0.784314 0.784314 0.784314 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="4.16334e-17 -0.12125 -0.0195" rpy="2.0506e-16 4.64408e-16 1.94289e-16"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part geared_dc_motor_with_encoder___ts_25ga370h_2 -->
+    <visual>
+      <origin xyz="-0.105006 0.060625 -0.0195" rpy="-3.14159 4.27106e-44 1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+      </geometry>
+      <material name="geared_dc_motor_with_encoder___ts_25ga370h_2_material">
+        <color rgba="0.784314 0.784314 0.784314 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.105006 0.060625 -0.0195" rpy="-3.14159 4.27106e-44 1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_mount -->
+    <visual>
+      <origin xyz="3.46945e-17 -0.08 0" rpy="-3.14159 4.64408e-16 1.94289e-16"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/motor_mount.stl"/>
+      </geometry>
+      <material name="motor_mount_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="3.46945e-17 -0.08 0" rpy="-3.14159 4.64408e-16 1.94289e-16"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/motor_mount.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part geared_dc_motor_with_encoder___ts_25ga370h_3 -->
+    <visual>
+      <origin xyz="0.105006 0.060625 -0.0195" rpy="3.14159 5.47382e-48 -1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+      </geometry>
+      <material name="geared_dc_motor_with_encoder___ts_25ga370h_3_material">
+        <color rgba="0.784314 0.784314 0.784314 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.105006 0.060625 -0.0195" rpy="3.14159 5.47382e-48 -1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/geared_dc_motor_with_encoder___ts_25ga370h.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part column_support_3 -->
+    <visual>
+      <origin xyz="-0.0436286 0.084433 0.126" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+      <material name="column_support_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0436286 0.084433 0.126" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part column_support_4 -->
+    <visual>
+      <origin xyz="0.0513068 -0.08 0.126" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+      <material name="column_support_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0513068 -0.08 0.126" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part column_support_5 -->
+    <visual>
+      <origin xyz="-0.0949354 -0.00443297 0.126" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+      <material name="column_support_5_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0949354 -0.00443297 0.126" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_link -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/base_link.stl"/>
+      </geometry>
+      <material name="base_link_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/base_link.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part top_plate -->
+    <visual>
+      <origin xyz="9.02056e-17 -1.38778e-17 0.132" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/top_plate.stl"/>
+      </geometry>
+      <material name="top_plate_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="9.02056e-17 -1.38778e-17 0.132" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/top_plate.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_mount_2 -->
+    <visual>
+      <origin xyz="-0.069282 0.04 -6.55569e-45" rpy="3.14159 -4.28639e-44 -2.0944"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/motor_mount.stl"/>
+      </geometry>
+      <material name="motor_mount_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.069282 0.04 -6.55569e-45" rpy="3.14159 -4.28639e-44 -2.0944"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/motor_mount.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_mount_3 -->
+    <visual>
+      <origin xyz="0.069282 0.04 0" rpy="3.14159 3.61234e-97 2.0944"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/motor_mount.stl"/>
+      </geometry>
+      <material name="motor_mount_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.069282 0.04 0" rpy="3.14159 3.61234e-97 2.0944"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/motor_mount.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part column_support_6 -->
+    <visual>
+      <origin xyz="0.0949354 -0.00443297 0.126" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+      <material name="column_support_6_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0949354 -0.00443297 0.126" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/column_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_8 -->
+    <visual>
+      <origin xyz="-0.0121949 0.0322049 0.1791" rpy="-2.74517 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_8.stl"/>
+      </geometry>
+      <material name="part_8_material">
+        <color rgba="0.776471 0.756863 0.737255 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0121949 0.0322049 0.1791" rpy="-2.74517 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_8.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_15 -->
+    <visual>
+      <origin xyz="-0.028 0.035 0.1416" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_15.stl"/>
+      </geometry>
+      <material name="part_15_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.028 0.035 0.1416" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_15.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_11 -->
+    <visual>
+      <origin xyz="-9.44383e-15 -0.0385 0.1411" rpy="-6.12279e-17 -6.12323e-17 -3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_11.stl"/>
+      </geometry>
+      <material name="part_11_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.44383e-15 -0.0385 0.1411" rpy="-6.12279e-17 -6.12323e-17 -3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_11.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_8_2 -->
+    <visual>
+      <origin xyz="-0.011 -0.0385 0.1629" rpy="1.53787 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_8.stl"/>
+      </geometry>
+      <material name="part_8_2_material">
+        <color rgba="0.776471 0.756863 0.737255 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.011 -0.0385 0.1629" rpy="1.53787 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_8.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_20 -->
+    <visual>
+      <origin xyz="-9.44383e-15 -0.0385 0.1616" rpy="1.28639e-16 3.79626e-17 0.124422"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_20.stl"/>
+      </geometry>
+      <material name="part_20_material">
+        <color rgba="0.25098 0.25098 0.25098 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.44383e-15 -0.0385 0.1616" rpy="1.28639e-16 3.79626e-17 0.124422"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_20.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_16 -->
+    <visual>
+      <origin xyz="0.02 -0.035 0.14" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_16.stl"/>
+      </geometry>
+      <material name="part_16_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.02 -0.035 0.14" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_16.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_16_2 -->
+    <visual>
+      <origin xyz="-0.02 -0.035 0.14" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_16.stl"/>
+      </geometry>
+      <material name="part_16_2_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02 -0.035 0.14" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_16.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_15_2 -->
+    <visual>
+      <origin xyz="-0.02 -0.035 0.1416" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_15.stl"/>
+      </geometry>
+      <material name="part_15_2_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02 -0.035 0.1416" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_15.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1 -->
+    <visual>
+      <origin xyz="-9.44383e-15 0.007 0.1606" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_1.stl"/>
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.25098 0.25098 0.25098 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.44383e-15 0.007 0.1606" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_2 -->
+    <visual>
+      <origin xyz="0.000111026 0.00693466 0.1761" rpy="3.14159 5.29332e-14 0.450629"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_1__2.stl"/>
+      </geometry>
+      <material name="part_1_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000111026 0.00693466 0.1761" rpy="3.14159 5.29332e-14 0.450629"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_18 -->
+    <visual>
+      <origin xyz="-9.44383e-15 0.007 0.1416" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_18.stl"/>
+      </geometry>
+      <material name="part_18_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.44383e-15 0.007 0.1416" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_18.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_13 -->
+    <visual>
+      <origin xyz="0.000125 -0.0152 0.14875" rpy="-3.14159 -1.22465e-16 3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_13.stl"/>
+      </geometry>
+      <material name="part_13_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000125 -0.0152 0.14875" rpy="-3.14159 -1.22465e-16 3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_13.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_10 -->
+    <visual>
+      <origin xyz="0.000362495 -0.026 0.1358" rpy="1.5708 -8.69586e-17 -3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_10.stl"/>
+      </geometry>
+      <material name="part_10_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000362495 -0.026 0.1358" rpy="1.5708 -8.69586e-17 -3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_10.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_8_3 -->
+    <visual>
+      <origin xyz="0.011 -0.0385 0.1629" rpy="1.53787 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_8.stl"/>
+      </geometry>
+      <material name="part_8_3_material">
+        <color rgba="0.776471 0.756863 0.737255 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.011 -0.0385 0.1629" rpy="1.53787 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_8.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_14 -->
+    <visual>
+      <origin xyz="-9.44383e-15 0.007 0.1496" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_14.stl"/>
+      </geometry>
+      <material name="part_14_material">
+        <color rgba="0.486275 0.486275 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.44383e-15 0.007 0.1496" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_14.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_15_3 -->
+    <visual>
+      <origin xyz="0.02 -0.035 0.1416" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_15.stl"/>
+      </geometry>
+      <material name="part_15_3_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.02 -0.035 0.1416" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_15.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_16_3 -->
+    <visual>
+      <origin xyz="0.028 0.035 0.14" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_16.stl"/>
+      </geometry>
+      <material name="part_16_3_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.028 0.035 0.14" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_16.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_15_4 -->
+    <visual>
+      <origin xyz="0.028 0.035 0.1416" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_15.stl"/>
+      </geometry>
+      <material name="part_15_4_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.028 0.035 0.1416" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_15.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_17 -->
+    <visual>
+      <origin xyz="-0.0271 0.007 0.14" rpy="1.22465e-16 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_17.stl"/>
+      </geometry>
+      <material name="part_17_material">
+        <color rgba="0.909804 0.443137 0.0313725 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0271 0.007 0.14" rpy="1.22465e-16 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_17.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_12 -->
+    <visual>
+      <origin xyz="-9.44383e-15 -0.0385 0.1375" rpy="-1.51397e-16 -2.57317e-17 -2.70799"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_12.stl"/>
+      </geometry>
+      <material name="part_12_material">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.44383e-15 -0.0385 0.1375" rpy="-1.51397e-16 -2.57317e-17 -2.70799"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_12.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_6 -->
+    <visual>
+      <origin xyz="-9.44383e-15 0.007 0.1676" rpy="-9.52416e-14 4.54221e-14 0.445009"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_6.stl"/>
+      </geometry>
+      <material name="part_6_material">
+        <color rgba="0.486275 0.486275 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.44383e-15 0.007 0.1676" rpy="-9.52416e-14 4.54221e-14 0.445009"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_8_4 -->
+    <visual>
+      <origin xyz="-0.00946882 -0.0193504 0.1791" rpy="-2.63865 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_8.stl"/>
+      </geometry>
+      <material name="part_8_4_material">
+        <color rgba="0.776471 0.756863 0.737255 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00946882 -0.0193504 0.1791" rpy="-2.63865 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_8.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_9 -->
+    <visual>
+      <origin xyz="-9.44383e-15 0.007 0.1506" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_9.stl"/>
+      </geometry>
+      <material name="part_9_material">
+        <color rgba="0.0509804 0.615686 0.0509804 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.44383e-15 0.007 0.1506" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_9.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_2 -->
+    <visual>
+      <origin xyz="-9.44383e-15 0.007 0.1636" rpy="-5.29332e-14 -8.49279e-14 -1.12017"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_2.stl"/>
+      </geometry>
+      <material name="part_2_material">
+        <color rgba="0.25098 0.25098 0.25098 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.44383e-15 0.007 0.1636" rpy="-5.29332e-14 -8.49279e-14 -1.12017"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_4 -->
+    <visual>
+      <origin xyz="-0.0201761 0.00977362 0.1756" rpy="3.14159 -1.36674 0.452838"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_4.stl"/>
+      </geometry>
+      <material name="part_4_material">
+        <color rgba="0.0823529 0.0823529 0.0823529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0201761 0.00977362 0.1756" rpy="3.14159 -1.36674 0.452838"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_16_4 -->
+    <visual>
+      <origin xyz="-0.028 0.035 0.14" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_16.stl"/>
+      </geometry>
+      <material name="part_16_4_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.028 0.035 0.14" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_16.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_7 -->
+    <visual>
+      <origin xyz="-1.30458e-13 0.007 0.1855" rpy="3.14159 1.96746e-14 -2.69096"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_7.stl"/>
+      </geometry>
+      <material name="part_7_material">
+        <color rgba="0.439216 0.439216 0.439216 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.30458e-13 0.007 0.1855" rpy="3.14159 1.96746e-14 -2.69096"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_7.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_3 -->
+    <visual>
+      <origin xyz="0.000141965 0.00687055 0.1666" rpy="-7.13303e-14 4.5174e-14 0.452838"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_3.stl"/>
+      </geometry>
+      <material name="part_3_material">
+        <color rgba="0.486275 0.486275 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000141965 0.00687055 0.1666" rpy="-7.13303e-14 4.5174e-14 0.452838"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_19 -->
+    <visual>
+      <origin xyz="-1.30458e-13 0.007 0.163786" rpy="1.5708 -1.37204e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_19.stl"/>
+      </geometry>
+      <material name="part_19_material">
+        <color rgba="0.486275 0.486275 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.30458e-13 0.007 0.163786" rpy="1.5708 -1.37204e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_19.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_5 -->
+    <visual>
+      <origin xyz="0.0250914 0.0125735 0.1766" rpy="4.06979e-14 -0.804343 -2.55696"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_5.stl"/>
+      </geometry>
+      <material name="part_5_material">
+        <color rgba="0.909804 0.443137 0.0313725 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0250914 0.0125735 0.1766" rpy="4.06979e-14 -0.804343 -2.55696"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_8_5 -->
+    <visual>
+      <origin xyz="0.0265381 -0.00192909 0.1791" rpy="-2.63865 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_8.stl"/>
+      </geometry>
+      <material name="part_8_5_material">
+        <color rgba="0.776471 0.756863 0.737255 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0265381 -0.00192909 0.1791" rpy="-2.63865 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/part_8.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame lidarView (dummy link + fixed joint) -->
+  <link name="lidarView">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="lidarView_frame" type="fixed">
+    <origin xyz="0.000111026 0.00693466 0.1761" rpy="-8.49279e-14 5.29332e-14 0.450629"/>
+    <parent link="base_link"/>
+    <child link="lidarView"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  
+
+  <!-- Link wheel1 -->
+  <link name="wheel1">
+    <inertial>
+      <origin xyz="6.66143e-18 1.48071e-18 -0.0125" rpy="0 0 0"/>
+      <mass value="0.056156"/>
+      <inertia ixx="1.10674e-05" ixy="-1.51453e-52" ixz="-2.89647e-22" iyy="1.10674e-05" iyz="-5.04438e-69" izz="1.62852e-05"/>
+    </inertial>
+    <!-- Part wheel2 -->
+    <visual>
+      <origin xyz="6.86182e-18 0 -0.025" rpy="0 -5.55112e-17 -8.21073e-48"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/wheel.stl"/>
+      </geometry>
+      <material name="wheel2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.86182e-18 0 -0.025" rpy="0 -5.55112e-17 -8.21073e-48"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>  <!-- wheel1: make it continuous and remove position limits -->
+  <joint name="wheel1_joint" type="continuous">
+    <origin xyz="0.100026 0.05775 -0.0195" rpy="1.5708 -2.15704e-32 -1.0472"/>
+    <parent link="base_link"/>
+    <child link="wheel1"/>
+    <!-- Axis must be the wheel's spin axis in the JOINT frame -->
+    <axis xyz="0 0 -1"/>
+    <!-- Continuous joints ignore lower/upper. Keep effort/velocity. -->
+    <limit effort="15.0" velocity="100.0"/>
+    <!-- Helps kill jitter -->
+    <dynamics damping="0.1" friction="0.05"/>
+  </joint>
+
+  <!-- Link wheel2 -->
+  <link name="wheel2">
+    <inertial>
+      <origin xyz="4.50126e-19 -6.90649e-18 -0.0125" rpy="0 0 0"/>
+      <mass value="0.056156"/>
+      <inertia ixx="1.10674e-05" ixy="-1.53591e-22" ixz="-1.26001e-22" iyy="1.10674e-05" iyz="8.14835e-22" izz="1.62852e-05"/>
+    </inertial>
+    <!-- Part wheel2 -->
+    <visual>
+      <origin xyz="0 -8.67362e-18 -0.025" rpy="3.99084e-17 6.27965e-18 -1.38778e-17"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/wheel.stl"/>
+      </geometry>
+      <material name="wheel_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -8.67362e-18 -0.025" rpy="3.99084e-17 6.27965e-18 -1.38778e-17"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- wheel2: make it continuous and remove position limits -->
+  <joint name="wheel2_joint" type="continuous">
+    <origin xyz="-0.100026 0.05775 -0.0195" rpy="1.5708 1.48832 1.0472"/> 
+    <!-- 1.48832 -->
+    <parent link="base_link"/>
+    <child link="wheel2"/>
+    <!-- Axis must be the wheel's spin axis in the JOINT frame -->
+    <axis xyz="0 0 -1"/>
+    <!-- Continuous joints ignore lower/upper. Keep effort/velocity. -->
+    <limit effort="15.0" velocity="100.0"/>
+    <!-- Helps kill jitter -->
+    <dynamics damping="0.1" friction="0.05"/>
+  </joint>
+
+  <!-- Link wheel3 -->
+  <link name="wheel3">
+    <inertial>
+      <origin xyz="-3.36578e-18 1.48071e-18 -0.0125" rpy="0 0 0"/>
+      <mass value="0.056156"/>
+      <inertia ixx="1.10674e-05" ixy="0" ixz="-1.79532e-38" iyy="1.10674e-05" iyz="0" izz="1.62852e-05"/>
+    </inertial>
+    <!-- Part wheel3 -->
+    <visual>
+      <origin xyz="-3.85927e-18 0 -0.025" rpy="0 6.56362e-34 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/wheel.stl"/>
+      </geometry>
+      <material name="wheel3_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-3.85927e-18 0 -0.025" rpy="0 6.56362e-34 0"/>
+      <geometry>
+        <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+<!-- Joint from base_link to wheel3 -->
+<!-- wheel3: make it continuous and remove position limits -->
+  <joint name="wheel3_joint" type="continuous">
+    <origin xyz="4.03566e-17 -0.1155 -0.0195" rpy="-1.5708 -2.04051e-15 2.22045e-16"/>
+    <parent link="base_link"/>
+    <child link="wheel3"/>
+    <!-- Axis must be the wheel's spin axis in the JOINT frame -->
+    <axis xyz="0 0 -1"/>
+    <!-- Continuous joints ignore lower/upper. Keep effort/velocity. -->
+    <limit effort="15.0" velocity="100.0"/>
+    <!-- Helps kill jitter -->
+    <dynamics damping="0.1" friction="0.05"/>
+  </joint>
+
+  <gazebo reference="wheel1">
+    <surface>
+      <friction>
+        <ode>
+          <mu>1.5</mu>
+          <mu2>0.01</mu2>
+          <slip1>0.001</slip1>
+          <slip2>0.5</slip2>
+          <fdir1>-0.5 0.866 0</fdir1>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="wheel2">
+    <surface>
+      <friction>
+        <ode>
+          <mu>1.5</mu>
+          <mu2>0.01</mu2>
+          <slip1>0.001</slip1>
+          <slip2>0.5</slip2>
+          <fdir1>-0.5 -0.866 0</fdir1>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="wheel3">
+    <surface>
+      <friction>
+        <ode>
+          <mu>1.5</mu>
+          <mu2>0.01</mu2>
+          <slip1>0.001</slip1>
+          <slip2>0.5</slip2>
+          <fdir1>1 0 0</fdir1>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+
+  <!-- ROS2 Control for Harmonic - UPDATED -->
+  <ros2_control name="GazeboSimSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>  <!-- Updated plugin name -->
+    </hardware>
+    <joint name="wheel1_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="wheel2_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="wheel3_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <!-- Gazebo ROS2 Control Plugin for Harmonic - MAJOR CHANGES -->
+  <gazebo>
+     <plugin filename="libgz_ros2_control-system.so" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <robot_param>robot_description</robot_param>
+      <robot_param_node>robot_state_publisher</robot_param_node>
+      <parameters>/home/abanoub/delivery_bot_ws/src/delivery_bot_control/config/omni_drive_controller.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+  <!-- LiDAR sensor - CORRECTED for Gazebo Harmonic -->
+  <gazebo reference="lidarView">
+    <sensor name="lidarView" type="gpu_lidar">
+      <gz_frame_id>lidarView</gz_frame_id>
+      <always_on>true</always_on>
+      <update_rate>25</update_rate>
+      <visualize>false</visualize>
+      <topic>/scan</topic>
+      <plugin filename="libgz-sim-sensors-system.so" name="gz::sim::systems::Sensors">
+        <render_engine>ogre2</render_engine>
+      </plugin>
+      <pose relative_to="lidarView">0 0 0 0 0 0</pose>
+      <!-- plugin already included in world file -->
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14</min_angle>
+            <max_angle>3.14</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.12</min>
+          <max>6.0</max>
+          <resolution>0.05</resolution>
+        </range>
+      </lidar>
+    </sensor>
+  </gazebo>
+
+  <!-- IMU frame: no inertial on sensor link -->
+  <link name="imu_link"/>
+    
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="imu_link"/>
+    <origin xyz="0 0 0.10" rpy="0 0 0"/>
+  </joint>
+  
+  <!-- IMU sensor - CORRECTED for Gazebo Harmonic -->
+  <gazebo reference="imu_link">
+    <sensor name="imu" type="imu">
+      <gz_frame_id>imu_link</gz_frame_id>
+      <always_on>true</always_on>
+      <update_rate>100.0</update_rate>
+      <visualize>false</visualize>
+      <topic>/imu</topic>
+      <imu>
+        <angular_velocity>
+          <x>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+            </noise>
+          </z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+            </noise>
+          </z>
+        </linear_acceleration>
+      </imu>
+    </sensor>
+  </gazebo>
+
+</robot>
+

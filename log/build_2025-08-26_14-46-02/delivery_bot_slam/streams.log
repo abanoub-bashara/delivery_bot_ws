@@ -1,0 +1,47 @@
+[0.028s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abanoub/delivery_bot_ws/src/delivery_bot_slam -DCMAKE_INSTALL_PREFIX=/home/abanoub/delivery_bot_ws/install/delivery_bot_slam
+[0.185s] -- The C compiler identification is GNU 13.3.0
+[0.329s] -- The CXX compiler identification is GNU 13.3.0
+[0.376s] -- Detecting C compiler ABI info
+[0.590s] -- Detecting C compiler ABI info - done
+[0.613s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.614s] -- Detecting C compile features
+[0.615s] -- Detecting C compile features - done
+[0.643s] -- Detecting CXX compiler ABI info
+[0.870s] -- Detecting CXX compiler ABI info - done
+[0.886s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.887s] -- Detecting CXX compile features
+[0.888s] -- Detecting CXX compile features - done
+[0.894s] -- Found robot_localization: 3.8.2 (/opt/ros/jazzy/share/robot_localization/cmake)
+[1.167s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.441s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.468s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.493s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.521s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.860s] -- Configuring done (1.8s)
+[1.864s] -- Generating done (0.0s)
+[1.866s] -- Build files have been written to: /home/abanoub/delivery_bot_ws/build/delivery_bot_slam
+[1.879s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abanoub/delivery_bot_ws/src/delivery_bot_slam -DCMAKE_INSTALL_PREFIX=/home/abanoub/delivery_bot_ws/install/delivery_bot_slam
+[1.881s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_slam -- -j20 -l20
+[1.968s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_slam -- -j20 -l20
+[1.971s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_slam
+[1.983s] -- Install configuration: ""
+[1.984s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/config
+[1.984s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/config/slam_params.yaml
+[1.984s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/launch
+[1.985s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/launch/slam.launch.py
+[1.985s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/ament_index/resource_index/package_run_dependencies/delivery_bot_slam
+[1.985s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/ament_index/resource_index/parent_prefix_path/delivery_bot_slam
+[1.985s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/environment/ament_prefix_path.sh
+[1.986s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/environment/ament_prefix_path.dsv
+[1.986s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/environment/path.sh
+[1.986s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/environment/path.dsv
+[1.986s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/local_setup.bash
+[1.986s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/local_setup.sh
+[1.987s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/local_setup.zsh
+[1.987s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/local_setup.dsv
+[1.987s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/package.dsv
+[1.987s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/ament_index/resource_index/packages/delivery_bot_slam
+[1.987s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/cmake/delivery_bot_slamConfig.cmake
+[1.987s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/cmake/delivery_bot_slamConfig-version.cmake
+[1.988s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_slam/share/delivery_bot_slam/package.xml
+[1.990s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_slam

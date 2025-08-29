@@ -1,0 +1,167 @@
+[0.018s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abanoub/delivery_bot_ws/src/delivery_bot_description -DCMAKE_INSTALL_PREFIX=/home/abanoub/delivery_bot_ws/install/delivery_bot_description
+[2.646s] -- The C compiler identification is GNU 13.3.0
+[4.402s] -- The CXX compiler identification is GNU 13.3.0
+[4.745s] -- Detecting C compiler ABI info
+[5.265s] -- Detecting C compiler ABI info - done
+[5.287s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.299s] -- Detecting C compile features
+[5.322s] -- Detecting C compile features - done
+[5.442s] -- Detecting CXX compiler ABI info
+[5.768s] -- Detecting CXX compiler ABI info - done
+[5.789s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.789s] -- Detecting CXX compile features
+[5.790s] -- Detecting CXX compile features - done
+[6.000s] -- Found robot_localization: 3.8.2 (/opt/ros/jazzy/share/robot_localization/cmake)
+[6.685s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[9.356s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[9.627s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[10.064s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.474s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[13.767s] -- Configuring done (13.7s)
+[13.773s] -- Generating done (0.0s)
+[13.777s] -- Build files have been written to: /home/abanoub/delivery_bot_ws/build/delivery_bot_description
+[13.792s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abanoub/delivery_bot_ws/src/delivery_bot_description -DCMAKE_INSTALL_PREFIX=/home/abanoub/delivery_bot_ws/install/delivery_bot_description
+[13.793s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_description -- -j20 -l20
+[13.883s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_description -- -j20 -l20
+[13.885s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_description
+[13.899s] -- Install configuration: ""
+[13.899s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models
+[13.900s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2
+[13.900s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes
+[13.900s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_19.stl
+[13.901s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_12.stl
+[13.901s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/middle_plate.part
+[13.901s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/middle_plate.stl
+[13.907s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/base_link.part
+[13.907s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_2.stl
+[13.913s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_9.part
+[13.913s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_1__2.stl
+[13.913s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/geared_dc_motor_with_encoder___ts_25ga370h.part
+[13.913s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_14.part
+[13.914s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_5.part
+[13.914s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_20.stl
+[13.914s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_12.part
+[13.915s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_9.stl
+[13.915s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_1__2.part
+[13.915s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_1.part
+[13.916s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_17.stl
+[13.916s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_4.part
+[13.916s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_1.stl
+[13.922s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_4.stl
+[13.923s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_19.part
+[13.923s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/motor_mount.stl
+[13.923s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_18.part
+[13.923s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/top_plate.stl
+[13.926s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_7.stl
+[13.932s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_20.part
+[13.932s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_14.stl
+[13.934s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_10.part
+[13.934s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_11.stl
+[13.934s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_16.stl
+[13.935s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_11.part
+[13.935s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_18.stl
+[13.935s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_5.stl
+[13.935s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/base_link.stl
+[13.944s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/motor_mount.part
+[13.944s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/geared_dc_motor_with_encoder___ts_25ga370h.stl
+[13.947s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_13.part
+[13.947s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_2.part
+[13.948s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_3.stl
+[13.953s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/omni_wheel.part
+[13.953s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/column_support.stl
+[13.954s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_8.part
+[13.954s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_13.stl
+[13.954s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/top_plate.part
+[13.955s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_17.part
+[13.955s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_16.part
+[13.956s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/column_support.part
+[13.956s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_15.stl
+[13.957s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_15.part
+[13.957s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_10.stl
+[13.957s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_7.part
+[13.958s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_6.part
+[13.959s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_6.stl
+[13.961s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/omni_wheel.stl
+[13.996s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_8.stl
+[13.997s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/meshes/part_3.part
+[13.997s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot_v2/model.config
+[13.998s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot
+[13.998s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes
+[13.998s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_19.stl
+[14.000s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_12.stl
+[14.001s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/base_link.part
+[14.020s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_2.stl
+[14.033s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_9.part
+[14.054s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_1__2.stl
+[14.054s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/geared_dc_motor_with_encoder___ts_25ga370h.part
+[14.066s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_14.part
+[14.077s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/wheel.stl
+[14.077s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_5.part
+[14.094s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_20.stl
+[14.096s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_12.part
+[14.120s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_9.stl
+[14.120s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_1__2.part
+[14.142s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_1.part
+[14.154s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_17.stl
+[14.154s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_4.part
+[14.172s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_1.stl
+[14.176s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_4.stl
+[14.176s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_19.part
+[14.199s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/motor_mount.stl
+[14.199s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/wheel.part
+[14.199s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_18.part
+[14.210s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/top_plate.stl
+[14.215s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_7.stl
+[14.222s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_20.part
+[14.242s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_14.stl
+[14.246s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_10.part
+[14.257s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_11.stl
+[14.258s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_16.stl
+[14.258s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_11.part
+[14.269s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_18.stl
+[14.271s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_5.stl
+[14.271s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/base_link.stl
+[14.277s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/motor_mount.part
+[14.288s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/geared_dc_motor_with_encoder___ts_25ga370h.stl
+[14.290s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_13.part
+[14.301s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_2.part
+[14.313s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_3.stl
+[14.317s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/column_support.stl
+[14.318s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_8.part
+[14.339s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_13.stl
+[14.339s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/top_plate.part
+[14.350s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_17.part
+[14.376s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_16.part
+[14.387s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/column_support.part
+[14.398s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_15.stl
+[14.399s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_15.part
+[14.409s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_10.stl
+[14.409s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_7.part
+[14.427s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_6.part
+[14.438s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_6.stl
+[14.440s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_8.stl
+[14.440s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/meshes/part_3.part
+[14.452s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/models/delivery_bot/model.config
+[14.452s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/urdf
+[14.452s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/urdf/robot_v3.xacro
+[14.453s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/urdf/config.json
+[14.453s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/urdf/robot_v4.xacro
+[14.453s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/launch
+[14.453s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/launch/slam.launch.py
+[14.454s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/launch/gazebo.launch.py
+[14.454s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/ament_index/resource_index/package_run_dependencies/delivery_bot_description
+[14.454s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/ament_index/resource_index/parent_prefix_path/delivery_bot_description
+[14.454s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/environment/ament_prefix_path.sh
+[14.455s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/environment/ament_prefix_path.dsv
+[14.455s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/environment/path.sh
+[14.455s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/environment/path.dsv
+[14.455s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/local_setup.bash
+[14.456s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/local_setup.sh
+[14.456s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/local_setup.zsh
+[14.456s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/local_setup.dsv
+[14.456s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/package.dsv
+[14.456s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/ament_index/resource_index/packages/delivery_bot_description
+[14.457s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/cmake/delivery_bot_descriptionConfig.cmake
+[14.457s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/cmake/delivery_bot_descriptionConfig-version.cmake
+[14.457s] -- Installing: /home/abanoub/delivery_bot_ws/install/delivery_bot_description/share/delivery_bot_description/package.xml
+[14.462s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abanoub/delivery_bot_ws/build/delivery_bot_description

@@ -1,46 +1,294 @@
-# bring up server lifecycle parameters
-nav2_lifecycle_manager:
-  ros__parameters:
-    use_sim_time: true
-    autostart:    true
-    node_names:
-      - map_server
-      - amcl
-      - planner_server
-      - controller_server
-      - bt_navigator
-
-# Map server
-map_server:
-  ros__parameters:
-    yaml_filename:  {map}        # substituted in launch
-    use_sim_time:   true
-
-# AMCL
+# Nav2 Parameters for Omni-wheel Delivery Bot
+# Nav2 Parameters for Omni-wheel Delivery Bot
 amcl:
-  ros__parameters: *amcl_params   # anchor to reuse amcl_params.yaml if you wish
-
-# Global & Local costmaps
-planner_server:
   ros__parameters:
-    expected_planner_frequency: 1.0
-    planner_plugin_ids:          ["GridBased"]
-    planner_plugins:             ["nav2_navfn_planner/NavfnPlanner"]
-    use_sim_time:                true
+    use_sim_time: True
+    
+    # Initial pose settings
+    set_initial_pose: true
+    initial_pose: {x: 0.0, y: 0.0, z: 0.0, yaw: 0.0}
+    
+    # Frame IDs
+    base_frame_id: "base_link"
+    global_frame_id: "map"
+    odom_frame_id: "odom"
+    scan_topic: "scan"
+    
+    # Motion model parameters - OPTIMIZED for omni-wheel
+    robot_model_type: "nav2_amcl::OmniMotionModel"
+    # Reduced noise for omni-wheel precision
+    alpha1: 1.0   # Rotational noise from rotation (was 0.2)
+    alpha2: 1.0   # Rotational noise from translation (was 0.2)
+    alpha3: 1.0 # Translational noise from translation (was 0.2)
+    alpha4: 1.0   # Translational noise from rotation (was 0.2)
+    alpha5: 1.0   # Translation noise (omni-specific, was 0.2)
+
+    # Particle filter parameters - OPTIMIZED
+    max_particles: 5000      # Increased for better accuracy
+    min_particles: 500       # Increased minimum
+    pf_err: 0.03            # Reduced error threshold (was 0.05)
+    pf_z: 0.99              # Keep high confidence
+    resample_interval: 1     # Keep frequent resampling
+    
+    # Recovery parameters - ENABLED for better recovery
+    recovery_alpha_slow: 0.001   # Enable slow recovery (was 0.0)
+    recovery_alpha_fast: 0.1     # Enable fast recovery (was 0.0)
+    
+    # Laser model parameters - MATCHED TO YOUR LIDAR
+    laser_model_type: "likelihood_field"
+    laser_likelihood_max_dist: 1.0   # Reduced to match 6m max range
+    laser_max_range: 6.0            # EXACT match to your LiDAR max (was 30.0)
+    laser_min_range: 0.12           # EXACT match to your LiDAR min (was 0.1)
+    max_beams: 360                   # Half of 360 samples for efficiency
+
+    # Laser weighting - FINE-TUNED
+    z_hit: 0.95      # Increased hit weight (was 0.5)
+    z_short: 0.1    # Increased short reading weight (was 0.05)
+    z_max: 0.05     # Keep max reading weight low
+    z_rand: 0.05    # Reduced random weight (was 0.5)
+    sigma_hit: 0.15 # Reduced hit sigma for tighter matching (was 0.2)
+    
+    # Beam skipping - ENABLED for efficiency
+    do_beamskip: true           # Enable beam skipping
+    beam_skip_distance: 0.3     # Reduced distance (was 0.5)
+    beam_skip_error_threshold: 0.8  # Reduced threshold (was 0.9)
+    beam_skip_threshold: 0.2    # Reduced threshold (was 0.3)
+    
+    # Update parameters - TUNED FOR 25Hz LIDAR
+    update_min_d: 0.05         # More frequent updates for fast LiDAR (was 0.15)
+    update_min_a: 0.05          # More frequent angular updates (was 0.15)
+    
+    # Transform and timing
+    tf_broadcast: true
+    transform_tolerance: 0.5    # Reduced for tighter timing (was 1.0)
+    save_pose_rate: 0.5
+    
+    # Additional parameters for better performance
+    lambda_short: 0.1
+    always_reset_initial_pose: false
+    first_map_only: false
+    
+bt_navigator:
+  ros__parameters:
+    use_sim_time: True
+    global_frame: map
+    robot_base_frame: base_link
+    odom_topic: /odometry/filtered
+    bt_loop_duration: 10
+    default_server_timeout: 20
+    wait_for_service_timeout: 1000
+    action_server_result_timeout: 900.0
+    navigators: ["navigate_to_pose", "navigate_through_poses"]
+    navigate_to_pose:
+      plugin: "nav2_bt_navigator::NavigateToPoseNavigator"
+    navigate_through_poses:
+      plugin: "nav2_bt_navigator::NavigateThroughPosesNavigator"
+    # Custom behavior trees for your delivery bot
+    default_nav_to_pose_bt_xml: /opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml
+    default_nav_through_poses_bt_xml: /opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_through_poses_w_replanning_and_recovery.xml
 
 controller_server:
   ros__parameters:
-    expected_controller_frequency: 20.0
-    controller_plugins:            ["FollowPath"]
-    use_sim_time:                  true
+    use_sim_time: True
+    controller_frequency: 20.0
+    min_x_velocity_threshold: 0.001
+    min_y_velocity_threshold: 0.001
+    min_theta_velocity_threshold: 0.001
+    failure_tolerance: 0.3
+    progress_checker_plugin: "progress_checker"
+    goal_checker_plugins: ["general_goal_checker"]
+    controller_plugins: ["FollowPath"]
 
-# include costmap configs
-global_costmap:
-  ros__parameters: *global_costmap
+    # Progress checker parameters
+    progress_checker:
+      plugin: "nav2_controller::SimpleProgressChecker"
+      required_movement_radius: 0.5
+      movement_time_allowance: 10.0
+      
+    # Goal checker parameters
+    general_goal_checker:
+      stateful: True
+      plugin: "nav2_controller::SimpleGoalChecker"
+      xy_goal_tolerance: 0.1
+      yaw_goal_tolerance: 0.17
+
+    # DWB parameters - optimized for omni-wheel robot
+    FollowPath:
+      plugin: "dwb_core::DWBLocalPlanner"
+      debug_trajectory_details: True
+      min_vel_x: -0.3
+      min_vel_y: -0.3
+      max_vel_x: 0.15
+      max_vel_y: 0.15
+      max_vel_theta: 0.5
+      min_speed_xy: 0.0
+      max_speed_xy: 0.212
+      min_speed_theta: 0.0
+      acc_lim_x: 0.5
+      acc_lim_y: 0.5
+      acc_lim_theta: 0.8
+      decel_lim_x: -0.5
+      decel_lim_y: -0.5
+      decel_lim_theta: -0.8
+      vx_samples: 20
+      vy_samples: 20
+      vth_samples: 40
+      sim_time: 1.7
+      linear_granularity: 0.05
+      angular_granularity: 0.025
+      transform_tolerance: 0.2
+      xy_goal_tolerance: 0.1
+      trans_stopped_velocity: 0.25
+      short_circuit_trajectory_evaluation: True
+      stateful: True
+      critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
+      BaseObstacle.scale: 0.02
+      PathAlign.scale: 32.0
+      PathAlign.forward_point_distance: 0.1
+      GoalAlign.scale: 24.0
+      GoalAlign.forward_point_distance: 0.1
+      PathDist.scale: 32.0
+      GoalDist.scale: 24.0
+      RotateToGoal.scale: 32.0
+      RotateToGoal.slowing_factor: 5.0
+      RotateToGoal.lookahead_time: -1.0
+
 local_costmap:
-  ros__parameters: *local_costmap
+  local_costmap:
+    ros__parameters:
+      update_frequency: 5.0
+      publish_frequency: 2.0
+      global_frame: odom
+      robot_base_frame: base_link
+      use_sim_time: True
+      rolling_window: true
+      width: 3
+      height: 3
+      resolution: 0.05
+      robot_radius: 0.125  # From your controller config
+      plugins: ["voxel_layer", "inflation_layer"]
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        cost_scaling_factor: 3.0
+        inflation_radius: 0.3
+      voxel_layer:
+        plugin: "nav2_costmap_2d::VoxelLayer"
+        enabled: True
+        publish_voxel_map: True
+        origin_z: 0.0
+        z_resolution: 0.05
+        z_voxels: 16
+        max_obstacle_height: 2.0
+        mark_threshold: 0
+        observation_sources: scan
+        scan:
+          topic: /scan
+          max_obstacle_height: 2.0
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+          raytrace_max_range: 3.0
+          raytrace_min_range: 0.0
+          obstacle_max_range: 2.5
+          obstacle_min_range: 0.0
+      static_layer:
+        plugin: "nav2_costmap_2d::StaticLayer"
+        map_subscribe_transient_local: True
+      always_send_full_costmap: True
 
-bt_navigator:
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      update_frequency: 1.0
+      publish_frequency: 1.0
+      global_frame: map
+      robot_base_frame: base_link
+      use_sim_time: True
+      robot_radius: 0.125  # From your controller config
+      resolution: 0.05
+      track_unknown_space: true
+      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        enabled: True
+        observation_sources: scan
+        scan:
+          topic: /scan
+          max_obstacle_height: 2.0
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+          raytrace_max_range: 3.0
+          raytrace_min_range: 0.0
+          obstacle_max_range: 2.5
+          obstacle_min_range: 0.0
+      static_layer:
+        plugin: "nav2_costmap_2d::StaticLayer"
+        map_subscribe_transient_local: True
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        cost_scaling_factor: 3.0
+        inflation_radius: 0.3
+      always_send_full_costmap: True
+
+map_server:
   ros__parameters:
-    use_sim_time:   true
-    bt_xml_filename: {bt_file}    # from launch
+    use_sim_time: True
+    # The frame_id is handled by the map yaml file
+
+planner_server:
+  ros__parameters:
+    expected_planner_frequency: 20.0
+    use_sim_time: True
+    planner_plugins: ["GridBased"]
+    GridBased:
+      plugin: "nav2_navfn_planner::NavfnPlanner"
+      tolerance: 0.5
+      use_astar: false
+      allow_unknown: true
+
+behavior_server:
+  ros__parameters:
+    costmap_topic: local_costmap/costmap_raw
+    footprint_topic: local_costmap/published_footprint
+    cycle_frequency: 10.0
+    behavior_plugins: ["spin", "backup", "drive_on_heading", "assisted_teleop", "wait"]
+
+    spin:
+      plugin: "nav2_behaviors::Spin"
+
+    backup:
+      plugin: "nav2_behaviors::BackUp"
+
+    drive_on_heading:
+      plugin: "nav2_behaviors::DriveOnHeading"
+
+    assisted_teleop:
+      plugin: "nav2_behaviors::AssistedTeleop"
+
+    wait:
+      plugin: "nav2_behaviors::Wait"
+
+    global_frame: odom
+    robot_base_frame: base_link
+    transform_timeout: 0.1
+    use_sim_time: true
+    simulate_ahead_time: 2.0
+    max_rotational_vel: 1.0
+    min_rotational_vel: 0.4
+    rotational_acc_lim: 3.2
+
+robot_state_publisher:
+  ros__parameters:
+    use_sim_time: True
+
+waypoint_follower:
+  ros__parameters:
+    use_sim_time: True
+    loop_rate: 20
+    stop_on_failure: false
+    waypoint_task_executor_plugin: "wait_at_waypoint"
+    wait_at_waypoint:
+      plugin: "nav2_waypoint_follower::WaitAtWaypoint"
+      enabled: True
+      waypoint_pause_duration: 200

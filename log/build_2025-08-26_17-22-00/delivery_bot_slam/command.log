@@ -1,0 +1,1 @@
+Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abanoub/delivery_bot_ws/install/twist_to_stamped:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_slam -- -j20 -l20

@@ -1,0 +1,20 @@
+[0.436s] Invoking command in '/home/abanoub/delivery_bot_ws/src/twist_to_stamped': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abanoub/delivery_bot_ws/build/twist_to_stamped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abanoub/delivery_bot_ws/install/twist_to_stamped/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_to_stamped build --build-base /home/abanoub/delivery_bot_ws/build/twist_to_stamped/build install --record /home/abanoub/delivery_bot_ws/build/twist_to_stamped/install.log --single-version-externally-managed
+[0.575s] running egg_info
+[0.585s] writing ../../build/twist_to_stamped/twist_to_stamped.egg-info/PKG-INFO
+[0.585s] writing dependency_links to ../../build/twist_to_stamped/twist_to_stamped.egg-info/dependency_links.txt
+[0.585s] writing entry points to ../../build/twist_to_stamped/twist_to_stamped.egg-info/entry_points.txt
+[0.585s] writing requirements to ../../build/twist_to_stamped/twist_to_stamped.egg-info/requires.txt
+[0.585s] writing top-level names to ../../build/twist_to_stamped/twist_to_stamped.egg-info/top_level.txt
+[0.604s] reading manifest file '../../build/twist_to_stamped/twist_to_stamped.egg-info/SOURCES.txt'
+[0.604s] writing manifest file '../../build/twist_to_stamped/twist_to_stamped.egg-info/SOURCES.txt'
+[0.604s] running build
+[0.604s] running build_py
+[0.604s] running install
+[0.608s] running install_lib
+[0.617s] running install_egg_info
+[0.627s] removing '/home/abanoub/delivery_bot_ws/install/twist_to_stamped/lib/python3.12/site-packages/twist_to_stamped-0.0.1-py3.12.egg-info' (and everything under it)
+[0.627s] Copying ../../build/twist_to_stamped/twist_to_stamped.egg-info to /home/abanoub/delivery_bot_ws/install/twist_to_stamped/lib/python3.12/site-packages/twist_to_stamped-0.0.1-py3.12.egg-info
+[0.627s] running install_scripts
+[0.690s] Installing twist_to_stamped script to /home/abanoub/delivery_bot_ws/install/twist_to_stamped/bin
+[0.690s] writing list of installed files to '/home/abanoub/delivery_bot_ws/build/twist_to_stamped/install.log'
+[0.706s] Invoked command in '/home/abanoub/delivery_bot_ws/src/twist_to_stamped' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abanoub/delivery_bot_ws/build/twist_to_stamped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abanoub/delivery_bot_ws/install/twist_to_stamped/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_to_stamped build --build-base /home/abanoub/delivery_bot_ws/build/twist_to_stamped/build install --record /home/abanoub/delivery_bot_ws/build/twist_to_stamped/install.log --single-version-externally-managed

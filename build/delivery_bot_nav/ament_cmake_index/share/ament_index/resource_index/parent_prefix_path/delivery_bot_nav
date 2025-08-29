@@ -1,1 +1,1 @@
-/home/abanoub/delivery_bot_ws/install/my_robot_description:/home/abanoub/delivery_bot_ws/install/delivery_bot_nav:/home/abanoub/delivery_bot_ws/install/delivery_bot_control:/opt/ros/jazzy
+/home/abanoub/delivery_bot_ws/install/my_robot_description:/home/abanoub/delivery_bot_ws/install/delivery_bot_slam:/home/abanoub/delivery_bot_ws/install/delivery_bot_nav:/home/abanoub/delivery_bot_ws/install/delivery_bot_description:/home/abanoub/delivery_bot_ws/install/delivery_bot_control:/opt/ros/jazzy

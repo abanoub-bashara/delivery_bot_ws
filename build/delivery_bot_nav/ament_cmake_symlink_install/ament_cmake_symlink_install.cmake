@@ -310,8 +310,11 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "config" "launch" "maps" "DESTINATION" "share/delivery_bot_nav")
-ament_cmake_symlink_install_directory("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" DIRECTORY "config" "launch" "maps" "DESTINATION" "share/delivery_bot_nav")
+# install(PROGRAMS "src/twist_to_stamped_node.py" "DESTINATION" "lib/delivery_bot_nav")
+ament_cmake_symlink_install_programs("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" PROGRAMS "src/twist_to_stamped_node.py" "DESTINATION" "lib/delivery_bot_nav")
+
+# install(DIRECTORY "src" "config" "launch" "maps" "behaviour_trees" "rviz" "DESTINATION" "share/delivery_bot_nav")
+ament_cmake_symlink_install_directory("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" DIRECTORY "src" "config" "launch" "maps" "behaviour_trees" "rviz" "DESTINATION" "share/delivery_bot_nav")
 
 # install(FILES "/home/abanoub/delivery_bot_ws/build/delivery_bot_nav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/delivery_bot_nav" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/abanoub/delivery_bot_ws/src/delivery_bot_nav" FILES "/home/abanoub/delivery_bot_ws/build/delivery_bot_nav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/delivery_bot_nav" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
