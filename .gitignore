@@ -1,2 +1,17 @@
-build/\ninstall/\nlog/\n*.pyc\n*.swp
+# build and install directories (ROS 2 artifacts)
+build/
+install/
+
+# ROS 2 and colcon log files
+log/
+
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Swap files
+*.swp
+
+# VS Code settings
 .vscode/
