@@ -1,2 +1,0 @@
-[console_scripts]
-twist_to_stamped = twist_to_stamped_node:main

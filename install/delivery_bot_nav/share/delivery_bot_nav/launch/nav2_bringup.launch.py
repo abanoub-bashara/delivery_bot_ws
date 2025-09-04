@@ -1,1 +1,0 @@
-/home/abanoub/delivery_bot_ws/src/delivery_bot_nav/launch/nav2_bringup.launch.py

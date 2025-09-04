@@ -1,1 +1,0 @@
-/home/abanoub/delivery_bot_ws/build/delivery_bot_nav/ament_cmake_environment_hooks/local_setup.bash

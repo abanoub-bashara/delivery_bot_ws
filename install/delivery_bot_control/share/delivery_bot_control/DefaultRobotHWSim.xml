@@ -1,9 +1,0 @@
-<library path="libgazebo_ros2_control.so">
-  <class name="gazebo_ros2_control/DefaultRobotHWSim"
-         type="gazebo_ros2_control::DefaultRobotHWSim"
-         base_class_type="hardware_interface::SystemInterface">
-    <description>
-      Gazebo system interface for ros2_control
-    </description>
-  </class>
-</library>

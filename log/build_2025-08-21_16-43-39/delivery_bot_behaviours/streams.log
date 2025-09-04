@@ -1,2 +1,0 @@
-[0.012s] Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours -- -j20 -l20
-[0.049s] Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_behaviours -- -j20 -l20

@@ -1,9 +1,0 @@
-/home/abanoub/delivery_bot_ws/build/delivery_bot_slam/CMakeFiles/uninstall.dir
-/home/abanoub/delivery_bot_ws/build/delivery_bot_slam/CMakeFiles/delivery_bot_slam_uninstall.dir
-/home/abanoub/delivery_bot_ws/build/delivery_bot_slam/CMakeFiles/test.dir
-/home/abanoub/delivery_bot_ws/build/delivery_bot_slam/CMakeFiles/edit_cache.dir
-/home/abanoub/delivery_bot_ws/build/delivery_bot_slam/CMakeFiles/rebuild_cache.dir
-/home/abanoub/delivery_bot_ws/build/delivery_bot_slam/CMakeFiles/list_install_components.dir
-/home/abanoub/delivery_bot_ws/build/delivery_bot_slam/CMakeFiles/install.dir
-/home/abanoub/delivery_bot_ws/build/delivery_bot_slam/CMakeFiles/install/local.dir
-/home/abanoub/delivery_bot_ws/build/delivery_bot_slam/CMakeFiles/install/strip.dir

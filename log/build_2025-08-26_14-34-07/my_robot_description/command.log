@@ -1,2 +1,0 @@
-Invoking command in '/home/abanoub/delivery_bot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/my_robot_description -- -j20 -l20
-Invoked command in '/home/abanoub/delivery_bot_ws/build/my_robot_description' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/my_robot_description -- -j20 -l20

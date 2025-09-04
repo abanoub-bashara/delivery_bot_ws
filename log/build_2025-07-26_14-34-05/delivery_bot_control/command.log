@@ -1,2 +1,0 @@
-Invoking command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control': /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20
-Invoked command in '/home/abanoub/delivery_bot_ws/build/delivery_bot_control' returned '2': /usr/bin/cmake --build /home/abanoub/delivery_bot_ws/build/delivery_bot_control -- -j20 -l20

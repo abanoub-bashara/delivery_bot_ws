@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: twist-to-stamped
-Version: 0.0.1
-Summary: Bridge node that converts geometry_msgs/Twist to TwistStamped.
-Maintainer: Your Name
-Maintainer-email: your@email.com
-License: MIT

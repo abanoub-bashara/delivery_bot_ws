@@ -1,1 +1,0 @@
-/home/abanoub/delivery_bot_ws/src/delivery_bot_nav/src/twist_to_stamped_node.py
