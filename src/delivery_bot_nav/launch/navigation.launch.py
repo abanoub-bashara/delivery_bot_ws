@@ -17,7 +17,7 @@ def generate_launch_description():
     # Declare launch arguments
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
-        default_value=os.path.join(nav_pkg, 'maps', 'my_map.yaml'),
+        default_value=os.path.join(nav_pkg, 'maps', 'my_map2.yaml'),
         description='Full path to map yaml file to load'
     )
     
@@ -66,7 +66,10 @@ def generate_launch_description():
         package='nav2_controller',
         executable='controller_server',
         output='screen',
-        parameters=[nav2_params_file]
+        parameters=[nav2_params_file],
+        remappings=[
+            ('/cmd_vel', '/omni_drive_controller/cmd_vel')  # Remap to your controller's topic
+        ]
     )
     
     # Nav2 Planner

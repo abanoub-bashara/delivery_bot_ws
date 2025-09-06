@@ -21,29 +21,28 @@ find_package(controller_manager REQUIRED)
 find_package(ros2_controllers   REQUIRED)
 find_package(gz_ros2_control REQUIRED)  # CHANGED: gazebo_ros2_control -> gz_ros2_control
 
-# 1) C++ hardware‐bridge node
-add_executable(hardware_bridge_node src/hardware_bridge_node.cpp)
-ament_target_dependencies(hardware_bridge_node
-  rclcpp
-  sensor_msgs
-  trajectory_msgs
-  geometry_msgs
-  control_msgs
-  hardware_interface
-  pluginlib
-)
-install(
-  TARGETS hardware_bridge_node
-  DESTINATION lib/${PROJECT_NAME}
-)
+# # 1) C++ hardware‐bridge node
+# add_executable(hardware_bridge_node src/hardware_bridge_node.cpp)
+# ament_target_dependencies(hardware_bridge_node
+#   rclcpp
+#   sensor_msgs
+#   trajectory_msgs
+#   geometry_msgs
+#   control_msgs
+#   hardware_interface
+#   pluginlib
+# )
+# install(
+#   TARGETS hardware_bridge_node
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 # 2) Python kinematics + odometry nodes
 install(
   PROGRAMS
     src/omni_kinematics_node.py
     src/odometry_node.py
-    src/recommend_fdir1.py
-    src/wheel_direction_test.py
+    src/omni_velocity_smoother.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

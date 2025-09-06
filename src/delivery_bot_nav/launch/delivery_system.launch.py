@@ -22,7 +22,7 @@ def generate_launch_description():
         'map',
         default_value=os.path.join(
             get_package_share_directory('delivery_bot_nav'), 
-            'maps', 'my_map.yaml'
+            'maps', 'my_map2.yaml'
         ),
         description='Full path to map yaml file (used in navigation mode)'
     )
@@ -74,8 +74,8 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         output='screen',
-        arguments=['-d', rviz_nav_config],                 # <<<<<< key line
-        parameters=[{'use_sim_time': True}],  # Remove the config file for now
+        arguments=['-d', rviz_nav_config],                
+        parameters=[{'use_sim_time': True}],  
         condition=IfCondition(
             PythonExpression(['"', mode, '" == "navigation"'])
         )
@@ -87,20 +87,13 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         output='screen',
-        arguments=['-d', rviz_slam_config],                 # <<<<<< key line
+        arguments=['-d', rviz_slam_config],              
         parameters=[{'use_sim_time': True}],
         condition=IfCondition(
             PythonExpression(['"', mode, '" == "slam"'])
         )
     )
 
-    # Twist to TwistStamped bridge
-    twist_bridge_node = Node(
-        package='delivery_bot_nav',  # Use your existing package
-        executable='twist_to_stamped_node.py',
-        name='twist_to_stamped',
-        output='screen'
-    )
     
     return LaunchDescription([
         declare_mode_cmd,
@@ -117,7 +110,6 @@ def generate_launch_description():
             actions=[
                 rviz_node,
                 rviz_slam_node,
-                twist_bridge_node
             ]
         )
     ])

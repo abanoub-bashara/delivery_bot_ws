@@ -1,5 +1,4 @@
-# Nav2 Parameters for Omni-wheel Delivery Bot
-# Nav2 Parameters for Omni-wheel Delivery Bot
+# Nav2 Parameters for Omni-wheel Delivery Bot - OPTIMIZED FOR ROBUST LOCALIZATION
 amcl:
   ros__parameters:
     use_sim_time: True
@@ -14,59 +13,87 @@ amcl:
     odom_frame_id: "odom"
     scan_topic: "scan"
     
-    # Motion model parameters - OPTIMIZED for omni-wheel
+    # Motion model parameters - INCREASED noise to handle bad odometry better
     robot_model_type: "nav2_amcl::OmniMotionModel"
-    # Reduced noise for omni-wheel precision
-    alpha1: 1.0   # Rotational noise from rotation (was 0.2)
-    alpha2: 1.0   # Rotational noise from translation (was 0.2)
-    alpha3: 1.0 # Translational noise from translation (was 0.2)
-    alpha4: 1.0   # Translational noise from rotation (was 0.2)
-    alpha5: 1.0   # Translation noise (omni-specific, was 0.2)
-
-    # Particle filter parameters - OPTIMIZED
-    max_particles: 5000      # Increased for better accuracy
-    min_particles: 500       # Increased minimum
-    pf_err: 0.03            # Reduced error threshold (was 0.05)
-    pf_z: 0.99              # Keep high confidence
+    # SIGNIFICANTLY increased noise values to reduce odometry dependence
+    alpha1: 5.0   # Rotational noise from rotation - high for bad odom recovery
+    alpha2: 5.0   # Rotational noise from translation - high for sideways drift
+    alpha3: 5.0   # Translational noise from translation - moderate increase
+    alpha4: 5.0   # Translational noise from rotation - high for turn errors
+    alpha5: 5.0   # Translation noise (omni-specific) - high for multi-directional drift
+    
+    # Particle filter parameters - OPTIMIZED for recovery without rotation dependence
+    max_particles: 8000      # Increased for better coverage of uncertain areas
+    min_particles: 1000      # Higher minimum to maintain diversity
+    pf_err: 0.02            # Tighter error threshold for precision
+    pf_z: 0.95              # Slightly reduced to allow more resampling when uncertain
     resample_interval: 1     # Keep frequent resampling
     
-    # Recovery parameters - ENABLED for better recovery
-    recovery_alpha_slow: 0.001   # Enable slow recovery (was 0.0)
-    recovery_alpha_fast: 0.1     # Enable fast recovery (was 0.0)
+    # Recovery parameters - AGGRESSIVE recovery settings
+    recovery_alpha_slow: 0.002   # Faster slow recovery (was 0.001)
+    recovery_alpha_fast: 0.15    # Much faster fast recovery (was 0.1)
     
-    # Laser model parameters - MATCHED TO YOUR LIDAR
+    # Laser model parameters - OPTIMIZED for better feature detection
     laser_model_type: "likelihood_field"
-    laser_likelihood_max_dist: 1.0   # Reduced to match 6m max range
-    laser_max_range: 6.0            # EXACT match to your LiDAR max (was 30.0)
-    laser_min_range: 0.12           # EXACT match to your LiDAR min (was 0.1)
-    max_beams: 360                   # Half of 360 samples for efficiency
-
-    # Laser weighting - FINE-TUNED
-    z_hit: 0.95      # Increased hit weight (was 0.5)
-    z_short: 0.1    # Increased short reading weight (was 0.05)
-    z_max: 0.05     # Keep max reading weight low
-    z_rand: 0.05    # Reduced random weight (was 0.5)
-    sigma_hit: 0.15 # Reduced hit sigma for tighter matching (was 0.2)
+    laser_likelihood_max_dist: 1.5   # Increased for better feature matching
+    laser_max_range: 5.8             # Slightly under max to avoid edge effects
+    laser_min_range: 0.15            # Slightly above min to avoid noise
+    max_beams: 180                   # Reduced for efficiency while maintaining coverage
     
-    # Beam skipping - ENABLED for efficiency
-    do_beamskip: true           # Enable beam skipping
-    beam_skip_distance: 0.3     # Reduced distance (was 0.5)
-    beam_skip_error_threshold: 0.8  # Reduced threshold (was 0.9)
-    beam_skip_threshold: 0.2    # Reduced threshold (was 0.3)
+    # Laser weighting - REBALANCED for better localization without rotation
+    z_hit: 0.85     # Higher hit weight for precise matching
+    z_short: 0.05   # Reduced short reading weight
+    z_max: 0.02     # Very low max reading weight
+    z_rand: 0.08    # Very low random weight for precision
+    sigma_hit: 0.12 # Tighter hit sigma for precise matching
     
-    # Update parameters - TUNED FOR 25Hz LIDAR
-    update_min_d: 0.05         # More frequent updates for fast LiDAR (was 0.15)
-    update_min_a: 0.05          # More frequent angular updates (was 0.15)
+    # Beam skipping - OPTIMIZED for efficiency
+    do_beamskip: true
+    beam_skip_distance: 0.25    # Moderate skipping
+    beam_skip_error_threshold: 0.7  # More aggressive skipping of bad beams
+    beam_skip_threshold: 0.15   # Lower threshold for better beam selection
     
-    # Transform and timing
+    # Update parameters - AGGRESSIVE updates for fast recovery
+    update_min_d: 0.02          # Very frequent position updates
+    update_min_a: 0.02          # Very frequent angular updates
+    
+    # Transform and timing - OPTIMIZED for real-time performance
     tf_broadcast: true
-    transform_tolerance: 0.5    # Reduced for tighter timing (was 1.0)
-    save_pose_rate: 0.5
+    transform_tolerance: 0.3    # Tighter tolerance for better sync
+    save_pose_rate: 2.0         # More frequent pose saving
     
-    # Additional parameters for better performance
-    lambda_short: 0.1
+    # Additional parameters for robust performance
+    lambda_short: 0.08          # Reduced for less sensitivity to obstacles
     always_reset_initial_pose: false
     first_map_only: false
+    
+    # CRITICAL: Spatial sampling parameters for better coverage without rotation
+    spatial_resample_threshold: 0.3  # Lower threshold for more resampling
+    temporal_update: false           # Disable time-based updates, use motion only
+    
+    # Feature-based localization improvements
+    selective_resampling: true       # Enable selective resampling
+    
+    # Initialization and recovery parameters
+    init_particles_for_scan_match: true  # Use scan matching for initialization
+    max_scan_range_factor: 0.95          # Use most of the scan range
+    min_scan_range_factor: 0.05          # Ignore very close readings
+    
+    # Convergence parameters - TUNED for stability without rotation requirement
+    convergence_timeout: 30.0    # Longer timeout for difficult scenarios
+    initial_pose_covariance_x: 2.0      # Higher initial uncertainty
+    initial_pose_covariance_y: 2.0      # Higher initial uncertainty  
+    initial_pose_covariance_yaw: 1.57   # High angular uncertainty (~90 degrees)
+    
+    # Observation model parameters for better feature matching
+    observation_persistence: 3   # Keep observations longer for stability
+    expected_noisy_observation_density: 0.1  # Expect some noisy observations
+    
+map_server:
+  ros__parameters:
+    use_sim_time: True
+    # The frame_id is handled by the map yaml file
+
     
 bt_navigator:
   ros__parameters:
@@ -89,6 +116,7 @@ bt_navigator:
 
 controller_server:
   ros__parameters:
+    enable_stamped_cmd_vel: True
     use_sim_time: True
     controller_frequency: 20.0
     min_x_velocity_threshold: 0.001
@@ -231,11 +259,6 @@ global_costmap:
         inflation_radius: 0.3
       always_send_full_costmap: True
 
-map_server:
-  ros__parameters:
-    use_sim_time: True
-    # The frame_id is handled by the map yaml file
-
 planner_server:
   ros__parameters:
     expected_planner_frequency: 20.0
@@ -278,9 +301,6 @@ behavior_server:
     min_rotational_vel: 0.4
     rotational_acc_lim: 3.2
 
-robot_state_publisher:
-  ros__parameters:
-    use_sim_time: True
 
 waypoint_follower:
   ros__parameters:

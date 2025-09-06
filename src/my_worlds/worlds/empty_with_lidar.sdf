@@ -1,13 +1,12 @@
 <?xml version="1.0" ?>
 <sdf version="1.10">
   <world name="empty_with_lidar">
-    
+
     <!-- Plugins -->
     <plugin filename="libgz-sim-physics-system.so" name="gz::sim::systems::Physics"/>
     <plugin filename="libgz-sim-user-commands-system.so" name="gz::sim::systems::UserCommands"/>
     <plugin filename="libgz-sim-scene-broadcaster-system.so" name="gz::sim::systems::SceneBroadcaster"/>
     <plugin filename="libgz-sim-imu-system.so" name="gz::sim::systems::Imu"/>
-
     <!-- Physics -->
     <physics name="1ms" type="ignored">
       <max_step_size>0.001</max_step_size>
@@ -24,10 +23,10 @@
     </light>
 
     <!-- Ground -->
-    <model name="ground_plane">
+    <model name='ground_plane'>
       <static>true</static>
-      <link name="link">
-        <collision name="collision">
+      <link name='link'>
+        <collision name='collision'>
           <geometry>
             <plane>
               <normal>0 0 1</normal>
@@ -35,10 +34,16 @@
             </plane>
           </geometry>
           <surface>
-            <friction><ode><mu>100</mu><mu2>50</mu2></ode></friction>
+            <friction>
+              <ode>
+                <mu>50</mu>
+              </ode>
+            </friction>
+            <bounce/>
+            <contact/>
           </surface>
         </collision>
-        <visual name="visual">
+        <visual name='visual'>
           <geometry>
             <plane>
               <normal>0 0 1</normal>
@@ -46,11 +51,28 @@
             </plane>
           </geometry>
           <material>
-            <ambient>0.8 0.8 0.8 1</ambient>
-            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <ambient>0.800000012 0.800000012 0.800000012 1</ambient>
+            <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+            <specular>0.800000012 0.800000012 0.800000012 1</specular>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
     </model>
 
     <!-- Maze -->
@@ -77,18 +99,20 @@
       <link name="h2"><pose>-8 2 0.5 0 0 0</pose><collision name="col"><geometry><box><size>4 0.2 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>4 0.2 1</size></box></geometry><material><diffuse>0.7 0.7 0.7 1</diffuse></material></visual></link>
       <link name="h3_left"><pose>-5.5 -2 0.5 0 0 0</pose><collision name="col"><geometry><box><size>3 0.2 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>3 0.2 1</size></box></geometry><material><diffuse>0.7 0.7 0.7 1</diffuse></material></visual></link>
       <link name="h3_right"><pose>0 -2 0.5 0 0 0</pose><collision name="col"><geometry><box><size>3 0.2 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>3 0.2 1</size></box></geometry><material><diffuse>0.7 0.7 0.7 1</diffuse></material></visual></link>
-      <link name="h4"><pose>-8 -6 0.5 0 0 0</pose><collision name="col"><geometry><box><size>5 0.2 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>5 0.2 1</size></box></geometry><material><diffuse>0.7 0.7 0.7 1</diffuse></material></visual></link>>
+      <link name="h4"><pose>-8 -6 0.5 0 0 0</pose><collision name="col"><geometry><box><size>5 0.2 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>5 0.2 1</size></box></geometry><material><diffuse>0.7 0.7 0.7 1</diffuse></material></visual></link>
+
       <link name="right_vert1_top">
         <pose>3 9.5 0.5 0 0 0</pose>
         <collision name="col"><geometry><box><size>0.2 3 1</size></box></geometry></collision>
         <visual name="vis"><geometry><box><size>0.2 3 1</size></box></geometry><material><diffuse>0.6 0.6 0.6 1</diffuse></material></visual>
       </link>
-<!-- Bottom segment of right_vert1 -->
+
       <link name="right_vert1_bottom">
         <pose>3 4.5 0.5 0 0 0</pose>
         <collision name="col"><geometry><box><size>0.2 3 1</size></box></geometry></collision>
         <visual name="vis"><geometry><box><size>0.2 3 1</size></box></geometry><material><diffuse>0.6 0.6 0.6 1</diffuse></material></visual>
       </link>
+
       <link name="right_vert2_top"><pose>6 5.5 0.5 0 0 0</pose><collision name="col"><geometry><box><size>0.2 5 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.2 5 1</size></box></geometry><material><diffuse>0.6 0.6 0.6 1</diffuse></material></visual></link>
       <link name="right_vert2_bottom"><pose>6 -3.5 0.5 0 0 0</pose><collision name="col"><geometry><box><size>0.2 5 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.2 5 1</size></box></geometry><material><diffuse>0.6 0.6 0.6 1</diffuse></material></visual></link>
       <link name="right_h1"><pose>3 4 0.5 0 0 0</pose><collision name="col"><geometry><box><size>6 0.2 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>6 0.2 1</size></box></geometry><material><diffuse>0.6 0.6 0.6 1</diffuse></material></visual></link>
@@ -100,6 +124,49 @@
       <link name="pillar2"><pose>5 -8 0.5 0 0 0</pose><collision name="col"><geometry><box><size>0.5 0.5 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.5 0.5 1</size></box></geometry><material><diffuse>0.7 0.5 0.4 1</diffuse></material></visual></link>
       <link name="pillar3"><pose>-7 -7 0.5 0 0 0</pose><collision name="col"><geometry><box><size>0.5 0.5 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.5 0.5 1</size></box></geometry><material><diffuse>0.8 0.3 0.3 1</diffuse></material></visual></link>
       <link name="pillar4"><pose>2 2 0.5 0 0 0</pose><collision name="col"><geometry><box><size>0.5 0.5 1</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.5 0.5 1</size></box></geometry><material><diffuse>0.3 0.8 0.3 1</diffuse></material></visual></link>
+    </model>
+
+    <!-- Dense landmarks pack: cones, boxes, cylinders -->
+    <model name="landmarks_dense">
+      <static>true</static>
+
+      <!-- Cones -->
+      <link name="cone_01"><pose>-7.0 7.5 0.25 0 0 0</pose><collision name="col"><geometry><cone><radius>0.20</radius><length>0.50</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.20</radius><length>0.50</length></cone></geometry><material><diffuse>0.9 0.4 0.1 1</diffuse></material></visual></link>
+      <link name="cone_02"><pose>-6.0 6.0 0.25 0 0 0.6</pose><collision name="col"><geometry><cone><radius>0.18</radius><length>0.50</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.18</radius><length>0.50</length></cone></geometry><material><diffuse>0.9 0.4 0.1 1</diffuse></material></visual></link>
+      <link name="cone_03"><pose>-4.0 5.5 0.25 0 0 1.1</pose><collision name="col"><geometry><cone><radius>0.20</radius><length>0.50</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.20</radius><length>0.50</length></cone></geometry><material><diffuse>0.9 0.4 0.1 1</diffuse></material></visual></link>
+      <link name="cone_04"><pose>-2.5 4.0 0.25 0 0 -0.5</pose><collision name="col"><geometry><cone><radius>0.16</radius><length>0.45</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.16</radius><length>0.45</length></cone></geometry><material><diffuse>0.95 0.5 0.15 1</diffuse></material></visual></link>
+      <link name="cone_05"><pose>0.5 3.0 0.25 0 0 0.3</pose><collision name="col"><geometry><cone><radius>0.18</radius><length>0.50</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.18</radius><length>0.50</length></cone></geometry><material><diffuse>0.95 0.5 0.15 1</diffuse></material></visual></link>
+      <link name="cone_06"><pose>2.0 5.0 0.25 0 0 1.2</pose><collision name="col"><geometry><cone><radius>0.20</radius><length>0.55</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.20</radius><length>0.55</length></cone></geometry><material><diffuse>0.9 0.4 0.1 1</diffuse></material></visual></link>
+      <link name="cone_07"><pose>4.0 7.0 0.25 0 0 -0.9</pose><collision name="col"><geometry><cone><radius>0.18</radius><length>0.45</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.18</radius><length>0.45</length></cone></geometry><material><diffuse>0.9 0.4 0.1 1</diffuse></material></visual></link>
+      <link name="cone_08"><pose>7.0 6.5 0.25 0 0 0.4</pose><collision name="col"><geometry><cone><radius>0.20</radius><length>0.50</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.20</radius><length>0.50</length></cone></geometry><material><diffuse>0.9 0.4 0.1 1</diffuse></material></visual></link>
+      <link name="cone_09"><pose>6.0 1.0 0.25 0 0 -0.2</pose><collision name="col"><geometry><cone><radius>0.18</radius><length>0.50</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.18</radius><length>0.50</length></cone></geometry><material><diffuse>0.9 0.4 0.1 1</diffuse></material></visual></link>
+      <link name="cone_10"><pose>5.5 -1.5 0.25 0 0 0.9</pose><collision name="col"><geometry><cone><radius>0.18</radius><length>0.45</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.18</radius><length>0.45</length></cone></geometry><material><diffuse>0.95 0.5 0.15 1</diffuse></material></visual></link>
+      <link name="cone_11"><pose>3.5 -4.0 0.25 0 0 -0.7</pose><collision name="col"><geometry><cone><radius>0.20</radius><length>0.55</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.20</radius><length>0.55</length></cone></geometry><material><diffuse>0.9 0.4 0.1 1</diffuse></material></visual></link>
+      <link name="cone_12"><pose>1.0 -5.5 0.25 0 0 0.2</pose><collision name="col"><geometry><cone><radius>0.18</radius><length>0.50</length></cone></geometry></collision><visual name="vis"><geometry><cone><radius>0.18</radius><length>0.50</length></cone></geometry><material><diffuse>0.9 0.4 0.1 1</diffuse></material></visual></link>
+
+      <!-- Boxes -->
+      <link name="box_01"><pose>-6.5 3.0 0.25 0 0 0.3</pose><collision name="col"><geometry><box><size>0.6 0.5 0.5</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.6 0.5 0.5</size></box></geometry><material><diffuse>0.2 0.4 0.8 1</diffuse></material></visual></link>
+      <link name="box_02"><pose>-4.5 1.0 0.35 0 0 1.1</pose><collision name="col"><geometry><box><size>0.4 0.4 0.7</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.4 0.4 0.7</size></box></geometry><material><diffuse>0.2 0.6 0.7 1</diffuse></material></visual></link>
+      <link name="box_03"><pose>-2.0 -1.0 0.25 0 0 -0.4</pose><collision name="col"><geometry><box><size>0.5 0.5 0.5</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.5 0.5 0.5</size></box></geometry><material><diffuse>0.2 0.5 0.9 1</diffuse></material></visual></link>
+      <link name="box_04"><pose>-1.0 -3.5 0.30 0 0 0.8</pose><collision name="col"><geometry><box><size>0.6 0.4 0.6</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.6 0.4 0.6</size></box></geometry><material><diffuse>0.3 0.5 0.8 1</diffuse></material></visual></link>
+      <link name="box_05"><pose>0.8 -7.0 0.35 0 0 -1.2</pose><collision name="col"><geometry><box><size>0.5 0.5 0.7</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.5 0.5 0.7</size></box></geometry><material><diffuse>0.2 0.6 0.9 1</diffuse></material></visual></link>
+      <link name="box_06"><pose>3.0 -2.5 0.25 0 0 0.2</pose><collision name="col"><geometry><box><size>0.6 0.5 0.5</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.6 0.5 0.5</size></box></geometry><material><diffuse>0.2 0.4 0.8 1</diffuse></material></visual></link>
+      <link name="box_07"><pose>4.5 2.0 0.30 0 0 -0.6</pose><collision name="col"><geometry><box><size>0.5 0.5 0.6</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.5 0.5 0.6</size></box></geometry><material><diffuse>0.2 0.6 0.7 1</diffuse></material></visual></link>
+      <link name="box_08"><pose>7.5 -1.0 0.25 0 0 1.4</pose><collision name="col"><geometry><box><size>0.6 0.6 0.5</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.6 0.6 0.5</size></box></geometry><material><diffuse>0.2 0.5 0.9 1</diffuse></material></visual></link>
+      <link name="box_09"><pose>-7.0 -2.5 0.35 0 0 0.0</pose><collision name="col"><geometry><box><size>0.4 0.6 0.7</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.4 0.6 0.7</size></box></geometry><material><diffuse>0.3 0.6 0.8 1</diffuse></material></visual></link>
+      <link name="box_10"><pose>-6.0 -5.5 0.25 0 0 -0.7</pose><collision name="col"><geometry><box><size>0.6 0.5 0.5</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.6 0.5 0.5</size></box></geometry><material><diffuse>0.2 0.4 0.8 1</diffuse></material></visual></link>
+
+      <!-- Cylinders -->
+      <link name="cyl_01"><pose>-8.0 5.0 0.4 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.25</radius><length>0.8</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.25</radius><length>0.8</length></cylinder></geometry><material><diffuse>0.7 0.7 0.2 1</diffuse></material></visual></link>
+      <link name="cyl_02"><pose>-3.5 0.0 0.3 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.20</radius><length>0.6</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.20</radius><length>0.6</length></cylinder></geometry><material><diffuse>0.7 0.6 0.2 1</diffuse></material></visual></link>
+      <link name="cyl_03"><pose>-1.0 2.0 0.5 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry><material><diffuse>0.8 0.7 0.3 1</diffuse></material></visual></link>
+      <link name="cyl_04"><pose>1.5 0.0 0.3 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.22</radius><length>0.6</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.22</radius><length>0.6</length></cylinder></geometry><material><diffuse>0.7 0.7 0.2 1</diffuse></material></visual></link>
+      <link name="cyl_05"><pose>3.0 6.0 0.4 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.25</radius><length>0.8</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.25</radius><length>0.8</length></cylinder></geometry><material><diffuse>0.7 0.6 0.2 1</diffuse></material></visual></link>
+      <link name="cyl_06"><pose>6.5 3.5 0.3 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.20</radius><length>0.6</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.20</radius><length>0.6</length></cylinder></geometry><material><diffuse>0.7 0.6 0.2 1</diffuse></material></visual></link>
+      <link name="cyl_07"><pose>8.0 -4.0 0.5 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.18</radius><length>1.0</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.18</radius><length>1.0</length></cylinder></geometry><material><diffuse>0.8 0.7 0.3 1</diffuse></material></visual></link>
+      <link name="cyl_08"><pose>5.0 -6.5 0.3 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.22</radius><length>0.6</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.22</radius><length>0.6</length></cylinder></geometry><material><diffuse>0.7 0.6 0.2 1</diffuse></material></visual></link>
+      <link name="cyl_09"><pose>0.0 -8.0 0.4 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.25</radius><length>0.8</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.25</radius><length>0.8</length></cylinder></geometry><material><diffuse>0.7 0.7 0.2 1</diffuse></material></visual></link>
+      <link name="cyl_10"><pose>-4.5 -6.0 0.3 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.20</radius><length>0.6</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.20</radius><length>0.6</length></cylinder></geometry><material><diffuse>0.7 0.6 0.2 1</diffuse></material></visual></link>
     </model>
 
     <!-- Gravity and magnetic field -->

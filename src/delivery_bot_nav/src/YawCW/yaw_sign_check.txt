@@ -1,0 +1,4 @@
+imu_mean_wz=-0.4822 -> CW
+odom_mean_wz=-0.5000 -> CW
+joint_states_mean_wz=-0.5000 -> CW
+eps=0.050

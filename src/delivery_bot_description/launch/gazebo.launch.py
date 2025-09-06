@@ -20,6 +20,7 @@ def generate_launch_description():
     #load urdf description 
     xacro_path = os.path.join(description_pkg, 'urdf', 'robot_v3.xacro')
     robot_desc = process_file(xacro_path).toxml()
+    robot_sdf_path = os.path.join(description_pkg, 'sdf', 'robot.sdf')  # <-- your saved SDF
 
     #load config files for nodes
     teleop_config_file = os.path.join(control_pkg, 'config', 'teleop_params.yaml')
@@ -62,6 +63,8 @@ def generate_launch_description():
             '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
             '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',  # Fixed syntax
             '/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',  # Fixed syntax
+            '/model/delivery_bot/pose@geometry_msgs/msg/PoseStamped[gz.msgs.Pose',
+
         ],
         parameters=[{'use_sim_time': True}],
         output='screen',
@@ -74,14 +77,13 @@ def generate_launch_description():
         name='spawn_robot',
         output='screen',
         arguments=[
-            '-name', 'delivery_bot', #v2 or no v
-            '-param', 'robot_description',
+            '-name', 'delivery_bot',
+            '-file', robot_sdf_path,          # <-- use SDF file
             '-world', 'empty_with_lidar',
-            '-x', '0', '-y', '0', '-z', '0.5',
+            '-x', '0', '-y', '0', '-z', '0.1',
         ],
-        parameters=[{'robot_description': robot_desc}],
     )
-    
+
 
     # Wait a bit before spawning controllers to ensure gz_ros2_control is ready
     wait_for_controllers = TimerAction(
@@ -115,24 +117,17 @@ def generate_launch_description():
         ]
     )
 
+    
+
     ekf = Node(
         package='robot_localization',
         executable='ekf_node',
         name='ekf_odom',
         output='screen',
         parameters=[ekf_config_file],
-        # remappings=[
-        #     ('/odometry/filtered', '/odom'),  # Remap EKF output from /odometry/filtered to /odom
-        # ]
     )
 
 
-    # slam_launch = IncludeLaunchDescription(
-    #     PythonLaunchDescriptionSource([
-    #         os.path.join(get_package_share_directory('delivery_bot_slam'), 
-    #                     'launch', 'slam.launch.py')
-    #     ])
-    # )
 
     joy_node = Node(
         package='joy',
@@ -148,18 +143,31 @@ def generate_launch_description():
         name='teleop_twist_joy_node',
         parameters=[teleop_config_file,
                     {'publish_stamped_twist': True}], # teleop params
-        remappings=[('/cmd_vel', '/omni_drive_controller/cmd_vel')],
+        remappings=[('/cmd_vel', '/omni_drive_controller/cmd_vel')], # Remap to raw cmd_vel
         output='screen'
     )
 
 
-    # rviz = Node(
-    #     package='rviz2',
-    #     executable='rviz2',
-    #     name='rviz2',
-    #     output='screen',
-    #     parameters=[{'use_sim_time': True}],
-    # )
+    # 6) Velocity smoother node (NEW)
+    velocity_smoother = Node(
+        package='delivery_bot_control',
+        executable='omni_velocity_smoother.py',
+        name='omni_velocity_smoother',
+        output='screen',
+        parameters=[{
+            'max_linear_accel': 0.5,
+            'max_angular_accel': 1.0,
+            'max_wheel_accel': 10.0,
+            'robot_radius': 0.115,
+            'wheel_radius': 0.024,
+            'wheel_angles_deg': [30, 150, 270],
+            'use_sim_time': True,
+        }],
+        remappings=[
+            ('/cmd_vel', '/cmd_vel'),
+            ('/cmd_vel', '/omni_drive_controller/cmd_vel'),
+        ],
+    )
 
 
     return LaunchDescription([
@@ -172,6 +180,7 @@ def generate_launch_description():
                 spawn,
                 wait_for_controllers,
                 spawn_drive_controller,
+                # velocity_smoother,
             ]
         ),
         TimerAction(
@@ -180,8 +189,6 @@ def generate_launch_description():
                 ekf,
                 joy_node,
                 teleop_node,
-                # slam_launch,
-                # rviz
             ]
         )
     ])

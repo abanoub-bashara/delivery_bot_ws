@@ -6,9 +6,9 @@ teleop_twist_joy_node:
     enable_turbo_button: 5  # L1 + R1 = turbo (optional)
 
     # Left stick → linear
-    axis_linear.x: 0        # left stick Y
-    axis_linear.y: 1        # left stick X
-    scale_linear.x: -0.20   # negative so UP gives +x
+    axis_linear.x: 1        # left stick Y
+    axis_linear.y: 0        # left stick X
+    scale_linear.x: 0.20   # negative so UP gives +x
     scale_linear.y: 0.20   # negative so LEFT gives +y
 
     # Right stick X → spin
@@ -16,7 +16,7 @@ teleop_twist_joy_node:
     scale_angular.yaw: 0.25
 
     # Turbo scales (optional) ONLY USE FOR NAV NOT MAP
-    scale_linear_turbo.x: -0.5
+    scale_linear_turbo.x: 0.5
     scale_linear_turbo.y: 0.5
     scale_angular_turbo.yaw: 2.0
 

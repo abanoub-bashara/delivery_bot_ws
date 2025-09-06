@@ -1,0 +1,13 @@
+Group,Wheel,Average Error,Rank
+X,wheel2_joint,2e-06,1
+X,wheel1_joint,2e-06,2
+X,wheel3_joint,0.0,3
+Y,wheel3_joint,2e-06,1
+Y,wheel1_joint,1e-06,2
+Y,wheel2_joint,1e-06,3
+Diagonals,wheel3_joint,2e-06,1
+Diagonals,wheel2_joint,2e-06,2
+Diagonals,wheel1_joint,2e-06,3
+Yaw,wheel1_joint,0.0,1
+Yaw,wheel2_joint,0.0,2
+Yaw,wheel3_joint,0.0,3

@@ -1,0 +1,4 @@
+imu_mean_wz=0.4879 -> CCW
+odom_mean_wz=0.5000 -> CCW
+joint_states_mean_wz=0.5000 -> CCW
+eps=0.050

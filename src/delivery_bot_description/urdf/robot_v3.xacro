@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
-<robot name="delivery_bot" xmlns:gz="http://gazebosim.org/schema">
+<robot name="delivery_bot" xmlns:xacro='http://www.ros.org/wiki/xacro' xmlns:gz="http://gazebosim.org/schema">
   <link name="base_link">
     <inertial>
       <origin xyz="1.47055e-09 -3.71873e-05 0.058853" rpy="0 0 0"/>
-      <mass value="0.823129"/>
+      <mass value="3.3"/>
       <inertia ixx="0.00583389" ixy="-3.74483e-11" ixz="2.82676e-10" iyy="0.00580868" iyz="-6.14396e-06" izz="0.00565531"/>
     </inertial>
     <!-- Part column_support -->
@@ -747,11 +747,15 @@
   <!-- Link wheel1 -->
   <link name="wheel1">
     <inertial>
-      <origin xyz="6.66143e-18 1.48071e-18 -0.0125" rpy="0 0 0"/>
+      <!-- COM offset in wheel1 frame -->
+      <origin xyz="0 0 -0.0125" rpy="0 0 0"/>
       <mass value="0.056156"/>
-      <inertia ixx="1.10674e-05" ixy="-1.51453e-52" ixz="-2.89647e-22" iyy="1.10674e-05" iyz="-5.04438e-69" izz="1.62852e-05"/>
+      <inertia ixx="9.9583307e-06" ixy="0.0" ixz="0.0"
+              iyy="9.9583307e-06" iyz="0.0"
+              izz="1.6172928e-05"/>
     </inertial>
-    <!-- Part wheel2 -->
+
+    <!-- Part wheel1 -->
     <visual>
       <origin xyz="6.86182e-18 0 -0.025" rpy="0 -5.55112e-17 -8.21073e-48"/>
       <geometry>
@@ -761,7 +765,7 @@
         <color rgba="0.615686 0.811765 0.929412 1"/>
       </material>
     </visual>
-    <collision>
+    <collision name="wheel1_collision">
       <origin xyz="6.86182e-18 0 -0.025" rpy="0 -5.55112e-17 -8.21073e-48"/>
       <geometry>
         <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/wheel.stl"/>
@@ -780,12 +784,17 @@
     <dynamics damping="0.1" friction="0.05"/>
   </joint>
 
+
+
+
   <!-- Link wheel2 -->
   <link name="wheel2">
     <inertial>
-      <origin xyz="4.50126e-19 -6.90649e-18 -0.0125" rpy="0 0 0"/>
+      <origin xyz="0 0 -0.0125" rpy="0 0 0"/>
       <mass value="0.056156"/>
-      <inertia ixx="1.10674e-05" ixy="-1.53591e-22" ixz="-1.26001e-22" iyy="1.10674e-05" iyz="8.14835e-22" izz="1.62852e-05"/>
+      <inertia ixx="9.9583307e-06" ixy="0.0" ixz="0.0"
+              iyy="9.9583307e-06" iyz="0.0"
+              izz="1.6172928e-05"/>
     </inertial>
     <!-- Part wheel2 -->
     <visual>
@@ -797,7 +806,7 @@
         <color rgba="0.615686 0.811765 0.929412 1"/>
       </material>
     </visual>
-    <collision>
+    <collision name="wheel2_collision">
       <origin xyz="0 -8.67362e-18 -0.025" rpy="3.99084e-17 6.27965e-18 -1.38778e-17"/>
       <geometry>
         <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/wheel.stl"/>
@@ -818,12 +827,18 @@
     <dynamics damping="0.1" friction="0.05"/>
   </joint>
 
+
+
+
+
   <!-- Link wheel3 -->
   <link name="wheel3">
     <inertial>
-      <origin xyz="-3.36578e-18 1.48071e-18 -0.0125" rpy="0 0 0"/>
+      <origin xyz="0 0 -0.0125" rpy="0 0 0"/>
       <mass value="0.056156"/>
-      <inertia ixx="1.10674e-05" ixy="0" ixz="-1.79532e-38" iyy="1.10674e-05" iyz="0" izz="1.62852e-05"/>
+      <inertia ixx="9.9583307e-06" ixy="0.0" ixz="0.0"
+              iyy="9.9583307e-06" iyz="0.0"
+              izz="1.6172928e-05"/>
     </inertial>
     <!-- Part wheel3 -->
     <visual>
@@ -835,7 +850,7 @@
         <color rgba="0.615686 0.811765 0.929412 1"/>
       </material>
     </visual>
-    <collision>
+    <collision name="wheel3_collision">
       <origin xyz="-3.85927e-18 0 -0.025" rpy="0 6.56362e-34 0"/>
       <geometry>
         <mesh filename="file://$(find delivery_bot_description)/models/delivery_bot/meshes/wheel.stl"/>
@@ -855,48 +870,6 @@
     <!-- Helps kill jitter -->
     <dynamics damping="0.1" friction="0.05"/>
   </joint>
-
-  <gazebo reference="wheel1">
-    <surface>
-      <friction>
-        <ode>
-          <mu>1.5</mu>
-          <mu2>0.01</mu2>
-          <slip1>0.001</slip1>
-          <slip2>0.5</slip2>
-          <fdir1>-0.5 0.866 0</fdir1>
-        </ode>
-      </friction>
-    </surface>
-  </gazebo>
-
-  <gazebo reference="wheel2">
-    <surface>
-      <friction>
-        <ode>
-          <mu>1.5</mu>
-          <mu2>0.01</mu2>
-          <slip1>0.001</slip1>
-          <slip2>0.5</slip2>
-          <fdir1>-0.5 -0.866 0</fdir1>
-        </ode>
-      </friction>
-    </surface>
-  </gazebo>
-
-  <gazebo reference="wheel3">
-    <surface>
-      <friction>
-        <ode>
-          <mu>1.5</mu>
-          <mu2>0.01</mu2>
-          <slip1>0.001</slip1>
-          <slip2>0.5</slip2>
-          <fdir1>1 0 0</fdir1>
-        </ode>
-      </friction>
-    </surface>
-  </gazebo>
 
 
   <!-- ROS2 Control for Harmonic - UPDATED -->
