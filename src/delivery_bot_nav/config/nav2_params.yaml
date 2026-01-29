@@ -16,11 +16,11 @@ amcl:
     # Motion model parameters - INCREASED noise to handle bad odometry better
     robot_model_type: "nav2_amcl::OmniMotionModel"
     # SIGNIFICANTLY increased noise values to reduce odometry dependence
-    alpha1: 5.0   # Rotational noise from rotation - high for bad odom recovery
-    alpha2: 5.0   # Rotational noise from translation - high for sideways drift
-    alpha3: 5.0   # Translational noise from translation - moderate increase
-    alpha4: 5.0   # Translational noise from rotation - high for turn errors
-    alpha5: 5.0   # Translation noise (omni-specific) - high for multi-directional drift
+    alpha1: 6.0   # Rotational noise from rotation - high for bad odom recovery
+    alpha2: 6.0   # Rotational noise from translation - high for sideways drift
+    alpha3: 6.0   # Translational noise from translation - moderate increase
+    alpha4: 6.0   # Translational noise from rotation - high for turn errors
+    alpha5: 6.0   # Translation noise (omni-specific) - high for multi-directional drift
     
     # Particle filter parameters - OPTIMIZED for recovery without rotation dependence
     max_particles: 8000      # Increased for better coverage of uncertain areas
@@ -41,10 +41,10 @@ amcl:
     max_beams: 180                   # Reduced for efficiency while maintaining coverage
     
     # Laser weighting - REBALANCED for better localization without rotation
-    z_hit: 0.85     # Higher hit weight for precise matching
+    z_hit: 0.78     # Higher hit weight for precise matching
     z_short: 0.05   # Reduced short reading weight
-    z_max: 0.02     # Very low max reading weight
-    z_rand: 0.08    # Very low random weight for precision
+    z_max: 0.01     # Very low max reading weight
+    z_rand: 0.2    # Very low random weight for precision
     sigma_hit: 0.12 # Tighter hit sigma for precise matching
     
     # Beam skipping - OPTIMIZED for efficiency
@@ -118,7 +118,7 @@ controller_server:
   ros__parameters:
     enable_stamped_cmd_vel: True
     use_sim_time: True
-    controller_frequency: 20.0
+    controller_frequency: 100.0
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.001
     min_theta_velocity_threshold: 0.001
@@ -144,13 +144,13 @@ controller_server:
     FollowPath:
       plugin: "dwb_core::DWBLocalPlanner"
       debug_trajectory_details: True
-      min_vel_x: -0.3
-      min_vel_y: -0.3
-      max_vel_x: 0.15
-      max_vel_y: 0.15
-      max_vel_theta: 0.5
+      max_vel_x: 0.6        # forward speed (m/s)
+      min_vel_x: 0.0
+      max_vel_y: 0.6
+      min_vel_y: 0.0
+      max_vel_theta: 1.0    # rotational speed (rad/s)
       min_speed_xy: 0.0
-      max_speed_xy: 0.212
+      max_speed_xy: 0.6
       min_speed_theta: 0.0
       acc_lim_x: 0.5
       acc_lim_y: 0.5
@@ -170,7 +170,7 @@ controller_server:
       short_circuit_trajectory_evaluation: True
       stateful: True
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-      BaseObstacle.scale: 0.02
+      BaseObstacle.scale: 0.25
       PathAlign.scale: 32.0
       PathAlign.forward_point_distance: 0.1
       GoalAlign.scale: 24.0
@@ -184,8 +184,8 @@ controller_server:
 local_costmap:
   local_costmap:
     ros__parameters:
-      update_frequency: 5.0
-      publish_frequency: 2.0
+      update_frequency: 10.0
+      publish_frequency: 5.0
       global_frame: odom
       robot_base_frame: base_link
       use_sim_time: True
@@ -193,12 +193,12 @@ local_costmap:
       width: 3
       height: 3
       resolution: 0.05
-      robot_radius: 0.125  # From your controller config
+      robot_radius: 0.115  # From your controller config
       plugins: ["voxel_layer", "inflation_layer"]
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.0
-        inflation_radius: 0.3
+        cost_scaling_factor: 1.0
+        inflation_radius: 0.4
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: True
@@ -255,8 +255,8 @@ global_costmap:
         map_subscribe_transient_local: True
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.0
-        inflation_radius: 0.3
+        cost_scaling_factor: 1.0
+        inflation_radius: 0.4
       always_send_full_costmap: True
 
 planner_server:

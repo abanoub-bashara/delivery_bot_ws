@@ -1,0 +1,45 @@
+# Saved robot locations
+# Format: location_name with position (x,y,z) and orientation (quaternion x,y,z,w)
+saved_locations:
+  home:
+    position:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+    frame_id: "map"
+    description: "Starting/charging position"
+  
+  position_1:
+    position:
+      x: 4.5
+      y: 6.0
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+    frame_id: "map"
+    description: "position 1"
+
+  position_2:
+    position:
+      x: 7.0
+      y: -5.0
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+    frame_id: "map"
+    description: "position 2"
+
+# You can add more locations by either:
+# 1. Manually editing this file with known coordinates
+# 2. Using the save_location service while robot is at desired position

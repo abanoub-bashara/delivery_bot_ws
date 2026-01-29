@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 1000  # Reduced from 200 - still fast but more reasonable
+    update_rate: 100  # Reduced from 200 - still fast but more reasonable
     use_sim_time: true
     
     # gains:

@@ -15,7 +15,6 @@ def generate_launch_description():
     # --- Paths ---
     description_pkg = get_package_share_directory('delivery_bot_description')
     control_pkg = get_package_share_directory('delivery_bot_control')
-    nav_pkg = get_package_share_directory('delivery_bot_nav')
 
     #load urdf description 
     xacro_path = os.path.join(description_pkg, 'urdf', 'robot_v3.xacro')

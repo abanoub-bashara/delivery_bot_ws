@@ -2,19 +2,32 @@
 <package format="3">
   <name>delivery_bot_nav</name>
   <version>0.1.0</version>
-  <description>
-    Navigation &amp; localization launch scripts and configs for the delivery bot
-  </description>
+  <description>Navigation &amp; localization launch scripts and configs for the delivery bot</description>
+
   <maintainer email="abanoubbashara5@icloud.com">Abanoub Bashara</maintainer>
   <license>Apache-2.0</license>
 
-  <!-- build tool -->
+  <!-- build tools -->
   <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
 
-  <!-- runtime dependencies for launch files -->
+  <!-- you GENERATE custom interfaces -->
+  <build_depend>rosidl_default_generators</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <!-- you RUN with generated interfaces -->
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <!-- launch + indexing -->
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
   <exec_depend>ament_index_python</exec_depend>
+
+  <!-- Python runtime deps -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
 
   <!-- Nav2 Core Components -->
   <exec_depend>nav2_map_server</exec_depend>
@@ -28,26 +41,22 @@
   <exec_depend>nav2_costmap_2d</exec_depend>
   <exec_depend>nav2_bringup</exec_depend>
 
-  <!-- SLAM (if using slam mode) -->
+  <!-- SLAM (optional) -->
   <exec_depend>slam_toolbox</exec_depend>
 
-  <!-- Message/Action dependencies -->
+  <!-- Messages/Actions you import -->
   <exec_depend>nav2_msgs</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
-  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
 
-  <!-- Behavior tree dependencies -->
+  <!-- Behavior tree + extras -->
   <exec_depend>behaviortree_cpp_v3</exec_depend>
-
-  <!-- DWB Local Planner (for omni-wheel support) -->
-  <exec_depend>dwb_core</exec_depend>
-  <exec_depend>dwb_plugins</exec_depend>
-  <exec_depend>dwb_critics</exec_depend>
-
-  <!-- Additional useful packages -->
   <exec_depend>nav2_common</exec_depend>
   <exec_depend>robot_localization</exec_depend>
+
+  <!-- REQUIRED when installing interfaces -->
+  <member_of_group>rosidl_interface_packages</member_of_group>
 
   <export>
     <build_type>ament_cmake</build_type>
